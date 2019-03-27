@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.lj-bg-img {
+    background-image: url(../img/lxt_bg.jpg);
+    width: 100%;
+    height: 380px;
+}
