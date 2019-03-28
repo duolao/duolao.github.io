@@ -78,7 +78,9 @@ button{
     height: 100%;
     background: rgb(10, 144, 226) ;
     overflow: hidden;
-    display: none;
+    /* display: none; */
+    float: left;
+    position: absolute;
 }
 .wgp_back_one img{
     display: block;
@@ -105,11 +107,13 @@ button{
 .wgp_back_two{
     width: 100%;
     height: 100%;
-    background-image: url(../img/bj_02.jpg);
+    background-image: url(../img/wgpbj_02.jpg);
     background-size:cover;
     background-position: center;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    /* display: none; */
+    float: left;
 }
  .wgp_img_five{
     width: 400px;
@@ -130,5 +134,89 @@ button{
     right: 0;
     bottom: 0;
     display: none;
+}
+.wgp_back_three{
+    width: 100%;
+    height: 100%;
+    background:rgb(0, 152, 197);
+    overflow: hidden;
+    float: left;
+    position: absolute;
+    /* display: none; */
+    
+}
+.wgp_img_seven{
+    width: 320px;
+    height: 250px;
+    margin:auto;
+    display: none;
+    margin-top: 100px;
+    transform: 1s;
+}
+.wgp_ball_img{
+    width: 155px;
+    height: 180px;
+    background-image: url(../img/wgpbanbg1.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
    
+}
+.wgp_img_com{
+  
+    position: absolute;
+    left: 55px;
+    top: 50px;
+    display: block;
+    /* transform: rotateY(180deg);
+    transition: 5s */
+}
+.wgp_ball_txt{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top:100px;
+    margin-left: 5px;
+}
+.wgp_img_math{
+    margin-left: 43px;
+    display: block;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.wgp_uls{
+    width: 925px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 1500px;
+}
+.wgp_box{
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
