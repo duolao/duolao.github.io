@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/relation.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jQuert-3.31.js"></script>
+    <script>
+    $(function(){
+        $('.navbar-brand').animate({"left":"0"},600);
+        $('.nav').animate({"left":"0"},600);
+        $('.lj-header-img').delay(500).animate({
+            top: "0",
+            opacity: "1",           
+        },600)
+        
+        
+        // delay(600).fadeIn(100,function(){
+        //     $('.lj-header-img').animate({"top":"0"},350)
+        // });
+        $('.lj-header-txt').delay(900).animate({"bottom":"0"},400);
+    });
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +31,7 @@
             <div class="navbar lj-nav-height" style="margin:0">
                 <div class="container-fluid list-unstyled lj-lk clearfix" style="height:80px;padding:0">
                     <div class="navbar-header">
-                        <div class="navbar-brand" style="padding:0"><img src="img/lj_logo.png" alt=""></div>
+                        <div class="navbar-brand" style="padding:0"><img src="img/lj_logo.png" alt="" class="lj-logo-dh"></div>
                     </div>
                     <ul class="nav nav-navbar navbar-right">
                         <li class="navbar-left"><a href="#" style="padding:0">首页</a></li>
@@ -46,6 +63,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 lj-foot-height" style="background:red">
+                <div class="container-fluid">
+                    <div class="lj-height-txt">
+        <p>感谢您来到网站，若您有合作意向，请您使用以下方式联系我们，</p>                
+        <p>我们将尽快给您回复，并为您提供最真诚的设计服务，谢谢。</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-7">
                 <div class="row">
@@ -64,26 +87,50 @@
             </div>
             <div class="text-center">
                     <a href="#">网站改版报价</a>
-                    <a href="#">响应式网站<a href="#">网站改版报价</a></a>
+                    <a href="#">响应式网站</a>
                     <a href="#">手机网站</a>
                     <a href="#">微商城开发</a>
                     <a href="#">微网站制作</a>
-                    <a href="#">网站制作流程</a>
                     <a href="#">网络公司</a>
                     <a href="#">微信平台开发</a>
+                    <a href="#">网站制作流程</a>
             </div>
-            <div class="lj-footer-center">
+
+            <!-- <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-9" style="padding:0">
+                                <img src="img/lj_tel2.png" alt="">
+                        </div>
+                        <div class="col-md-3" style="padding:0">
+                                <div class="row" style="padding:0">
+                                        <div class="col-md-5" style="padding:0">
+                                                <img src="img/lj_wei1.png" alt="" class="lj-wei1-img">
+                                        </div>
+                                        <div class="col-md-5" style="padding:0">
+                                                <img src="img/lj_wei2.png" alt="">
+                                        </div>
+                                </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="lj-footer-center">
             <div class="lj_tel2 flat"> 
                 <img src="img/lj_tel2.png" alt="" class="center-block">
                 <img src="img/lj_dh.png" alt="" class="lj-footer-dh">
             </div>
-            <div class="flat lj-mg">
-                <img src="img/lj_wei1.png" alt="">
+            <div class="flat lj-wei1">
+                <img src="img/lj_wei1.png" alt="" class="lj-wei1-img">
+                <img src="img/fo_wei1_1.png" alt="" class="lj-wei1-img2">
             </div>
             <div class="flat lj-mg">
                 <img src="img/lj_wei2.png" alt="">
             </div>
         </div>
+            </div>
+            
     </div>
 </body>
 </html>
