@@ -24,11 +24,17 @@
     display: block;
     text-align: center;
 }
+.nav>li>a:hover {
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
 .lj-lk {
     overflow: hidden;
 }
 .nav-navbar {
     margin: 23px auto;
+    padding-right: 60px;
+    overflow: hidden;
 }
 .lj-header-img {
     background-image: url(../img/lj_lx_con1.png);
@@ -49,7 +55,14 @@
     color: #000;
     padding: 44px 0 32px;
 }
-
+.lj-tab {
+    width: 35px;
+    height: 35px;
+    background: url(../img/lj-tob.png);
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 100%
+}
 .lj-foot-height {
     height: 615px;
 }
@@ -57,10 +70,37 @@
     height: 615px;
     background-image: url(../img/lj_map.png);
 }
-
+.lj-footer-bgcolor {
+    background-color: #ebebeb;
+}
+.lj_tel2{
+ position: relative;
+ background-color: #ffffff;
+ border-radius: 25px;
+}
+.lj-footer-dh {
+    position: absolute;
+    top:0;
+    left: 21px;
+}
 ::-webkit-scrollbar {
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #009ACD;
+}
+.flat {
+    float: left;
+}
+.lj-footer-bgcolor>div>a {
+    color: #484848;
+    font-size: 12px;
+    
+}
+.lj-footer-center {
+    width: 470px;
+    margin: 0 auto;
+}
+.lj-mg {
+    margin-left: 10px;
 }
