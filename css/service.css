@@ -94,9 +94,10 @@ a:hover{
 	height: 41px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 .wzr_top_b ul li{
-	margin-left: 15px;
+	padding-right: 15px;
 }
 .wzr_top_b ul li a{
 	width: 149px;
@@ -111,5 +112,44 @@ a:hover{
 }
 .wzr_top_b ul li a:hover{
 	color: #fffefe;
-	
+	background: none;
+}
+.wzr_m1{
+	text-align: center;
+	background: #FFF;
+    padding: 25px 0 75px;
+}
+.wzr_m1 img{
+	padding-bottom: 58px;
+}
+.wzr_m1_bbox{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.wzr_m1_sbox{
+	width: 20%;
+	border-left: 1px solid #000;
+}
+.wzr_m1_sbox_1{
+	display: block;
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    color: #000;
+    padding: 17px 15px 0;
+    height: 76px;
+}
+.wzr_m1_sbox_2{
+	display: block;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 20px 30px;	
+}
+.wzr_m1_sbox_3{
+	display: block;
+	text-align: center;
+    padding: 0 15px 19px;
 }
