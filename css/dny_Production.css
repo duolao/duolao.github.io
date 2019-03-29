@@ -1,0 +1,79 @@
+body{
+    padding-top: 120px;
+    background:url(../img/dny_albg.jpg) repeat;
+}
+/* 导航条 */
+.dny-nav-header a{
+    /* width: 120px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 70px;
+    /* background: url(images/logo.png) center center no-repeat;
+    background-size: 200px 80px; */
+}
+.dny-nav-header a img{
+    width: 315px;
+    height: 55px;
+}
+#navbar{
+    width: 100%;
+    padding-top:15px; 
+    font-size: 16px;
+}
+#navbar a{
+    /* color: #fff; */
+    width: 95px;
+    text-align: center;
+}
+#navbar a.current {
+    background: url(../img/dny_navhua2.png) center center no-repeat;
+}
+#navbar a:hover{
+    background: url(../img/dny_navhua2.png) center center no-repeat;
+}
+
+/* 右侧悬浮框 */
+.dny-sidebar {
+    position: fixed;
+    right: 0;
+    top: 45%;
+    margin-top: -160px;
+    width: 55px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 12px 0;
+    border-radius: 8px 0 0 8px;
+    z-index: 999999;
+}
+.dny-sidebar {
+    display: block;
+}
+.dny-sidebar ul{
+    padding-left: 20px;
+}
+.dny-sidebar li {
+    display: block;
+    height: 50px;
+    width: 160px;
+    padding-left: 0px;
+    border-radius: 8px 0 0 8px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.dny-sidebar li img {
+    display: block;
+}
+.dny-sidebar li:hover {
+    margin-left: -105px;
+    background: rgba(0, 0, 0, 0.6);
+}
+/* 滚动条样式 */
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    height: 50px;
+    background-color: #0098c5;
+}
