@@ -10,12 +10,12 @@ html{
 body{
     width: 100%;
     height: 100%;
-    color: #fff;
     font-weight: 300;
     font-size: 14px;
     background-color: #f9f9f9;
     font-family: "微软雅黑";
     vertical-align: baseline;
+    position: relative;
 }
 ul,ol{
     list-style: none;
@@ -74,13 +74,14 @@ button{
     z-index: 666;
 }
 .wgp_back_one{
-    width: 100%;
+    width: 1366px;
+    /* display: inline-block; */
     height: 100%;
     background: rgb(10, 144, 226) ;
     overflow: hidden;
     /* display: none; */
-    float: left;
-    position: absolute;
+    /* float: left; */
+    /* position: absolute; */
 }
 .wgp_back_one img{
     display: block;
@@ -88,32 +89,34 @@ button{
 .wgp_img_two{
     margin:auto;
     margin-top:100px;
-    /* display: none; */
+    display: none;
     /* display: block; */
 }
 .wgp_img_three{
   
     margin:auto;
     margin-top:10px;
-    /* display: none; */
+    display: none;
     /* display: block; */
 }
 .wgp_img_four{
     
     margin:auto;
-    /* display: none; */
+    display: none;
     /* display: block; */
 }
 .wgp_back_two{
-    width: 100%;
+    width: 1366px;
     height: 100%;
+    display: inline-block;
     background-image: url(../img/wgpbj_02.jpg);
     background-size:cover;
     background-position: center;
     overflow: hidden;
-    position: absolute;
+    position: relative;
+    /* z-index: 99; */
     /* display: none; */
-    float: left;
+    /* float: left; */
 }
  .wgp_img_five{
     width: 400px;
@@ -136,12 +139,13 @@ button{
     display: none;
 }
 .wgp_back_three{
-    width: 100%;
+    width: 1366px;
     height: 100%;
+    display: inline-block;
     background:rgb(0, 152, 197);
     overflow: hidden;
-    float: left;
-    position: absolute;
+    /* float: left; */
+    /* position: absolute; */
     /* display: none; */
     
 }
@@ -213,10 +217,31 @@ button{
     width: 925px;
     margin: 0 auto;
     margin-top: 30px;
-    margin-left: 1500px;
+    /* margin-left: 1500px; */
+    margin-left:1500px;
 }
 .wgp_box{
-    width: 100%;
+    width: 400%;
     height: 100%;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
 }
+.wgp_bean{
+    position: absolute;
+    bottom: 0;
+    left: center;
+}
+.wgp_bean span{
+    width: 15px;
+    height:15px;
+    border-radius: 100px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-left: 10px;
+}
+
