@@ -28,25 +28,22 @@ img{
     width: 95px;
     text-align: center;
 }
-#navbar a.current {
-    background: url(../img/dny_navhua2.png) center center no-repeat;
-}
-#navbar a:hover{
-    background: url(../img/dny_navhua2.png) center center no-repeat;
-}
 
-.dny_nav_tel_2 .dny_nav_tel2_2 {
+#navbar li{
+    width: 95px;
+}
+#navbar li.dny_current {
+    background: url(../img/dny_navhua2.png) center center no-repeat;
+}
+#navbar li:hover{
+    background: url(../img/dny_navhua2.png) center center no-repeat;
+}
+/* .dny_nav_tel_2 .dny_nav_tel2_2 {
     width: 35px;
     height: 35px;
     background: url(../images/ttel_1_0.png) center center no-repeat;
     cursor: pointer;
-}
-
-
-
-
-
-
+} */
 
 /* 右侧悬浮框 */
 .dny-sidebar {
@@ -93,7 +90,9 @@ img{
     height: 50px;
     background-color: #0098c5;
 }
-
+::-webkit-scrollbar-thumb:hover{
+    background-color: #333;
+}
  /* 菜单 */
  .dny-qing {
     display: block;
@@ -149,8 +148,12 @@ img{
     text-align: left;
     position: relative;
     margin: 0 30px;
+    transition: color 2s;
 }
-
+/* 小菜单的hover */
+.dny-cl-effect-11 a:hover{
+    color: #0098c5;
+}
 
 .dny-al_xfl_bt{
     padding: 35px 30px 16px;
@@ -211,27 +214,37 @@ img{
     font-size: 14px;
     color: #666;
 }
+
 .dny-workimg{
     display: block;
     margin: 0;
     width: 100%;
-    transition: transform 0.3s linear;
-    transform: scale(1);
+    position: relative;
 }
-
+/* 遮罩层 */ 
 #dny-workbox .dny-workshow .dny-woryan {
     width: 100%;
-    height: 100%;
+    height: 69%;
     display: block;
+
     position: absolute;
     z-index: 99;
     left: 0;
     top: 0;
-    background: url(../img/dny-nal_yan.png) center top no-repeat;
+
+    background: rgba(0, 0, 0, 0.7) url(../img/dny-nal_yan.png) center top no-repeat;
     text-align: center;
-    transition: transform 0.6s;
-    transform: scale(1);
+    transform-origin: right bottom;
+   	-webkit-transform-origin: right bottom; 
+   	-moz-transform-origin: right bottom; 
+   	transform: rotate(90deg); 
+   	-webkit-transform: rotate(90deg); 
+   	-moz-transform: rotate(90deg); 
+   	transition: all 0.35s; 
+   	-webkit-transition: all 0.35s; 
+   	-moz-transition: all 0.35s; 
 }
+
 #dny-workbox .dny-workshow i {
     display: block;
     top: 33%;
@@ -260,6 +273,20 @@ img{
     -moz-transform: scale(0.7,0.7);
     -o-transform: scale(0.7,0.7);
 }
+/* 遮罩层执行动画 */
+#dny-workbox .dny-workshow:hover .dny-woryan {
+    transform: rotate(0deg); 
+	-webkit-transform: rotate(0deg); 
+	-moz-transform: rotate(0deg); 
+}
+
+.dny_hov{
+    transition: all 1s;
+}
+.dny_hov:hover{
+    transform: scale(1.1);
+}
+
 #dny-workbox .dny-worjs {
     background: #fff;
     padding: 20px 23px 23px;
@@ -332,7 +359,7 @@ img{
         background-position: -2550px 0;
     }
 }
-
+/* 媒体查询 */
 @media screen and (max-width: 768px) {
     #dny-workbox .dny-workshow {
         width: 50%;
@@ -343,3 +370,9 @@ img{
     width: 25%;
 }
 }; */
+
+/* 底部 */
+.dny_fobg_ser {
+    background: #ebebeb;
+    padding: 52px 30px;
+}
