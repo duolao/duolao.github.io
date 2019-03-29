@@ -36,10 +36,12 @@
     height: 34px;
     display: block;
     text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 .nav>li>a:hover {
     border: 2px solid #fff;
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
 }
 .lj-lk {
     overflow: hidden;
@@ -50,9 +52,9 @@
     /* overflow: hidden; */
 }
 .lj-header-img {
-    background-image: url(../img/lj_lx_con1.png);
+    /* background-image: url(../img/lj_lx_con1.png);
     height: 55px;
-    width: 358px;
+    width: 358px; */
     opacity: 0;
     position: relative;
     top:-160px;
@@ -84,12 +86,20 @@
 .lj-height-txt>p {
     line-height: 20px;
     font-size: 14px;
-    color: #ffffff;}
+    color: #ffffff;
+}
 .lj-height-txt{
     border-bottom: 1px solid #22a9d1;
     padding-bottom: 23px;
 }
-
+.lj-add-img {
+    line-height: 40px;
+}
+.lj-add-txt {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 40px;
+}
 
 
 .lj-tab {
@@ -103,6 +113,7 @@
 .lj-foot-height {
     height: 615px;
     padding-top: 55px;
+    background-color: #0098c5;
 }
 .lj-foot-map {
     height: 615px;
@@ -118,7 +129,7 @@
  position: relative;
  background-color: #ffffff;
  border-radius: 25px;
- margin-right: 10px;
+ /* margin-right: 10px; */
 }
 .lj-footer-dh {
     position: absolute;
@@ -139,6 +150,13 @@
     font-size: 12px;
     text-decoration: none;
     margin: 0 7px;
+}
+.lj-ice {
+    color: #484848;
+    font-size: 12px;
+}
+.lj-ice-top {
+    margin-bottom: 20px;
 }
 .lj-footer-center {
     width: 470px;
@@ -178,11 +196,17 @@
     animation-duration: 1s;
 
 } */
+.lj-wei-top {
+    margin-top: 25px;
+}
 .lj_tel2:hover .lj-footer-dh{
     animation-name: scaleDraw;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 1s;
+}
+.lj-add-img>img {
+    position: relative;
 }
 @keyframes scaleDraw {
     0%{
@@ -197,4 +221,32 @@
     75%{
         transform: scale(1.5);
     }
+}
+@media (max-width:768px) {
+	.container,.container-fluid {
+        width: 750px
+    }
+}
+
+@media (min-width:768px) {
+	.container,.container-fluid {
+		width: 750px
+    }
+}
+ 
+@media (min-width:992px) {
+	.container,.container-fluid {
+		width: 970px
+	}
+}
+ 
+@media (min-width:1200px) {
+	.container,.container-fluid {
+		width: 1170px
+	}
+}
+@media (min-width:1200px) {
+	.container,.container-fluid {
+		width: auto
+	}
 }
