@@ -24,11 +24,11 @@ a{
     text-decoration: none;
     color: #fff;
 }
-.wgp_wrap{
+/* .wgp_wrap{
     width: 1240px;
     height: auto;
     margin: auto;
-}
+} */
 img{
     border: none;
 }
@@ -58,15 +58,18 @@ button{
     font-size: 16px;
 }
 .wgp_txt{
+    width: 100%;
+    /* max-height: 80px; */
     margin-top: 15px;
 }
 .wgp_txt li{
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .navbar-toggle{
     margin-top: 25px;
 }
 .wgp_fixed{
+    width: 100%;
     position:fixed;
     left: 0;
     top: 0;
@@ -74,7 +77,7 @@ button{
     z-index: 666;
 }
 .wgp_back_one{
-    width: 1366px;
+    width: 100%;
     /* display: inline-block; */
     height: 100%;
     background: rgb(10, 144, 226) ;
@@ -93,20 +96,18 @@ button{
     /* display: block; */
 }
 .wgp_img_three{
-  
     margin:auto;
-    margin-top:10px;
+    margin-top:1.5%;
     display: none;
     /* display: block; */
 }
 .wgp_img_four{
-    
     margin:auto;
     display: none;
     /* display: block; */
 }
 .wgp_back_two{
-    width: 1366px;
+    width: 100%;
     height: 100%;
     display: inline-block;
     background-image: url(../img/wgpbj_02.jpg);
@@ -119,8 +120,7 @@ button{
     /* float: left; */
 }
  .wgp_img_five{
-    width: 400px;
-    height: 500px;
+    width: 30%;
     /* display: none; */
     position: absolute;
     left: 5%;
@@ -130,8 +130,7 @@ button{
     
 }
 .wgp_img_six{
-    width:600px;
-    height:500px;
+    width:44%;
     /* display: none; */
     position: absolute;
     right: 0;
@@ -139,7 +138,7 @@ button{
     display: none;
 }
 .wgp_back_three{
-    width: 1366px;
+    width: 100%;
     height: 100%;
     display: inline-block;
     background:rgb(0, 152, 197);
@@ -150,30 +149,29 @@ button{
     
 }
 .wgp_img_seven{
-    width: 320px;
-    height: 250px;
+    width: 23%;
     margin:auto;
     display: none;
     margin-top: 100px;
     transform: 1s;
 }
 .wgp_ball_img{
-    width: 155px;
-    height: 180px;
+    width: 20%;
     background-image: url(../img/wgpbanbg1.png);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
-    float: left;
-    margin-left: 20px;
+    overflow: hidden; 
+    /* /* float: left; */
+    /* margin-left: 20px; */
    
 }
 .wgp_img_com{
-  
+    width: 30%;
     position: absolute;
-    left: 55px;
-    top: 50px;
-    display: block;
+    left:35%;
+    top:25%;
+    /* display: block; */
     /* transform: rotateY(180deg);
     transition: 5s */
 }
@@ -214,11 +212,13 @@ button{
     align-items: center;
 }
 .wgp_uls{
-    width: 925px;
+    width: 60%;
+    height: 20%;
     margin: 0 auto;
     margin-top: 30px;
     /* margin-left: 1500px; */
-    margin-left:1500px;
+    margin-left:100%;
+    display: flex;
 }
 .wgp_box{
     width: 400%;
@@ -244,4 +244,5 @@ button{
     float: left;
     margin-left: 10px;
 }
+
 
