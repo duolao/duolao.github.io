@@ -28,7 +28,7 @@
 		</div>
 	</header>
 
-	<section>
+	<section class="red-text" style="display: table;">
 		<div id="Select-the">
 			<h3 class="text-center">选择身份</h3>
 			<div class="developer">
@@ -46,12 +46,95 @@
 				</div>
 			</div>
 		</div>
+		<div id="Register-development-account" class="text-center">
+			<h3>注册开发者账号</h3>
+			<form action="" class="bs-example bs-example-form" role="form">	
+			<input type="text" class="form-control"  placeholder="用户名(即个性后缀,注册后无法修改)" >
+			<input type="text" class="form-control"  placeholder="手机号" >
+			<input type="text" class="form-control"  placeholder="请输入手机验证" >
+			<input type="text" class="form-control"  placeholder="请输入密码" >	
+			<input type="password"class="form-control" placeholder="请确认密码">
+		</form>
+		<div class="agreement">
+			<em><i class="fa fa-check-square"></i> <span>我同意遵守</span></em>
+			<a href="https://codemart.com/agreement">《码市用户服务协议》</a>
+		</div>
+		<div>
+			<button class="btn btn-info" data-loading-text="登陆"type="button" style="padding:8px 150px;background-color: #08c;outline:none;">
+    	 		登陆
+			</button>
+		</div>
+			<div class="retrieve-password get-back" onclick="javascrtpt:window.location.href=''">
+			注册需求方
+			</div>
+		</div>
+		<div id="Registered-enterprise">
+			<h3 class="text-center">选择需求方类型</h3>
+			<div class="developer">
+				<img class="fl" src="img/z_kaifazhe.png" alt="">
+				<div class="fl">
+					<span>个人需求方</span>
+					<p>适用于没有企业资质个人需求方</p>
+				</div>
+			</div>
+			<div class="developer">
+			<img class="fl" src="img/z_xuqiufang.png" alt="">
+				<div class="fl">
+					<span>企业需求方</span>
+					<p>适合于已注册企业资质的需求方</p>
+				</div>
+			</div>
+			<div class="retrieve-password get-back text-center" onclick="javascrtpt:window.location.href=''">
+			返回选择身份
+			</div>
+		</div>
+		<div id="personage" class="text-center">
+			<h3>注册个人需求方</h3>
+			<form action="" class="bs-example bs-example-form" role="form">	
+			<input type="text" class="form-control"  placeholder="用户名(即个性后缀,注册后无法修改)" >
+			<input type="text" class="form-control"  placeholder="手机号" >
+			<input type="text" class="form-control"  placeholder="请输入手机验证" >
+			<input type="text" class="form-control"  placeholder="请输入密码" >	
+			<input type="password"class="form-control" placeholder="请确认密码">
+		</form>
+		<div class="agreement">
+			<em><i class="fa fa-check-square"></i> <span>我同意遵守</span></em>
+			<a href="https://codemart.com/agreement">《码市用户服务协议》</a>
+		</div>
+		<div>
+			<button class="btn btn-info" data-loading-text="登陆"type="button" style="padding:8px 150px;background-color: #08c;outline:none;">
+    	 		登陆
+			</button>
+		</div>
+			<div class="retrieve-password get-back" id="send-back" onclick="javascrtpt:window.location.href=''">
+			返回选择需求类型
+			</div>
+		</div>
+		<div id="enterprise" class="text-center">
+			<h3>注册开发者账号</h3>
+			<form action="" class="bs-example bs-example-form" role="form">	
+			<input type="text" class="form-control"  placeholder="用户名(即个性后缀,注册后无法修改)" >
+			<input type="text" class="form-control"  placeholder="手机号" >
+			<input type="text" class="form-control"  placeholder="请输入手机验证" >
+			<input type="text" class="form-control"  placeholder="请输入密码" >	
+			<input type="password"class="form-control" placeholder="请确认密码">
+		</form>
+		<div class="agreement">
+			<em><i class="fa fa-check-square"></i> <span>我同意遵守</span></em>
+			<a href="https://codemart.com/agreement">《码市用户服务协议》</a>
+		</div>
+		<div>
+			<button class="btn btn-info" data-loading-text="登陆"type="button" style="padding:8px 150px;background-color: #08c;outline:none;">
+    	 		登陆
+			</button>
+		</div>
+			<div class="retrieve-password get-back" onclick="javascrtpt:window.location.href=''">
+			注册需求方
+			</div>
+		</div>
+
 	</section>
-
-	<aside title="在线咨询请添加客服 QQ" data-container="body" data-toggle="popover" data-placement="top" data-content="QQ841187588">   
-		<i class="fa fa-qq"></i> 联系我们
-	</aside>
-
+	
 	<footer>
 		<img src="img/z_mashi.png" alt="">
 		<span>&copy; Copyright 2014-2018</span>
@@ -59,11 +142,7 @@
 
   	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script>
-		$(function () { 
-		  $("[data-toggle='popover']").popover();
-		});
-
-	</script>
+	<script src="js/QQ.Contact.Information.js"></script>
+	<script src="js/register.js"></script>
 </body>
 </html>

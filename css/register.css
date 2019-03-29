@@ -33,3 +33,42 @@ section .fl p{
 	margin-top: 5px;
 	padding-left: 5px;
 }
+.get-back{
+	margin-top: 38px;
+	color:#727f8f;
+}
+.agreement{
+	margin: 10px 0;
+	float: left;
+	font-style: normal;
+	cursor: pointer;
+}
+.agreement em{
+	font-style: normal;
+	cursor: pointer;
+}
+ .agreement i::before{
+	color: #108ee9;
+}
+.agreement span{
+	color: #727f8f;
+	padding-left: 5px
+}
+#Select-the{
+	
+}
+#Register-development-account{
+	display: none;
+}
+.retrieve-password{
+	cursor: pointer;
+}
+#Registered-enterprise{
+	display: none;
+}
+#personage{
+	display: none;
+}
+#enterprise{
+	display: none;
+}
