@@ -1,0 +1,94 @@
+a{
+	background-color: red
+}
+a:focus{text-decoration:none;}
+header{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #ccc;
+}
+.log-nav{
+	width: 96%;
+	height: 70px;
+	line-height: 70px;
+	margin:0 auto;
+}
+.log-nav-left{
+	float: left;
+}
+.log-nav-left img{
+	width: 60px;
+	height: 28px;
+}
+.log-nav-left span{
+	color: #333;
+	font-size: 14px;
+	margin-left: 20px
+}
+section{
+	padding: 60px 20px 10px;
+	margin: 0 auto
+}
+section input{
+	margin-top: 20px;
+	
+}
+section h3{
+	padding-bottom: 20px;
+}
+section input{
+	height: 40px !important
+}
+.Remember-my-password{
+	margin: 10px 0;
+	float: left;
+}
+.Remember-my-password em{
+	font-style: normal;
+	cursor: pointer;
+}
+.Remember-my-password i::before{
+	color: #108ee9;
+	/*border: 1px solid #108ee9;*/
+	/*color: #Fff*/
+} 
+.Remember-my-password span{
+	color: #727f8f;
+	padding-left: 5px
+}
+.Remember-my-password a{
+	margin-left: 208px;
+}
+@media screen and (max-width: 680px){
+
+	.log-nav-left span{
+		display: none;
+	}
+}
+@media screen and (max-width: 560px) {   
+ 	.log-nav{
+ 		width: 90%;
+ 	}
+    .text-right span{   
+       display: none;
+    }  
+}
+@media screen and (max-height: 460px) {   
+	footer{
+		display: none;
+	}
+}
+footer{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #727f8f;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform:translate(-50%);}
+footer img{
+	width: 45px;
+	height: 21px;
+	padding-right: 5px
+}

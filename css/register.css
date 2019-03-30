@@ -1,0 +1,74 @@
+section .developer{
+	width: 322px;
+	height: 116px;
+	margin: 0 auto;
+	border-radius:5px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+section .developer:hover{
+	border: 1px solid #08f;
+}
+section .developer img{
+	width: 65px;
+	height: 65px;
+	margin-left: 25px;
+}
+section .developer span{
+	display: inline-block;
+	width: 200px;
+	color: #4289dc;
+	font-size: 21px;
+}
+section .fl{
+	float: left;
+	margin-top: 25px;
+}
+section .fl span{
+	margin-top: 5px;
+	padding-left: 5px
+}
+section .fl p{
+	margin-top: 5px;
+	padding-left: 5px;
+}
+.get-back{
+	margin-top: 38px;
+	color:#727f8f;
+}
+.agreement{
+	margin: 10px 0;
+	float: left;
+	font-style: normal;
+	cursor: pointer;
+}
+.agreement em{
+	font-style: normal;
+	cursor: pointer;
+}
+ .agreement i::before{
+	color: #108ee9;
+}
+.agreement span{
+	color: #727f8f;
+	padding-left: 5px
+}
+#Select-the{
+	
+}
+#Register-development-account{
+	display: none;
+}
+.retrieve-password{
+	cursor: pointer;
+}
+#Registered-enterprise{
+	display: none;
+}
+#personage{
+	display: none;
+}
+#enterprise{
+	display: none;
+}
