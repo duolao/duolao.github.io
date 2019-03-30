@@ -1,0 +1,31 @@
+.wgp_webthree_box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wgp_webthree_box video{
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    /* object-fit: cover; */
+    left: 0;
+    top:0;
+}
+.wgp_webthree_masking{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+.wgp_webthree_imgone img{
+    width: 15%;
+    z-index: 5556;
+    position: absolute;
+    right: 42%;
+    top: 13%;
+    /* display: none; */
+    opacity: 0;
+}

@@ -9,7 +9,14 @@
    .wgp_web_twomove .wgp_web_twolione{
        margin: 0;
    }
-   
+      .wgp_webthree_box video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top:0;
+}
 
 }
 @media screen and (min-width: 768px) and (max-width:991px ){
@@ -20,6 +27,14 @@
    .wgp_web_twomove .wgp_web_twolione{
        margin: 0;
    }
+   .wgp_webthree_box video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top:0;
+}
  }
 @media screen and (max-width: 768px){
     .wgp_web_twolione{
@@ -29,17 +44,32 @@
    .wgp_web_twomove .wgp_web_twolione{
        margin: 0;
    }
+   .wgp_webtwo_btn{
+       width: 200px;
+       height: 30px;
+       margin: auto;
+       
+   }
+   .wgp_webthree_box video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top:0;
+}
 }
 
 .wgp_web_two{
     width: 100%;
     height: 100%;
     background: #222325;
+    position: relative;
 }
 .wgp_web_twouls{
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 2%;
 }
 .wgp_web_twouls li img{
     display: block;
@@ -84,6 +114,10 @@
     text-align: center;
     outline: none;
 }
+.wgp_web_two{
+   
+    
+}
 .wgp_web_twouls li{
     width: 20%;
     position: relative;
@@ -91,7 +125,6 @@
 }
 .wgp_web_twouls li p{
     width: 100%;
-    height: 55px;
     background: #000;
     font-size: 14px;
     color: #fff;
@@ -99,33 +132,50 @@
     position: absolute;
     left: 0;
     top: 180px;
-    display: none;
-
 }
 .wgp_masking{
     width: 100%;
     height: 100%;
-    background: rgba(0, 0,0, 0.5);
+    background: rgba(0,0,0,0.5);
     position: absolute;
     left: 0;
     top: 0;
     display: none;
 }
 .wgp_webtwo_ball{
-    width: 68px;
-    height: 68px;
+    width: 25%;
+    height: 40%;
     background-image: url(../img/wgpyuanquan.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
-    left:-68px;
-    top: 50px;
+    left: -25%;
+    top: 27%;
 }
 .wgp_webtwo_glass{
-    width: 34px;
-    height: 33px;
+    width: 14%;
+    height: 20%;
     background-image:url(../img/wgpfangdajing.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
-    right: -34px;
-    top: 70px;
+    right:  -14%;
+    top: 37%;
 
     
+}
+.wgpnone{
+    display: none;
+}
+/* .wgpmovetwo{
+    position: absolute;
+    left:200px;
+} */
+.wgp_webtwo_box{
+    width: 100%; 
+}
+.wgp_web_twouls li{
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
 }
