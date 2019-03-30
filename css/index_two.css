@@ -1,0 +1,131 @@
+@media screen and (min-width:1200px) {
+    
+ }
+@media screen and (min-width:992px) and (max-width: 1199px) {
+    .wgp_web_twolione{
+    
+        margin-top: 100px;
+    }
+   .wgp_web_twomove .wgp_web_twolione{
+       margin: 0;
+   }
+   
+
+}
+@media screen and (min-width: 768px) and (max-width:991px ){
+    .wgp_web_twolione{
+    
+        margin-top: 100px;
+    }
+   .wgp_web_twomove .wgp_web_twolione{
+       margin: 0;
+   }
+ }
+@media screen and (max-width: 768px){
+    .wgp_web_twolione{
+    
+        margin-top: 100px;
+    }
+   .wgp_web_twomove .wgp_web_twolione{
+       margin: 0;
+   }
+}
+
+.wgp_web_two{
+    width: 100%;
+    height: 100%;
+    background: #222325;
+}
+.wgp_web_twouls{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+.wgp_web_twouls li img{
+    display: block;
+}
+.wgp_web_twouls li{
+    float: left;
+}
+/* .wgp_web_twouls li img{
+    
+} */
+.wgp_web_twolione{
+   width: 100%;
+    
+}
+.wgp_web_twomove{
+    margin: 0;
+}
+.wgp_webtwo_btn{
+    margin-top: 90px;
+}
+.wgp_webtwo_btn button{
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    /* border:2px solid #0597c4; */
+    /* margin-top: 100px; */
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+.wgp_webtwo_btnone{
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    border:2px solid #0597c4;
+    /* margin-top: 100px; */
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+.wgp_web_twouls li{
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+}
+.wgp_web_twouls li p{
+    width: 100%;
+    height: 55px;
+    background: #000;
+    font-size: 14px;
+    color: #fff;
+    line-height: 55px;
+    position: absolute;
+    left: 0;
+    top: 180px;
+    display: none;
+
+}
+.wgp_masking{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.wgp_webtwo_ball{
+    width: 68px;
+    height: 68px;
+    background-image: url(../img/wgpyuanquan.png);
+    position: absolute;
+    left:-68px;
+    top: 50px;
+}
+.wgp_webtwo_glass{
+    width: 34px;
+    height: 33px;
+    background-image:url(../img/wgpfangdajing.png);
+    position: absolute;
+    right: -34px;
+    top: 70px;
+
+    
+}

@@ -1,0 +1,247 @@
+body ,html, a, p ,div, h1 ,h2, h3, h4 ,h5 ,h6 ,img,input ,button ,ul ,ol ,li ,form ,span, i{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+    vertical-align: baseline;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    font-family: "微软雅黑";
+    vertical-align: baseline;
+    position: relative;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.wgp_wrap{
+    width: 1240px;
+    height: auto;
+    margin: auto;
+}
+img{
+    border: none;
+}
+input{
+    outline: none;
+}
+button{
+    border: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.wgpclear{
+    clear: both;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0 ,0.4) ;
+    border: none;
+}
+
+.navbar-default  .container-fluid .fr .wgp_txt li a{
+    color: #fff;
+    font-size: 16px;
+}
+.wgp_txt{
+    margin-top: 15px;
+}
+.wgp_txt li{
+    padding-left: 10px;
+}
+.navbar-toggle{
+    margin-top: 25px;
+}
+.wgp_fixed{
+    position:fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 666;
+}
+.wgp_back_one{
+    width: 1366px;
+    /* display: inline-block; */
+    height: 100%;
+    background: rgb(10, 144, 226) ;
+    overflow: hidden;
+    /* display: none; */
+    /* float: left; */
+    /* position: absolute; */
+}
+.wgp_back_one img{
+    display: block;
+}
+.wgp_img_two{
+    margin:auto;
+    margin-top:100px;
+    display: none;
+    /* display: block; */
+}
+.wgp_img_three{
+  
+    margin:auto;
+    margin-top:10px;
+    display: none;
+    /* display: block; */
+}
+.wgp_img_four{
+    
+    margin:auto;
+    display: none;
+    /* display: block; */
+}
+.wgp_back_two{
+    width: 1366px;
+    height: 100%;
+    display: inline-block;
+    background-image: url(../img/wgpbj_02.jpg);
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 99; */
+    /* display: none; */
+    /* float: left; */
+}
+ .wgp_img_five{
+    width: 400px;
+    height: 500px;
+    /* display: none; */
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: none;
+    
+    
+}
+.wgp_img_six{
+    width:600px;
+    height:500px;
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.wgp_back_three{
+    width: 1366px;
+    height: 100%;
+    display: inline-block;
+    background:rgb(0, 152, 197);
+    overflow: hidden;
+    /* float: left; */
+    /* position: absolute; */
+    /* display: none; */
+    
+}
+.wgp_img_seven{
+    width: 320px;
+    height: 250px;
+    margin:auto;
+    display: none;
+    margin-top: 100px;
+    transform: 1s;
+}
+.wgp_ball_img{
+    width: 155px;
+    height: 180px;
+    background-image: url(../img/wgpbanbg1.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-left: 20px;
+   
+}
+.wgp_img_com{
+  
+    position: absolute;
+    left: 55px;
+    top: 50px;
+    display: block;
+    /* transform: rotateY(180deg);
+    transition: 5s */
+}
+.wgp_ball_txt{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top:100px;
+    margin-left: 5px;
+}
+.wgp_img_math{
+    margin-left: 43px;
+    display: block;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.wgp_uls{
+    width: 925px;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* margin-left: 1500px; */
+    margin-left:1500px;
+}
+.wgp_box{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.wgp_bean{
+    position: absolute;
+    bottom: 0;
+    left: center;
+}
+.wgp_bean span{
+    width: 15px;
+    height:15px;
+    border-radius: 100px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-left: 10px;
+}
+
