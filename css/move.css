@@ -286,24 +286,112 @@ a{
 	background: url(../img/wcy_move_zzdabg.jpg) center;
 }
 .zjsj_box{
-	width: 1040px;
+	display: flex;
+	justify-content: center;
 	height: 734px;
-	margin: 0 auto;
 	padding-top: 58px;
 }
+/* 左侧ul */
 .zjsj_box_ul{
 	display: block;
 	position: relative;
 	padding-top: 85px;
+	padding-left: 0;
 }
-.zjsj_box_ul li{
-	padding: 12px 34px 13px 12px;
-	width: 252px;
-	height: 84px;
+.zjsj_box_li,.zjsj_box_li2{
+	width: 298px;
+	height: 106px;
 	position: relative;
+	overflow: hidden;
+}
+.zjsj_box_li{
+	padding: 12px 34px 13px 12px;
 }
 .zzbt1{
+	position: relative;
 	border: 1px solid #626262;
-	height: 84px;
+	height: 86px;
 	z-index: 2;
+}
+.zzxb{
+	height: 145px;
+	width: 44px;
+	padding-top: 19px;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: 0.5s;
+	z-index: 2;
+}
+.zjsj_box_li:hover>.zzbt1>.zzxb,.zjsj_box_li2:hover>.zzbt1>.zzxb{
+	top: -80px;
+	transition: 0.5s;
+}
+.zzbt1_1{
+	width: 250px;
+	height: 66px;
+	padding: 16px 10px 0 84px;
+	z-index: 2;
+}
+.zzbt1_1 span{
+	font-size: 16px;
+	color: #fff;
+	line-height: 26px;
+}
+.zzbt1_1 p{
+	color: #b0b7b9;
+	line-height: 24px;
+}
+.zjsj_box_li:hover>.zzbt1>.zzbt1_1>p,.zjsj_box_li2:hover>.zzbt1>.zzbt1_1>p{
+	color: #fff;
+}
+.zjsj_box_li_img{
+	position: absolute;
+	left: -298px;
+	top: 0;
+	transition: 0.5s;
+}
+.zjsj_box_li:hover>.zjsj_box_li_img{
+	left: 0;
+	transition: 0.5s;
+}
+
+/* 手机主体 */
+.zjsj_phone_box{
+	width: 358px;
+	height: 734px;
+	padding: 94px 24px 0;
+	margin: 0 41px;
+	background: url(../img/wcy_move_sjlk.png);
+}
+.zjsj_phone{
+	height: 549px;
+	background: url(../img/wcy_move_zsjbg.jpg)
+}
+.zsjnr{
+	width: 310px;
+	height: 463px;
+	padding: 68px 16px 0 40px;
+}
+.zsjnr h2{
+	font-size: 36px;
+	color: #fffeff;
+	line-height: 48px;
+}
+
+/* 右侧ul */
+.zjsj_box_li2{
+	padding: 12px 12px 12px 34px;
+}
+.zjsj_box_li_img2{
+	position: absolute;
+	top: 0;
+	right: -298px;
+}
+.zjsj_box_li2:hover>.zjsj_box_li_img2{
+	right: 0;
+	transition: 0.5s;
 }
