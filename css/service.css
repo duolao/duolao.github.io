@@ -193,13 +193,15 @@ a:hover{
 	transition: 500ms;
 	z-index: -1;
 	position: absolute;
-	top: 0;
-	background: rgba(0, 152, 197, 0.5)
-	/* background: url(../img/wzr_1.png) center no-repeat; */
+	top: 62;
+	/* background: rgba(0, 152, 197, 0.5) */
+	background: url(../img/wzr_1.png) center no-repeat;
 }
 .wzr_m1_sbox:hover .wzr_m1_sbox_pic2{
 	height: 62px;
 	z-index: 2;
+	transform: translate(0,-62px);
+	transition: 0.5s;
 }
 .wzr_m2{
 	text-align: center;
