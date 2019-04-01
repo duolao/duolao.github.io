@@ -20,25 +20,26 @@
 			</div>
 			<div class="text-right">
 				<span style="color:#727f8f">还没注册账号？</span>
-				<button type="button" class="btn btn-info " data-loading-text="注册" style="color:#08c;background-color: #fff;border: 1px solid #08c;outline:none;" onclick="javascrtpt:window.location.href='register.html'">注册</button>
+				<button type="button" class="btn btn-info " data-loading-text="注册" style="color:#08c;background-color: #fff;border: 1px solid #08c;outline:none;padding: 5px 20px" onclick="javascrtpt:window.location.href='register.html'">注册</button>
 			</div>
 		</div>
 	</header>
 	<section class="red-text text-center" style="display: table;">
 		<h3>登录码市</h3>	
-		<form action="" class="bs-example bs-example-form" role="form">	
-			<input type="text" class="form-control"  placeholder="手机 / 用户名 / 电子邮箱" >
-			<input type="password"class="form-control" placeholder="请输入密码">
-		</form>
-		<div class="Remember-my-password">
-			<em><i class="fa fa-check-square"></i> <span>记住我</span></em>
+		<form action='http://127.0.0.1:3000/reqRes'class="bs-example bs-example-form" role="form" onsubmit="return checkForm"  method='post' >	
+			<input type="text" name="username" class="form-control"  placeholder="手机 / 用户名 / 电子邮箱" ><p></p>
+			<input type="password" name="pass" 	class="form-control" placeholder="请输入密码"><p></p>
+			<div class="Remember-my-password">
+			<em><i class="fa fa-check-square"></i><i class="fa fa-square-o" style="display: none;"></i><span>记住我</span></em>
 			<a href="password.html">找回密码</a>
 		</div>
 		<div>
-			<button class="btn btn-info" data-loading-text="登陆"type="button" style="padding:8px 150px;background-color: #08c;outline:none;">
+			<button class="btn btn-info" data-loading-text="登陆"type="submit" style="padding:8px 150px;background-color: #08c;outline:none;">
     	 		登陆
 			</button>
 		</div>
+		</form>
+		
 	</section>		
 	<footer>
 		<img src="img/z_mashi.png" alt="">
