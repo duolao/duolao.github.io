@@ -1,0 +1,59 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background-color:#F0F2F5
+}
+.log-nav-left{
+	position: relative;
+}
+.Business-center{
+	width: 980px;
+	height: 75px;
+	margin:0 auto;
+	line-height: 75px;
+}
+.Business-center span{
+	margin-left: 10px
+}
+.message-box{
+	width: 980px;
+	height: 942px;
+	margin: 0 auto;
+}
+.message-left{
+	width: 220px;
+	float: left;
+}
+.message-right{
+	width: 750px;
+	height: 524px;
+	background-color: #fff;
+	float: right;
+}
+.ul-one{
+	border: 1px solid #e6e6e6;
+}
+.fa{
+	margin-right: 10px;
+}
+.list-s{
+	background-color: #E6EBF0;
+	font-size: 11px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 20px
+}
+.list-o{
+	background-color: #F0F2F5;
+	height:45px;
+	line-height: 45px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+ul{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+}
