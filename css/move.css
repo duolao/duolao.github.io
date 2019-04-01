@@ -1,7 +1,14 @@
+p,h1,h2,h3,h4,h5,h6,ul,li,ol,div,button{
+	padding: 0;
+	margin: 0;
+}
 ul,li{
 	list-style: none;
 }
 a{
+	text-decoration: none;
+}
+a:hover{
 	text-decoration: none;
 }
 .juzhong{
@@ -177,6 +184,12 @@ a{
 	margin: 19px auto  0;
 	overflow: hidden;
 }
+.wcy_taock_four_box{
+	display: block;
+	width: 128px;
+	height: 37px;
+	transition: 0.5s;
+}
 .wcy_taock_four span b{
 	display: block;
 	font-weight: normal;
@@ -189,7 +202,7 @@ a{
 	cursor: default;
 	transition: 0.5s;
 }
-.wcy_taock_four span b:hover,.wcy_taock_four span b:hover+b{
+.wcy_taock_four_box:hover{
 	transform: translate(0,-37px);
 	transition: 0.5s;
 }
@@ -380,6 +393,53 @@ a{
 	font-size: 36px;
 	color: #fffeff;
 	line-height: 48px;
+	margin: 10px 0 0;
+}
+.zznr_box{
+	width: 254px;
+	height: 223px;
+	padding-top: 19px;
+}
+.zznr_box p{
+	color: #fff;
+	line-height: 34px;
+	text-indent: 20px;
+	margin-bottom: 0;
+	transition: 0.5s;
+}
+.zznr_box p:hover{
+	text-indent: 30px;
+	transition: 0.5s;
+}
+.zxbj{
+	display: block;
+	width: 167px;
+	height: 43px;
+	border-radius: 22px;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #0086ae;
+	font-size: 22px;
+	overflow: hidden;
+	position: relative;
+}
+.zxbj_box{
+	position: absolute;
+	top: 0;
+	transition: 0.5s;
+}
+.zxbj_box span{
+	display: block;
+	width: 167px;
+	height: 43px;
+	font-size: 22px;
+	line-height: 43px;
+	color: #0086ae;
+	text-align: center;
+}
+.zxbj_box:hover{
+	top: -43px;
+	transition: 0.5s;
 }
 
 /* 右侧ul */
@@ -393,5 +453,116 @@ a{
 }
 .zjsj_box_li2:hover>.zjsj_box_li_img2{
 	right: 0;
+	transition: 0.5s;
+}
+
+
+/* 描述介绍 */
+.presentation{
+	clear: both;
+	overflow: hidden;
+}
+.presentation_left,.presentation_right{
+	width: 50%;
+	height: 440px;
+	position: relative;
+}
+.presentation_right_content{
+	padding: 70px 0 0 70px;
+	width: 560px;
+}
+.presentation_right_content h2{
+	font-size: 36px;
+	line-height: 52px;
+	color: #29a9ce;
+}
+.presentation_right_content span{
+	display: block;
+	padding: 18px 0 30px;
+	font-size: 16px;
+	line-height: 30px;
+	color: #383838;
+}
+.advisory{
+	display: block;
+	width: 145px;
+	height: 38px;
+	position: relative;
+	background: url(../img/wcy_move_zxbg2.png);
+	overflow: hidden;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+	color: #42a8cd;
+}
+.advisory_box p{
+	width: 145px;
+	height: 38px;
+}
+.advisory_box{
+	position: absolute;
+	top: 0;
+	transition: 0.5s;
+}
+.advisory_box:hover{
+	top: -38px;
+	transition: 0.5s;
+	color: #42a8cd;
+}
+.bg_color_one{
+	background: #d9eff5;
+}
+
+
+/* 案例作品 */
+.production_top{
+	text-align: center;
+}
+.production_content_box{
+	width: 20%;
+	overflow: hidden;
+	position: relative;
+}
+.production_content_box_img{
+	width: 100%;
+	transition: 0.5s;
+}
+.screen{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background: rgba(0, 0, 0, .5);
+	display: none;
+	transition: 0.5s;
+}
+.designation{
+	width: 100%;
+	height: 56px;
+	position: absolute;
+	background: #000;
+	bottom: -60px;
+	color: #fff;
+	line-height: 56px;
+	text-indent: 20px;
+	transition: 0.5s;
+}
+.production_content_box_img_left{
+	position: absolute;
+	z-index: 10;
+}
+.production_content_box_img_rigth{
+	position: absolute;
+	z-index: 10;
+}
+.production_content_box:hover .production_content_box_img{
+	transition: 0.5s;
+	transform: scale(1.1)
+}
+.production_content_box:hover .screen{
+	display: block
+}
+.production_content_box:hover .designation{
+	bottom: 0;
 	transition: 0.5s;
 }
