@@ -1,0 +1,29 @@
+body{
+    padding-top: 60px;
+}
+ul,li{
+    list-style: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color: #108ee9;
+    background: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+div{
+    margin: 0;
+    padding: 0px;
+}
