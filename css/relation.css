@@ -199,14 +199,14 @@
 .lj-wei-top {
     margin-top: 25px;
 }
+.lj-add-img>img {
+    position: relative;
+}
 .lj_tel2:hover .lj-footer-dh{
     animation-name: scaleDraw;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 1s;
-}
-.lj-add-img>img {
-    position: relative;
 }
 @keyframes scaleDraw {
     0%{
