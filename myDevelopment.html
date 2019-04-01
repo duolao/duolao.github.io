@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>我的开发宝</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/dny_myDevelopment.css" />
+    <style>
+        /* 导航 */
+        .navbar-header{
+            padding-top: 10px;
+        }
+        .navbar-header a{
+            padding: 0;
+        }
+        .navbar-header a img{
+            height: 90%;
+        }
+        #navbar{
+            line-height: 60px;
+        }
+        /* 个人中心菜单 */
+        .dny_user-avatar{
+            position: relative;
+            display: inline-block;
+            padding: 0 1rem;
+        }
+        .dny_avatar-link{
+            display: inline-block;
+            position: relative;
+        }
+        .dny_avatar-menu{
+            position: absolute;
+            right: -10px;
+            top: 50px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 180px;
+            z-index: 65px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,.2);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            /* display: none; */
+        }
+        .dny_user-avatar:hover .dny_avatar-menu{
+            display: inline-block;
+        }
+        .dny_avatar-menu ul{
+            margin: 0;
+            padding: 0px;
+            list-style: none;
+        }
+        .dny_avatar-menu li {
+            /* padding: 5px 0; */
+            border-bottom: 1px solid #f7f6f2;
+        }
+        .dny_avatar-menu a {
+            color: #333;
+            font-size: 1rem;
+            display: inline-block;
+            width: 100%;
+            line-height: 1.5rem;
+            padding: 7px 20px;
+            box-sizing: border-box;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="javascript:;" class="navbar-brand"><img src="./img/dny_logo (2).png" alt="" /></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">项目</a></li>
+                    <li><a href="service.html">估价</a></li>
+                    <li><a href="move.html">开发者</a></li>
+                    <li><a href="WeChat.html">帮助</a></li>
+                    <li>
+                        <a class="notification-zone-YCBRp">
+                            <i class="fa fa-inbox"></i><i class="red-dot-2BoUf"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 个人中心下拉 -->
+                <div class="dny_user-avatar navbar-right">
+                    <!-- 头像 -->
+                    <a href="JavaScript:;" class="dny_avatar-link">
+                        <img src="./img/dny_personal.png" height="40px" />
+                    </a>
+                    <!-- 下拉字体图标 -->
+                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <ul class="dny_avatar-menu">
+                        <li>
+                            <a><span>Hello, </span><span class="dny_username">dingny</span></a>
+                        </li>
+                        <li>
+                            <a href="/user/info"><i class="glyphicon glyphicon-user"></i><!-- react-text: 331 -->个人中心
+                                <!-- /react-text --></a>
+                        </li>
+                        <li>
+                            <label id="mpay">
+                                <a href="/user/mpay/account">
+                                    <svg name="#mpayBlack_53768171af12f73e158556f9641f760d" class="icon" style="width: 16px; height: 16px;">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            xlink:href="#mpayBlack_53768171af12f73e158556f9641f760d"></use>
+                                    </svg>
+                                    <span class="glyphicon glyphicon-briefcase">我的开发宝</span>
+                                </a>
+                            </label>
+                            <!-- react-empty: 338 -->
+                            <a href="/user/projects">
+                                <i class="glyphicon glyphicon-pencil"></i><!-- react-text: 341 --> 我发布的项目
+                                <!-- /react-text -->
+                            </a>
+                            <a href="/user/quote">
+                                <i class="glyphicon glyphicon-list-alt"></i><!-- react-text: 344 --> 我的报价单
+                                <!-- /react-text -->
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="glyphicon glyphicon-log-out"></i><!-- react-text: 348 --> 退出登录
+                                <!-- /react-text -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 内容 -->
+    <div class="container">
+        <h1>放点内容吧</h1>
+    </div>
+    <!-- 底部 -->
+    <footer class="container">
+        <div class="dny_footer">
+            <div class="dny_brand">
+                <a href="index.html" class="navbar-brand"><img src="./img/dny_logo (2).png" alt="天眼" /></a>
+            </div>
+            <div>Copyright&nbsp;©&nbsp;2014-2018</div>
+        </div>
+    </footer>
+  </body>
+</html>
