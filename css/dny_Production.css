@@ -1,6 +1,11 @@
 body{
     padding-top: 80px;
+    padding-bottom: 52px;
     background:url(../img/dny_albg.jpg) repeat;
+}
+a {
+    outline: none;
+    text-decoration: none;
 }
 a:hover{
     text-decoration: none;
@@ -214,17 +219,18 @@ img{
     font-size: 14px;
     color: #666;
 }
-
+/* 图片放大 */
 .dny-workimg{
     display: block;
     margin: 0;
     width: 100%;
+    overflow: hidden;
     position: relative;
 }
 /* 遮罩层 */ 
 #dny-workbox .dny-workshow .dny-woryan {
     width: 100%;
-    height: 69%;
+    height: 100%;
     display: block;
 
     position: absolute;
@@ -234,15 +240,15 @@ img{
 
     background: rgba(0, 0, 0, 0.7) url(../img/dny-nal_yan.png) center top no-repeat;
     text-align: center;
-    transform-origin: right bottom;
-   	-webkit-transform-origin: right bottom; 
-   	-moz-transform-origin: right bottom; 
+    transform-origin: right top;
+   	-webkit-transform-origin: right top; 
+   	-moz-transform-origin: right top; 
    	transform: rotate(90deg); 
    	-webkit-transform: rotate(90deg); 
    	-moz-transform: rotate(90deg); 
-   	transition: all 0.35s; 
-   	-webkit-transition: all 0.35s; 
-   	-moz-transition: all 0.35s; 
+   	transition: all 0.1s; 
+   	-webkit-transition: all 0.1s; 
+   	-moz-transition: all 0.1s; 
 }
 
 #dny-workbox .dny-workshow i {
@@ -277,8 +283,9 @@ img{
 #dny-workbox .dny-workshow:hover .dny-woryan {
     transform: rotate(0deg); 
 	-webkit-transform: rotate(0deg); 
-	-moz-transform: rotate(0deg); 
+    -moz-transform: rotate(0deg); 
 }
+
 
 .dny_hov{
     transition: all 1s;
@@ -372,7 +379,106 @@ img{
 }; */
 
 /* 底部 */
-.dny_fobg_ser {
-    background: #ebebeb;
+.dny_fobg_ser{
+    height: 300px;
+    /* background: #ebebeb; */
     padding: 52px 30px;
+}
+.dny_fologo{
+    padding-top: 52px;
+    display: block;
+    text-align: center;
+}
+.dny_banq_ser {
+    text-align: center;
+    line-height: 26px;
+    color: #484848;
+    font-size: 12px;
+    padding: 14px 0 26px;
+}
+.dny_saoma{
+    position: relative;
+    margin: 0 auto;
+    width: 460px;
+}
+.dny_saoma div {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+.dny_saoma div img {
+    display: block;
+    float: left;
+    position: relative;
+}
+.dny_fo_tel {
+    width: 341px;
+    height: 49px;
+    position: relative;
+    display: block;
+    background: url(../img/dny_fo_telk.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.dny_fo_tel1 {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.dny_fo_tel2 {
+    display: block;
+    position: absolute;
+    left: 22px;
+    top: -49px;
+    /* animation: scaleDraw  5s;
+    -webkit-animation: scaleDraw  5s; Safari 与 Chrome */
+}
+.dny_fo_tel2:hover{
+
+    animation: scaleDraw  2s;
+    -webkit-animation: scaleDraw  2s; /* Safari 与 Chrome */
+}
+.dny_fo_wei1 {
+    display: block;
+    position: relative;
+    width: 49px;
+    height: 49px;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+.dny_fo_wei1 a {
+    cursor: pointer;
+}
+.dny_fo_wei1_0, .dny_fo_wei1_1 {
+    -webkit-transition: all 0.4s cubic-bezier(1, .57, .48, 1.4);
+    -moz-transition: all 0.4s cubic-bezier(1, .57, .48, 1.4);
+    -o-transition: all 0.4s cubic-bezier(1, .57, .48, 1.4);
+    transition: all 0.4s cubic-bezier(1, .57, .48, 1.4);
+}
+.dny_fo_wei1_0, .dny_fo_wei1_1 {
+    width: 49px;
+    height: 49px;
+    position: absolute !important;
+    left: 0;
+    display: block;
+}
+.dny_fo_wei1_0 {
+    top: 0;
+}
+.dny_fo_wei1_1 {
+    top: 49px;
+}
+@keyframes scaleDraw {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+    }
 }

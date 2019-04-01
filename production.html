@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>作品</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/dny_Production.css">
+    
 </head>
 <body >
     <!-- 导航 -->
@@ -22,17 +22,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="javascript:;" class="navbar-brand"><img src="./img/dny_logo.png" alt=""></a>
+                <a href="javascript:;" class="navbar-brand"><img src="./img/dny_logo (2).png" alt=""></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse example-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="javascript:;">首页</a></li>
-                    <li><a href="javascript:;">服务</a></li>
-                    <li><a href="javascript:;">移动站</a></li>
-                    <li><a href="javascript:;">微信开发</a></li>
-                    <li class="dny_current"><a href="javascript:;">作品</a></li>
-                    <li><a href="javascript:;">关于</a></li>
-                    <li><a href="javascript:;">联系</a></li>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="service.html">服务</a></li>
+                    <li><a href="move.html">移动站</a></li>
+                    <li><a href="WeChat.html">微信开发</a></li>
+                    <li class="dny_current"><a href="production.html">作品</a></li>
+                    <li><a href="about.html">关于</a></li>
+                    <li><a href="relation.html">联系</a></li>
                     <!-- <li>
                         <a id="tt" class="tag nav_tel_2" tips="咨询电话：010-6666 6666<br /> 　　　　　010-6666 6666">
                         <div class="nav_tel2_2"></div></a>
@@ -371,12 +371,11 @@
                 </a> 
             </div>
         </div> 
-        <div class="dny-ajaxtips"></div>
-    </div> 
+    </div>
     <!-- 底部 -->
     <div class="dny-qing dny_fobg_ser">
-        <div class="fologo"><img src="./img/dny_logo.png" width="185" height="85"></div>
-        <div class=" banq_ser">北京科技有限公司 京ICP备06666666号
+        <div class="dny_fologo"><img src="./img/dny_logo (2).png" width="185" height="85"></div>
+        <div class="dny_banq_ser">北京科技有限公司 京ICP备06666666号
             <br>
             <a href="#">网站改版报价</a>　
             <a href="#">响应式网站</a>　
@@ -387,56 +386,25 @@
             <a href="#">微信平台开发</a>　
             <a href="#">网站制作流程</a>
         </div>
-        <div class="saom" style=" overflow:visible;">
+        <div class="dny_saoma" style=" overflow:visible;">
             <div class="dny_fo_tel" style=" margin-left:0;">
                 <img src="img/dny_fo_tel2.png" width="341" height="49" class="dny_fo_tel1">
                 <img src="img/dny_fo_dh.png" width="27" height="49" class="dny_fo_tel2">
             </div>
-            <div class="dny_fo_wei1">
-                <a class="tooltipa" title="">
+            <div class="dny_fo_wei1"> 
+                <a class="dny_tooltipa" title="">
                     <img src="img/dny_fo_wei1.png" width="49" height="49" class="dny_fo_wei1_0">
                     <img src="img/dny_fo_wei1_1.png" width="49" height="49" class="dny_fo_wei1_1">
                 </a>
             </div>
             <div class="dny_fo_wei1">
-                <a class="tooltipb" title="">
+                <a class="dny_tooltipb" title="">
                     <img src="img/dny_fo_wei2.png" width="49" height="49" class="dny_fo_wei1_0">
                     <img src="img/dny_fo_wei2_1.png" width="49" height="49" class="dny_fo_wei1_1">
                 </a>
             </div>
         </div>
     </div>
-    <script>
-    // 导航条点击效果
-    $('li').click(function(){
-        $(this).siblings('li').removeClass('dny_current'); 
-        $(this).addClass('dny_current');
-    })
-    // 菜单动画效果
-    $(".dny-al_fl>a").hover(
-        function () {
-            $(this).addClass("dny-alnn");
-        },
-        function () {
-            $(this).removeClass("dny-alnn");
-        },
-    );
-    //图集图片放大执行代码
-    $(".dny-workshow").hover(
-        function () {
-        $('a').addClass('dny_hov');
-        $(".dny-al_ewm1").slideToggle("300");
-        },
-        function () {
-            $(this).removeClass('dny_hov');
-            $(".dny-al_ewm1").fadeToggle("300");
-        },
-    );
-
-
-
-    </script>
-
-    
+    <script src="./js/production.js"></script>
 </body>
 </html>
