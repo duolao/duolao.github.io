@@ -32,6 +32,7 @@ section .fl span{
 section .fl p{
 	margin-top: 5px;
 	padding-left: 5px;
+	color: #666
 }
 .get-back{
 	margin-top: 38px;
