@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Access-Control-Allow-Origin:http://http://119.23.230.195" content="*">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+	<script>
+
+		$(document).ready(function () {
+			$.ajax({
+				url: 'http://119.23.230.195/json/data.json',
+				type: 'get',
+				dataType: 'jsonp',
+				data:"{}",
+				// jsonp: 'callback',
+				async:false,
+				success: function (data) {
+					console.log(data)
+					console.log(1)
+				},
+				error: function (XMLHttpRequest, textStatus, errorThrown) {
+					console.log('出错')
+					console.log(XMLHttpRequest.readyState)
+					console.log(XMLHttpRequest.status)
+					console.log(XMLHttpRequest.status.errorThrown)
+				}
+			})
+			function showData(result) {
+				var data = JSON.stringify(result);
+				console.log(data)
+				console.log(3)
+			}
+			// console.log(response.headers)
+		})
+
+
+
+		// var xhr = new XMLHttpRequest();
+		// xhr.open('get','http://119.23.230.195/json/data.json',true)
+		// xhr.send()
+		// xhr.onreadystatechange=function(){
+		// 	if(xhr.readyState === 4 && xhr === 200){
+		// 		var jsonUsers = JSON.parse(xhr.responseText)
+		// 		console.log(jsonUsers)
+		// 		for(var i=0;i<jsonUsers;i++){
+		// 			var li = document.createElement('li');
+		// 			li.innerHTML = jsonUsers[i].username;
+		// 			document.getElementById('news').appendChild(li)
+		// 		}
+		// 	}else if(this.status === 404){
+		// 		document.body.innerHTML = "NOT Found"
+		// 	}
+		// }
+
+
+
+		// var url = 'http://119.23.230.195/json/data.json';
+		// function createCORSRequest(method, url) {
+		// 	console.log(1)
+		// 	var xhr = new XMLHttpRequest();
+		// 	if ('withCredentials' in xhr) {
+		// 		console.log(2)
+		// 		xhr.open(method, url, true);
+		// 	} else if (typeof XDomainRequest !== 'undefined') {
+		// 		console.log(3)
+		// 		xhr = new XDomainRequest();
+		// 		xhr.open(method, url);
+		// 	} else {
+		// 		console.log(4)
+		// 		xhr = null;
+		// 	}
+		// 	return xhr;
+		// }
+		// function sendAjaxRequest(){
+		// 	var xhr = createCORSXhr(url,'get');
+		// 	xhr.onload=function(){
+		// 		if(xhr.readyState==4){
+		// 			if(xhr.status<=200 && xhr.status<300 || xhr.status==304){
+		// 				alert(xhr.responseText);
+		// 			}else{
+		// 				alert('ajax error ...')
+		// 			}
+		// 		}
+		// 	};
+		// 	xhr.onerror=function(){
+		// 		alert('error code:'+xhr.status)
+		// 	}
+		// 	xhr.send(null);
+		// }
+		// sendAjaxRequest()
+		// var request = createCORSRequest("get", "http://119.23.230.195/json/data.json");
+		// if (request) {
+		// 	// request.onload = fucntion(){
+				
+		// 	// };
+		// 	request.send();
+		// }
+		// createCORSRequest()
+
+	</script>
+</body>
+
+</html>
