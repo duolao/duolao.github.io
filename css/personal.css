@@ -1,4 +1,5 @@
 body{
+    background-color: #f2f2f2;
     padding-top: 90px;
 }
 .zll_img{
@@ -9,9 +10,55 @@ body{
     padding: 0;
     padding-top: 15px;
 }
-.zll_nav{
+/* .zll_nav{
+    line-height: 50px;
+} */
+/* 内容 */
+.row{
+    margin-top: 15px;
+}
+.zll_btn{
+    text-align: left;
+    font-size: 12px;
+}
+.zll_btn_two{
+    text-align: left;
+}
+.zll_a{
+    margin-top: 20px;
+}
+/* .nav>li>a{
+    padding: 0 15px;
+} */
+.zll_content{
     background-color: #fff;
 }
-/* .zll_div{
-    background-color: #000;
-} */
+.col_div_one{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.col_div_two{
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.col_div_two>p{
+    color: #333;
+}
+.col_div_one_span{
+    font-size: 20px;
+    color: #000;
+}
+.col_div_two>hr{
+    margin-top: 20px;
+    color: #dde3eb;
+}
+.col_div_three{
+    margin-left: 35px;
+    margin-right: 35px;
+}
