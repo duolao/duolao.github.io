@@ -9,12 +9,14 @@
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/vip.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
 </head>
 <body>
     <div class="wzr_box">
         <div class="wzr_top">
             <div class="wzr_top_left">
-                <img src="img/wzr_logo.png" height="64px;">
+                <img src="img/wzr_logo.png" height="45px;" class="wzr_logo_top">
                 <ul class="wzr_header">
                     <li><a href="#">项目</a></li>
                     <li><a href="#">估价</a></li>
@@ -25,8 +27,8 @@
             </div>
             <div>
                 <ul class="wzr_header">
-                    <li><a href="#">登录</a></li>
-                    <li><a href="#">注册</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="register.html">注册</a></li>
                 </ul>
             </div>
         </div>
@@ -107,7 +109,7 @@
                             <div class="wzr_body_bottom">
                                 <button class="wzr_mssj">马上升级</button>
                             </div>
-                            <div class="wzr_look">查看资质要求</div>
+                            <div class="wzr_look" id="wzr_look1">查看资质要求</div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +150,7 @@
                             <div class="wzr_body_bottom">
                                 <button class="wzr_mssj">马上升级</button>
                             </div>
-                            <div class="wzr_look">查看资质要求</div>
+                            <div class="wzr_look" id="wzr_look2">查看资质要求</div>
                         </div>
                     </div>
                 </div>
@@ -180,5 +182,53 @@
             <p class="wzr_bottom_font">Copyright © 2014-2018</p>
         </div>
     </div>
+
+    <div class="wzr_tc_bg" id="wzr_tc_1">
+        <div class="wzr_tc_look1">
+        <div class="wzr_tc_look1_top">
+            <p>资质要求</p>
+            <span class="wzr_tc_look1_top_colse" id="wzr_close">X</span>
+        </div>
+        <div class="wzr_tc_look1_bottom">
+            <div class="wzr_tc_look1_bottom_left">
+                <p>人数：</p>
+                <p>积累客户数量：</p>
+                <p>提供技术服务能力：</p>
+                <p>技术栈：</p>
+            </div>
+            <div class="wzr_tc_look1_bottom_right">
+                <p>不少于 3 人</p>
+                <p>不少于 5 个</p>
+                <p>开发</p>
+                <p>JAVA、 PHP、Python、Ruby 、Android 、iOS 、<br>HTML/CSS 、JS （不少于 1 种）</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="wzr_tc_bg" id="wzr_tc_2">
+        <div class="wzr_tc_look1">
+        <div class="wzr_tc_look1_top">
+            <p>资质要求</p>
+            <span class="wzr_tc_look1_top_colse" id="wzr_colse2">X</span>
+        </div>
+        <div class="wzr_tc_look1_bottom">
+            <div class="wzr_tc_look1_bottom_left">
+                <p>人数：</p>
+                <p>积累客户数量：</p>
+                <p>公司成立时间：</p>
+                <p>提供技术服务能力：</p>
+                <p>技术栈：</p>
+            </div>
+            <div class="wzr_tc_look1_bottom_right">
+                <p>不少于 10 人</p>
+                <p>不少于 8 个</p>
+                <p>不少于 1 年</p>
+                <p>产品 、 设计、 开发</p>
+                <p>JAVA、 PHP、Python、Ruby 、Android 、 iOS 、<br>HTML/CSS 、JS （不少于 3 种）</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/vip.js"></script>
 </body>
 </html>
