@@ -10,66 +10,182 @@
     <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/dny_myDevelopment.css" />
     <style>
-        /* 导航 */
-        .navbar-header{
-            padding-top: 10px;
+    /* 内容 */
+        .dny_content{
+            padding-top: 64px;
+            padding-bottom: 56px;
+            min-height: 600px;
         }
-        .navbar-header a{
-            padding: 0;
+        .dny_content .dny_cont{
+            height: 100%;
+            max-width: 980px;
+            margin: auto;
         }
-        .navbar-header a img{
-            height: 90%;
-        }
-        #navbar{
-            line-height: 60px;
-        }
-        /* 个人中心菜单 */
-        .dny_user-avatar{
-            position: relative;
-            display: inline-block;
-            padding: 0 1rem;
-        }
-        .dny_avatar-link{
-            display: inline-block;
-            position: relative;
-        }
-        .dny_avatar-menu{
-            position: absolute;
-            right: -10px;
-            top: 50px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            width: 180px;
-            z-index: 65px;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,.2);
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
-            /* display: none; */
-        }
-        .dny_user-avatar:hover .dny_avatar-menu{
-            display: inline-block;
-        }
-        .dny_avatar-menu ul{
-            margin: 0;
-            padding: 0px;
-            list-style: none;
-        }
-        .dny_avatar-menu li {
-            /* padding: 5px 0; */
-            border-bottom: 1px solid #f7f6f2;
-        }
-        .dny_avatar-menu a {
-            color: #333;
-            font-size: 1rem;
-            display: inline-block;
+        .dny_breadcrumb-wrap{
+            display: block;
             width: 100%;
-            line-height: 1.5rem;
-            padding: 7px 20px;
-            box-sizing: border-box;
+            padding: 35px 0 21px;
+        }
+        .dny_clearfix {
+            zoom: 1;
+        }
+        .dny_breadcrumbs {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .dny_breadcrumbs li {
+            float: left;
+            font-size: 1.5rem;
+            line-height: 1.4rem;
+            color: #474b48;
+            padding-right: 1rem;
+        }
+        .dny_breadcrumbs li a {
+            color: #2d3238;
             text-decoration: none;
-            cursor: pointer;
+        }
+        .dny_breadcrumbs li :after {
+            position: relative;
+            right: -.5rem;
+            content: "\2192";
+            font-size: 1rem;
+            color: #979fa8;
+        }
+        .dny_breadcrumbs li~li {
+            color: #2d3238;
+            opacity: .5;
+        }
+
+
+        .dny_flex-direction-row {
+            -ms-box-orient: vertical;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-line-pack: stretch;
+        }
+        .dny_flex-direction-column, .dny_flex-direction-row {
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -ms-flex-align: stretch;
+            -ms-grid-row-align: stretch;
+            align-items: stretch;
+            align-content: stretch;
+        }
+        .dny_flex-box {
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .dny_wrapper{
+            width: 100%;
+        }
+
+        /* 左边菜单部分 */
+        .dny_menu {
+            max-width: 300px;
+        }
+        .dny_side-nav{
+            max-width: 300px;
+            margin: 0;
+            left: 0;
+        }
+        .dny_side-nav ul {
+            padding: 0;
+            margin: 0;
+            border-radius: 4px;
+            box-shadow: 0 -1px 0 0 #e7e7e7, inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+            list-style: none;
+        }
+        .dny_side-nav ul .dny_side-nav-header{
+            background-color: #e6ebf0;
+            padding: 7px 0 7px 21px;
+            width: 220px;
+            box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+        }
+        .dny_side-nav ul>li {
+            position: relative;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .dny_border-radius-top{
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .dny_side-nav ul .dny_side-nav-item{
+            background-color: #f0f2f5;
+            height: 48px;
+            width: 220px;
+            box-shadow: 0 -1px 0 0 #e6e6e6, inset 0 1px 0 0 #fff, 0 2px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+        }
+        .dny_side-nav ul .dny_side-nav-item .dny_activing {
+            background-color: #fff;
+        }
+        .dny_side-nav ul>li .dny_nav-link-2 {
+            display: block;
+            padding: 14px 0 14px 50px;
+            color: #979fa8;
+            line-height: 18px;
+            text-decoration: none;
+            outline: none;
+            font-weight: 500;
+        }
+        .dny_side-nav ul>li .dny_nav-link-2 .dny_icon {
+            position: absolute;
+            left: 20px;
+            top: 16px;
+        }
+        /* 右边部分 */
+        .dny_flex-auto-justify {
+            -ms-flex: 1;
+            flex: 1;
+        }
+        .dny_content-right{
+            margin-left: 10px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            background: #fff;
+            min-height: 40rem;
+            box-shadow: 0 1px 2px hsla(165,9%,74%,.95);
+            font-size: 14px;
+            color: #333;
+            border-radius: 4px;
+        }
+        .dny_content-right .dny_box{
+            margin: 0 auto;
+            padding: 30px 60px 0;
+        }
+        .dny_tip.dny_shadow{
+            box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
+        }
+        .dny_tip.dny_red{
+            color: #e84d60;
+        }
+        .dny_tip {
+            font-size: 14px;
+            background: #fff6de;
+            color: #979fa8;
+            padding: .6rem 2.5rem .5rem 1.5rem;
+            position: relative;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .dny_account-wrapper-box{
+            background-color: rgba(221,227,235,.2);
+            border-radius: 5px;
+        }
+        .dny_account-wrapper-box .dny_wrapper-body{
+            display: table;
+            width: 100%;
+            padding-bottom: 2.5rem;
+        }
+        .dny_account-wrapper-box .dny_wrapper-body .dny_left-wrapper, .dny_account-wrapper-box .dny_wrapper-body .dny_right-wrapper{
+            vertical-align: middle;
+        }
+
+
+        .dny_account-balance-page div[class*=records] {
+            border-bottom: none;
         }
     </style>
   </head>
@@ -92,11 +208,6 @@
                     <li><a href="service.html">估价</a></li>
                     <li><a href="move.html">开发者</a></li>
                     <li><a href="WeChat.html">帮助</a></li>
-                    <li>
-                        <a class="notification-zone-YCBRp">
-                            <i class="fa fa-inbox"></i><i class="red-dot-2BoUf"></i>
-                        </a>
-                    </li>
                 </ul>
                 <!-- 个人中心下拉 -->
                 <div class="dny_user-avatar navbar-right">
@@ -105,38 +216,34 @@
                         <img src="./img/dny_personal.png" height="40px" />
                     </a>
                     <!-- 下拉字体图标 -->
-                    <i class="glyphicon glyphicon-chevron-down"></i>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
                     <ul class="dny_avatar-menu">
                         <li>
                             <a><span>Hello, </span><span class="dny_username">dingny</span></a>
                         </li>
                         <li>
-                            <a href="/user/info"><i class="glyphicon glyphicon-user"></i><!-- react-text: 331 -->个人中心
+                            <a href="/user/info"><span class="glyphicon glyphicon-user"></span><!-- react-text: 331 -->个人中心
                                 <!-- /react-text --></a>
                         </li>
                         <li>
                             <label id="mpay">
                                 <a href="/user/mpay/account">
-                                    <svg name="#mpayBlack_53768171af12f73e158556f9641f760d" class="icon" style="width: 16px; height: 16px;">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            xlink:href="#mpayBlack_53768171af12f73e158556f9641f760d"></use>
-                                    </svg>
                                     <span class="glyphicon glyphicon-briefcase">我的开发宝</span>
                                 </a>
                             </label>
                             <!-- react-empty: 338 -->
                             <a href="/user/projects">
-                                <i class="glyphicon glyphicon-pencil"></i><!-- react-text: 341 --> 我发布的项目
+                                <span class="glyphicon glyphicon-pencil"></span><!-- react-text: 341 --> 我发布的项目
                                 <!-- /react-text -->
                             </a>
                             <a href="/user/quote">
-                                <i class="glyphicon glyphicon-list-alt"></i><!-- react-text: 344 --> 我的报价单
+                                <span class="glyphicon glyphicon-list-alt"></span><!-- react-text: 344 --> 我的报价单
                                 <!-- /react-text -->
                             </a>
                         </li>
                         <li>
                             <a>
-                                <i class="glyphicon glyphicon-log-out"></i><!-- react-text: 348 --> 退出登录
+                                <span class="glyphicon glyphicon-log-out"></span><!-- react-text: 348 --> 退出登录
                                 <!-- /react-text -->
                             </a>
                         </li>
@@ -146,17 +253,130 @@
         </div>
     </nav>
     <!-- 内容 -->
-    <div class="container">
-        <h1>放点内容吧</h1>
+    <div class="container dny_content">
+        <div class="dny_cont">
+            <div style="width:100%; height:100px;">
+                <div class="dny_breadcrumb-wrap">
+                    <ul class="dny_breadcrumbs dny_clearfix">
+                        <li><a href="/user/mpay/account">我的开发宝</a></li>
+                        <li>账户概览</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="dny_wrapper dny_flex-box dny_flex-direction-row">
+                    <div class="dny_menu">
+                        <div class="dny_side-nav">
+                            <ul>
+                                <li class="dny_side-nav-header dny_border-radius-top">
+                                    <span> </span>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2 dny_activing" href="#">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>账户概览</span>
+                                    </a>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="#">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>交易记录</span>
+                                    </a>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="#">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>交易密码</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dny_content-right dny_flex-auto-justify">
+                        <div class="dny_box">
+                            <span>
+                                <div class="dny_tip dny_red dny_shadow">
+                                    <div>
+                                        根据税务局要求，2018 年 6 月 1 日起码市不再支持开具发票，仅提供资金托收托付服务。如有开票要求请于 2018 年 5 月 30 日前提交或与开发服务商协商开票。
+                                    </div>
+                                </div>
+                            </span>
+                            <div class="dny_account-balance-page">
+                                <!-- react-empty: 136 --><!-- react-empty: 137 -->
+                                <div class="dny_account-wrapper-box">
+                                    <div class="dny_wrapper-body">
+                                        <div class="dny_left-wrapper">
+                                            <div class="dny_account-box">
+                                                <svg name="#mpay_dc3d91e1ee94dd049f45e873cd188655" class="mpay-icon-15Rrz" width="2.2rem" height="2.8rem" style="width: 2.2rem; height: 2.8rem;">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mpay_dc3d91e1ee94dd049f45e873cd188655"></use>
+                                                </svg>
+                                                <h2>开发宝余额</h2>
+                                                <div class="account-balance-2y3Ln">
+                                                    <div>
+                                                        <span>
+                                                            <em>0</em><!-- react-text: 149 -->元<!-- /react-text -->
+                                                        </span>
+                                                        <div class="withdraw-balance-3XWaD">
+                                                            <!-- react-text: 151 -->可提现余额：<!-- /react-text -->
+                                                            <!-- react-text: 152 -->0.00<!-- /react-text -->
+                                                            <!-- react-text: 153 --> 元<!-- /react-text -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dny_right-wrapper">
+                                            <div class="btn-box-3jcaP">
+                                                <a href="/user/mpay/deposit">
+                                                    <button class="deposit-btn-juDGt">充值</button>
+                                                </a>
+                                                <a href="/user/mpay/withdraw">
+                                                    <button class="withdraw-btn-1ggTa">提现</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- react-empty: 160 -->
+                                <div class="dny_account-balance-records">
+                                    <h2 class="header-2Zlmi">交易记录</h2>
+                                    <div class="records-DOuKL">
+                                        <table class="sheets-OWog8">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-left-2E7xk" style="width: 7rem;">创建时间</th>
+                                                    <th class="align-left-2E7xk">名称</th>
+                                                    <th class="align-right-1Fw5-" style="width: 7rem;">交易金额</th>
+                                                    <th class="align-right-1Fw5-" style="width: 5rem;">状态</th>
+                                                    <th class="align-right-1Fw5-" style="width: 5rem;">余额</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" style="text-align: center;">没有找到相关交易记录</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <a class="read-more-WHKFT" href="/user/mpay/records">查看更多记录</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- 底部 -->
-    <footer class="container">
-        <div class="dny_footer">
-            <div class="dny_brand">
-                <a href="index.html" class="navbar-brand"><img src="./img/dny_logo (2).png" alt="天眼" /></a>
+    <footer class="container-fluid">
+        <div class="dny_footer container">
+            <div class="dny_foot" style="width: 1116px;">
+                <div class="dny_brand">
+                    <a href="index.html"><img src="./img/dny_logo (2).png" alt="天眼" /></a>
+                </div>
+                <div>Copyright&nbsp;©&nbsp;2014-2018</div>
             </div>
-            <div>Copyright&nbsp;©&nbsp;2014-2018</div>
         </div>
     </footer>
+    <!-- 联系我们 -->
   </body>
 </html>
