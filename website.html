@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/website.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wgp_webone_box">
+        <div class="wgp_webone_wrap">
+            <img src="./img/tianyanlogos.png" alt="" class="wgp_logo fl">
+            <ul class="fl wgp_webone_oneuls">
+                <li><a href="#">项目</a></li>
+                <li><a href="#">估价</a></li>
+                <li><a href="#">会员</a></li>
+                <li class="wgp_webone_lastliss">
+                    <a href="#">帮助</a>
+                    <div class="wgp_help">
+                        <p class="wgp_help_onep">常见问题</p>
+                        <p>我是需求方</p>
+                        <p>我是开放方</p>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="wgp_webone_man fr">
+                <div class="fl wgp_webone_karsa">
+                    <img src="./img/wgp_tongzhi.png" alt="" class="wgp_webone_imgone">
+                    <div class="wgp_inform_box">
+                        <p>
+                            <a href="#">通知</a>
+                            <span>查看全部</span>
+                        </p>
+                        <span>无未读通知</span>
+                    </div>
+                </div>
+                <div class="fl wgp_webone_buff">
+                    <img src="https://dn-coding-net-production-pp.codehub.cn/29402486-bf33-4cb4-9ea2-ab4bae89bee2.png"
+                        alt="" class="wgp_webone_imgtwo">
+                    <img src="./img/wgp_xiasanjiao.png" alt="" class="wgp_webone_imgthree">
+
+                    <div class="wgp_per_box">
+                        <p class="wgp_perbor_box">Hellow,wgp110120</p>
+                        <p class="wgp_perbor_box">个人中心</p>
+                        <p>我的开发宝</p>
+                        <p>我参与的项目</p>
+                        <p class="wgp_perbor_box">我的报价单</p>
+                        <p>退出登入</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="wgpclear"></div>
+        </div>
+    </div>
+    <div class="wgp_webtwo_warp">
+        <div class="wrap">
+            <div class="wgp_webtwo_step fl wgp_webtwo_color">
+                <p class="fl">1</p>
+                <img src="./img/wgp_dayuhao.png" alt="" class="wgp_webtwo_imgone fl">
+                <span>第一步,项目类型</span>
+                <div class="wgpclear"></div>
+            </div>
+            <div class="wgp_webtwo_step fl ">
+                <p class="fl">2</p>
+                <img src="./img/wgp_dayuhao.png" alt="" class="wgp_webtwo_imgone fl">
+                <span>第二步,功能评估</span>
+                <div class="wgpclear"></div>
+            </div>
+            <div class="wgp_webtwo_step fl wgp_webtwo_color">
+                <p class="fl">3</p>
+                <img src="./img/wgp_dayuhao.png" alt="" class="wgp_webtwo_imgone fl">
+                <span>第三步,计算结果</span>
+                <div class="wgpclear"></div>
+            </div>
+            <div class="wgpclear"></div>
+        </div>
+    </div>
+    <div class="wgp_webthree_box">
+        <div class="wrap">
+            <p class="wgp_webthree_onep fl">
+                <a href="#">Web网站</a>
+                <span>4</span>
+            </p>
+            <p class="wgp_webthree_twop fl">
+                    <a href="#">管理后台</a>
+                    <span>5</span>
+            </p>
+            <button class="wgp_webthree_btn fr">修改平台</button>
+        </div>
+
+    </div>
+    <div class="bas"></div>
+    <script>
+        $(function () {
+            function setshit() {
+                var wgpwebonebox = $(".wgp_webone_box")
+                var wgpweboneoneuls = wgpwebonebox.find(".wgp_webone_oneuls")
+                var wgpwebonelastliss = wgpweboneoneuls.find(".wgp_webone_lastliss")
+                var wgphelp = wgpweboneoneuls.find(".wgp_help")
+                var wgpweboneman = wgpwebonebox.find(".wgp_webone_man")
+                var wgpweboneimgone = wgpweboneman.find(".wgp_webone_imgone")
+                var wgpinformbox = wgpweboneman.find(".wgp_inform_box")
+                var wgpperbox = wgpweboneman.find(".wgp_per_box")
+                var wgpperboxp = wgpperbox.find("p")
+                var wgpweboneimgtwo = wgpweboneman.find(".wgp_webone_imgtwo")
+                var wgpwebonekarsa = wgpweboneman.find(".wgp_webone_karsa")
+                var wgpwebonebuff = wgpweboneman.find(".wgp_webone_buff")
+                var wgpqq = $(".wgp_qq")
+                var wgpqqfont = wgpqq.find("a")
+                console.log(wgpqq)
+                console.log(wgpweboneimgtwo)
+                wgpwebonelastliss.on("mouseover", function () {
+                    wgphelp.css("display", "block")
+                })
+                wgpwebonelastliss.on("mouseout", function () {
+                    wgphelp.css("display", "none")
+                })
+                wgpwebonekarsa.on("mouseover", function () {
+                    wgpinformbox.css("display", "block")
+                })
+                wgpwebonekarsa.on("mouseout", function () {
+                    wgpinformbox.css("display", "none")
+                })
+                wgpwebonebuff.on("mouseover", function () {
+                    wgpperbox.css("display", "block")
+                })
+                wgpwebonebuff.on("mouseout", function () {
+                    wgpperbox.css("display", "none")
+                })
+                wgpperboxp.on("mouseover", function () {
+                    wgpperboxp.css({ "background": "#fff", "color": "#000" })
+                    $(this).css({ "background": "#4389d9", "color": "#fff", "transition": "0.5s" })
+                })
+                wgpqq.on("mouseover", function () {
+                    //   $(this).css({top:$(this).position().top,left:$(this).position().left}).animate({width:$(this).width()*2,height:$(this).height()*2,top:$(this).position().top-$(this).height(),
+                    // left:$(this).position().left-$(this).width()})
+                })
+            }
+            setshit()
+
+            function uzi(){
+                var wgpwebthreeboxs = $(".wgp_webthree_box")
+                console.log(wgpwebthreeboxs)
+                // if(wgpwebthreeboxs.offset().top=="65px"){
+                //     wgpwebthreeboxs.addClass("wgp_webthree_cone")
+                //     alert(1)
+                // }
+            }
+            uzi()
+        })
+    </script>
+</body>
+
+</html>
