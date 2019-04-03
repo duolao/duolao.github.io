@@ -8,17 +8,29 @@ body{
 .log-nav-left{
 	position: relative;
 }
+.log-nav-left a{
+	color: #333;
+	font-size: 14px;
+	margin-left: 50px;
+	text-decoration: none !important
+}
+.log-nav-left a:hover{
+	color:#5293df
+}
 .Business-center{
-	width: 980px;
+
 	height: 75px;
 	margin:0 auto;
 	line-height: 75px;
+}
+.Business-center a{
+	/*margin-left: 10px*/
 }
 .Business-center span{
 	margin-left: 10px
 }
 .message-box{
-	width: 980px;
+	/*width: 980px;*/
 	height: 942px;
 	margin: 0 auto;
 }
@@ -55,5 +67,22 @@ body{
 ul{
 	border: 1px solid #ccc;
 	border-radius: 5px;
+
+}
+.fa-navicon{
+	display: none;
+}
+@media screen and (max-width: 580px){
+	.log-nav-left a{
+		display: none;
+	}
+	.text-right img,.fa-chevron-down{
+		display: none;
+	}
+	.fa-navicon{
+		font-size: 25px;
+		line-height: 70px;
+		display: block;
+	}
 
 }
