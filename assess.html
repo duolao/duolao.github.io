@@ -126,33 +126,21 @@
                         <img src="./img/wgp_taozi.png" alt="" class="wgp_webfour_imgsix">
                         <p class="wgp_item">其他项目</p>
                     </div>
-                    <div class="spider">
+                    <div class="spider clearfix">
                         <div class="wgp_gamemach fl">
                             <img src="./img/wgp_youxibai.png" alt="" class="wgp_webfour_imgsevens">
                             <img src="./img/wgp_youxi.png" alt="" class="wgp_webfour_imgseven">
                             <p>H5游戏</p>
+                            <img src="./img/wgp_icon.png" alt="" class="wgp_add">
                         </div>
                         <div class="wgp_reptile fr">
                             <img src="./img/wgp_zhizhubai.png" alt="" class="wgp_webfour_imgeights">
                             <img src="./img/wgp_zhizhu.png" alt="" class="wgp_webfour_imgeight">
                             <p>爬虫类</p>
+                            <img src="./img/wgp_icon.png" alt="" class="wgp_add">
                         </div>
-                        <div class="wgpclear"></div>
                     </div>
                 </li>
-                <!-- <div class="spider">
-                        <div class="wgp_gamemach fl">
-                            <img src="./img/wgp_youxibai.png" alt="" class="wgp_webfour_imgsevens">
-                            <img src="./img/wgp_youxi.png" alt="" class="wgp_webfour_imgseven">
-                            <p>H5游戏</p>
-                        </div>
-                        <div class="wgp_reptile fr">
-                            <img src="./img/wgp_zhizhubai.png" alt="" class="wgp_webfour_imgeights">
-                            <img src="./img/wgp_zhizhu.png" alt="" class="wgp_webfour_imgeight">
-                            <p>爬虫类</p>
-                        </div>
-                        <div class="wgpclear"></div>
-                    </div> -->
                 <div class="wgpclear"></div>
             </ul>
             <button type="button" class="wgp_btn">下一步</button>
@@ -205,83 +193,167 @@
                 var wgpreptile = wgpspider.find(".wgp_reptile ")
                 var wgpreptileimg = wgpreptile.find("img:first")
                 var wgppeach = wgpwebfourliss.find(".wgp_peach")
-                var wgpadd = wgpwebfourli.find(".wgp_add")
-                var wgpimgoness =  wgpwebfourlis .find(".wgp_webfour_colone")
-                var wgpimgonepp =  wgpwebfourlis .find("p")
-                var wgpnb=0
-            
-                console.log(wgpadd)
-                // wgpwebfourli.on("mouseover",function(){
-                //     // wgpwebfourli.css("background","#fff")
-                //     $(this).css("background","#4389d9")
-                // })
+                var wgpadd = wgpwebfourli.children(".wgp_add")
+                var wgpaddss = wgpspider.find(".wgp_add")
+                var wgpimgoness = wgpwebfourlis.find(".wgp_webfour_colone")
+                var wgpimgonepp = wgpwebfourlis.find("p")
+                var wgpnb = 0
+                var wgpadds = wgpwebfourli.find("img:last")
+                var wgpdivs = wgpspider.find("div")
+                var wgpgamemachp = wgpgamemach.find("p")
+                var wgpreptilep = wgpreptile.find("p")
+                var wgpbtnone = wgpwebfourbox.find(".wgp_btn")
 
+                //最后里面点击
+                var wgparrss = []
+                wgpdivs.on("click", function () {
+                    var wgpindexthree = $(this).index()
+                    wgpaddss.eq(wgpindexthree).toggle()
+                    console.log(wgparrss)
+                    if (wgpaddss.eq(wgpindexthree).css("display") == "block") {
+                        $(this).addClass("wgp_cjs")
+                        wgparrss.push(1)
+                        // wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" }) 
+                    } else {
+                        $(this).removeClass("wgp_cjs")
+                        wgparrss.pop()
+                        // wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" }) 
+                    }
+                    $(this).css("background", "#4389d9")
+                    if(wgparrss.length != 0){
+                        
+                         wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" }) 
+                    }else{
+                        wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" })
+                    }
+                    
+                })  
+                //最后一个第一个
+                wgpgamemach.on("mouseover", function () {
+                    
+                    wgpgamemach.css("background", "#4389d9")
+                    wgpgamemachimg.css("z-index", "5")
+                    wgpgamemachp.css("color", "#fff")
+                })
+                wgpgamemach.on("mouseout", function () {
+                    if (wgpgamemach.hasClass("wgp_cjs")) {
+                        wgpgamemach.css("background", "#4389d9")
+                        wgpgamemachp.css("color", "#fff")
+
+                    }
+                    else {
+                        wgpgamemach.css("background", "#fff")
+                        wgpgamemachimg.css("z-index", "1")
+                        wgpgamemachp.css("color", "#8796a8")
+                    }
+
+                })
+                //最后一个第二个
+                wgpreptile.on("mouseover", function () {
+                    wgpreptile.css("background", "#4389d9")
+                    wgpreptileimg.css("z-index", "5")
+                    wgpreptilep.css("color", "#fff")
+                })
+                wgpreptile.on("mouseout", function () {
+                    if (wgpreptile.hasClass("wgp_cjs")) {
+                        wgpreptile.css("background", "#4389d9")
+                        wgpreptilep.css("color", "#fff")
+                    } else {
+                        wgpreptile.css("background", "#fff")
+                        wgpreptileimg.css("z-index", "1")
+                        wgpreptilep.css("color", "#8796a8")
+                    }
+
+                })
+                //最后一个
+                wgpwebfourliss.on("mouseover", function () {
+                    wgppeach.css("display", "none")
+                    wgpspider.css({ "display": "block", "background": "#eef0f3" })
+
+                })
+                wgpwebfourliss.on("mouseout", function () {
+                    if (wgpdivs.hasClass("wgp_cjs")) {
+                        wgppeach.css("display", "none")
+                        wgpspider.css({ "display": "block", "background": "#eef0f3" })
+                    } else {
+                        wgppeach.css("display", "block")
+                        wgpspider.css({ "display": "none", "background": "#eef0f3" })
+                    }
+
+
+                })
+                //六个点击
+                // console.log(wgpwebfourli)
+                var wgparr = [];
                 wgpwebfourli.on("click", function () {
-                    wgpnb++;
                     wgpindexone = $(this).index()
                     var wgpindextwo = $(this).parent().index()
                     if (wgpindextwo == 1) {
                         wgpindexone += 3
                     }
-                    if(wgpnb % 2 == 0){
-                        $(this).css("background", "#fff")
-                        wgpimgonepp.eq(wgpindexone).css("color","#a3aaa7")
-                    }else{
-                        $(this).css("background", "#4389d9")
-                        wgpimgonepp.eq(wgpindexone).css("color","#fff") 
-                    }
+              
                     wgpadd.eq(wgpindexone).toggle()
-                    // $(this).css("background", "#4389d9")
-
                     wgpimgoness.eq(wgpindexone).toggle()
-                    // wgpimgonepp.eq(wgpindexone).css("color","#fff")
+                    if (wgpadds.eq(wgpindexone).css("display") == "block") {
+                        $(this).css("background", "#4389d9")
+                        wgpimgonepp.eq(wgpindexone).css("color", "#fff")
+                        $(this).addClass("wgp_waini")
+                        wgparr.push(1)
+
+                    } else {
+                        $(this).css("background", "#fff")
+                        wgpimgonepp.eq(wgpindexone).css("color", "#8796a8")
+                        $(this).removeClass("wgp_waini")
+                        wgpwebfourimg.css("z-index","1")
+                        wgparr.pop()
+                    }
+                    if(wgparr.length == 0){
+                        wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" })
+                    }else{    
+                        wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })  
+                    }
+                    // if(wgpadds.eq(wgpindexone).css("display") == "block"){
+                    //     wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
+                    // }else{
+                    //     wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" }) 
+                    // }
                 })
+                //六个移入移除
+                wgpwebfourli.on("mouseover", function () {
+                    // wgpwebfourliss.css("background", "#fff")
+                    wgpindexone = $(this).index()
+                    var wgpindextwo = $(this).parent().index()
+                    if (wgpindextwo == 1) {
+                        wgpindexone += 3
+                    }
+                    //判断按钮
+                    // if (wgpadds.css("display") == "block"|| wgpaddss.css("display") == "block") {
+                    //     wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
+                    // }else{
+                    //     wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" }) 
+                    // }
 
-                wgpwebfourliss.on("mouseover", function () {
-
-                    wgpspider.css({ "display": "block", "background": "#eef0f3" })
-                    wgppeach.css("display", "none")
+                    $(this).css("background", "#4389d9")
+                    wgpimgonepp.eq(wgpindexone).css("color", "#fff")
                 })
-                wgpwebfourliss.on("mouseout", function () {
-                    wgpspider.css("display", "none")
-                    wgppeach.css("display", "block")
+                wgpwebfourli.on("mouseout", function () {
+                    wgpindexone = $(this).index()
+                    var wgpindextwo = $(this).parent().index()
+                    if (wgpindextwo == 1) {
+                        wgpindexone += 3
+                    }
+
+                    if ($(this).hasClass("wgp_waini")) {
+
+                    } else {
+                        $(this).css("background", "#fff")
+                        wgpimgonepp.eq(wgpindexone).css("color", "#8796a8")
+                    }
+                })
+                //按钮
+                wgpbtnone.on("click", function () {
 
                 })
-                wgpgamemach.on("mouseover", function () {
-                    wgpgamemach.css("background", "#4389d9")
-                    wgpgamemachimg.css("z-index", "5")
-                })
-                wgpgamemach.on("mouseout", function () {
-                    wgpgamemach.css("background", "#fff")
-                    wgpgamemachimg.css("z-index", "1")
-                })
-                wgpreptile.on("mouseover", function () {
-                    wgpreptile.css("background", "#4389d9")
-                    wgpreptileimg.css("z-index", "5")
-                })
-                wgpreptile.on("mouseout", function () {
-                    wgpreptile.css("background", "#fff")
-                    wgpreptileimg.css("z-index", "1")
-                })
-
-
-                wgpwebfourli.on("click", function () {
-
-
-                })
-                // wgpwebfourli.on("click", function () {
-                //     wgpindexone = $(this).index()
-                //     var wgpindextwo = $(this).parent().index()
-
-                //     if (wgpindextwo == 1) {
-                //         wgpindexone += 3
-                //     }
-                //     wgpadd.css("display", "none")
-                //     wgpadd.eq(wgpindexone).css("display", "block")
-                //     wgpwebfourli.css("background","#fff")
-                //     $(this).css("background", "#4389d9")
-
-                // })
             }
             zed()
 
