@@ -29,6 +29,9 @@ a:hover{
 ::-webkit-scrollbar-thumb{
 	background-color: #009ACD
 }
+::-webkit-scrollbar-thumb:hover{
+	background: #3d3d3d;
+}
 
 
 /* 顶部导航 */
@@ -518,10 +521,16 @@ a:hover{
 .production_top{
 	text-align: center;
 }
+.production_content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 .production_content_box{
 	width: 20%;
 	overflow: hidden;
 	position: relative;
+	cursor: pointer;
 }
 .production_content_box_img{
 	width: 100%;
@@ -549,10 +558,14 @@ a:hover{
 }
 .production_content_box_img_left{
 	position: absolute;
+	left: -20%;
+	top: 25%;
 	z-index: 10;
 }
 .production_content_box_img_rigth{
 	position: absolute;
+	right: -20%;
+	top: 32%;
 	z-index: 10;
 }
 .production_content_box:hover .production_content_box_img{
@@ -565,4 +578,63 @@ a:hover{
 .production_content_box:hover .designation{
 	bottom: 0;
 	transition: 0.5s;
+}
+.production_content_box:hover .production_content_box_img_left{
+	left: 41%;
+	transition: 0.5s;
+	
+}
+.production_content_box:hover .production_content_box_img_rigth{
+	right: 45%;
+	transition: 0.5s;
+	
+}
+.read_more{
+	padding: 38px 0 65px;
+	text-align: center;
+}
+.read_more_box{
+	width: 164px;
+	height: 40px;
+	margin: 0 auto;
+	background: url(../img/wcy_move_rdbg.png);
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+.read_more_box_span{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.5s;
+}
+.read_more_box:hover .read_more_box_span{
+	top: -40px;
+	transition: 0.5s;
+}
+
+
+
+/* 尾部 */
+.footer{
+	padding: 52px 30px;
+	background: #ebebeb;
+}
+.footer_logo{
+	text-align: center;
+}
+.footer_text{
+	padding: 14px 0 26px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 12px;
+	color: #484848;
+}
+.footer_text a{
+	padding: 0 5px;
+	color: #484848;
+}
+.footer_text a:hover{
+	color: #484848;
 }
