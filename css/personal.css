@@ -62,3 +62,17 @@ body{
     margin-left: 35px;
     margin-right: 35px;
 }
+.form-horizontal .control-label{
+    text-align: left;
+    font-weight: 0;
+}
+.col_div_two .form-horizontal .control-label{
+    padding-top:0;
+
+} 
+/* .control-label {
+    font-weight: 0;
+} */
+.zll_from{
+    margin-top: 40px;
+}
