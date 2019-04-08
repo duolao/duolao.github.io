@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>我的开发宝/交易记录</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/dny_myDevelopment.css" />
+    <link rel="stylesheet" href="./css/dny_myRecord.css" />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="javascript:;" class="navbar-brand"><img src="./img/dny_logo (2).png" alt="" /></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">项目</a></li>
+                    <li><a href="service.html">估价</a></li>
+                    <li><a href="move.html">开发者</a></li>
+                    <li><a href="WeChat.html">帮助</a></li>
+                </ul>
+                <!-- 个人中心下拉 -->
+                <div class="dny_user-avatar navbar-right">
+                    <!-- 头像 -->
+                    <a href="JavaScript:;" class="dny_avatar-link">
+                        <img src="./img/dny_personal.png" height="40px" />
+                    </a>
+                    <!-- 下拉字体图标 -->
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    <!-- hover显示个人中心详情 -->
+                    <ul class="dny_avatar-menu">
+                        <li>
+                            <a><span>Hello, </span><span class="dny_username">dingny</span></a>
+                        </li>
+                        <li>
+                            <a href="/user/info"><span class="glyphicon glyphicon-user"></span><!-- react-text: 331 -->个人中心
+                                <!-- /react-text --></a>
+                        </li>
+                        <li>
+                            <label id="mpay">
+                                <a href="/user/mpay/account">
+                                    <span class="glyphicon glyphicon-briefcase">我的开发宝</span>
+                                </a>
+                            </label>
+                            <!-- react-empty: 338 -->
+                            <a href="/user/projects">
+                                <span class="glyphicon glyphicon-pencil"></span><!-- react-text: 341 --> 我发布的项目
+                                <!-- /react-text -->
+                            </a>
+                            <a href="/user/quote">
+                                <span class="glyphicon glyphicon-list-alt"></span><!-- react-text: 344 --> 我的报价单
+                                <!-- /react-text -->
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="glyphicon glyphicon-log-out"></span><!-- react-text: 348 --> 退出登录
+                                <!-- /react-text -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 内容 -->
+    <div class="container dny_content">
+        <div class="dny_cont">
+            <div style="width:100%; height:100px;">
+                <div class="dny_breadcrumb-wrap">
+                    <ul class="dny_breadcrumbs dny_clearfix">
+                        <li><a href="/user/mpay/account">我的开发宝</a></li>
+                        <li>交易记录</li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="row dny_wrapper dny_flex-direction-row">
+                    <!-- 左边 -->
+                    <div class="dny_menu col-md-3 col-sm-3 col-xs-12">
+                        <div class="dny_side-nav">
+                            <ul>
+                                <li class="dny_side-nav-header">
+                                    <span> </span>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="./myDevelopment.html">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>账户概览</span>
+                                    </a>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2 dny_activing" href="./myPayrecords.html">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>交易记录</span>
+                                    </a>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="./myPaypassword.html">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>交易密码</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 右边 -->
+                    <div class="dny_content-right col-md-9  col-sm-9 col-xs-12">
+                        <div class="dny_box">   
+                            <span class="row">
+                                <div class="col-md-1"></div>
+                                <div class="dny_tip dny_red dny_shadow col-md-10 col-xs-12">
+                                    <div>
+                                        根据税务局要求，2018 年 6 月 1 日起码市不再支持开具发票，仅提供资金托收托付服务。如有开票要求请于 2018 年 5 月 30 日前提交或与开发服务商协商开票。
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </span>
+                            <div class="dny_account-page row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-10 col-xs-12">
+                                    <!-- 放点内容呀 -->
+                                    <h2 class="dny_header-jilu">交易记录</h2>
+                                    <div class="dny_records">
+                                        <div class="dny_filters">
+                                            <div class="dny_filter">
+                                                <em class="dny_filter-title">创建时间</em>
+                                                <div class="dny_filter-content">
+                                                    <div>
+                                                        <label class="dny_selector" for="dny_select">
+                                                            <select name="createdAt" id="dny_select">
+                                                                <option value="all">全部</option>
+                                                                <option value="week">一周内</option>
+                                                                <option value="3-weeks">三周内</option>
+                                                                <option value="month">一个月内</option>
+                                                                <option value="3-months">三个月内</option>
+                                                                <option value="6-months">半年内</option>
+                                                            </select>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dny_filter">
+                                                <em class="dny_filter-title">交易类型</em>
+                                                <div class="dny_filter-content">
+                                                    <div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check1" tabindex="-1">
+                                                                <input type="checkbox" name="tradeType" value="income"
+                                                                    id="dny_check1">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                入账
+                                                            </label>
+                                                        </div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check2" tabindex="-1">
+                                                                <input type="checkbox" name="tradeType" value="payment"
+                                                                    id="dny_check2">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                付款
+                                                            </label>
+                                                        </div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check3" tabindex="-1">
+                                                                <input type="checkbox" name="tradeType" value="withdraw"
+                                                                    id="dny_check3">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                提现
+                                                            </label>
+                                                        </div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check4" tabindex="-1">
+                                                                <input type="checkbox" name="tradeType" value="other"
+                                                                    id="dny_check4">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                其他
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dny_filter">
+                                                <em class="dny_filter-title">交易状态</em>
+                                                <div class="dny_filter-content">
+                                                    <div>
+                                                        <div class="dny_checkbox dny_check-box">
+                                                            <label class="dny_check-label" for="dny_check5" tabindex="-1">
+                                                                <input type="checkbox" name="tradeStatus" value="pending"
+                                                                    id="dny_check5">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                处理中
+                                                            </label>
+                                                        </div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check6" tabindex="-1">
+                                                                <input type="checkbox" name="tradeStatus" value="success"
+                                                                    id="dny_check6">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                已完成
+                                                            </label>
+                                                        </div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check7" tabindex="-1">
+                                                                <input type="checkbox" name="tradeStatus" value="cancel"
+                                                                    id="dny_check7">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                已取消
+                                                            </label>
+                                                        </div>
+                                                        <div class="dny_checkbox dny_check-box ">
+                                                            <label class="dny_check-label" for="dny_check8" tabindex="-1">
+                                                                <input type="checkbox" name="tradeStatus" value="fail"
+                                                                    id="dny_check8">
+                                                                <div class="dny_check-icon">
+                                                                    <svg class="hidden-1B-QV" name="#check_119c9dc3451a464d003173e265af6cb6"
+                                                                        width=".9rem" height=".7rem" style="width: 0.9rem; height: 0.7rem;">
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            xlink:href="#check_119c9dc3451a464d003173e265af6cb6"></use>
+                                                                    </svg>
+                                                                </div>
+                                                                已失败
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="dny_sheets">
+                                            <thead>
+                                                <tr>
+                                                    <th class="dny_align-left" style="width: 7rem;">创建时间</th>
+                                                    <th class="dny_align-left">名称</th>
+                                                    <th class="dny_align-right" style="width: 7rem;">交易金额</th>
+                                                    <th class="dny_align-right" style="width: 5rem;">状态</th>
+                                                    <th class="dny_align-right" style="width: 5rem;">余额</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4" style="text-align: center;">没有找到相关交易记录</td>
+                                                </tr>
+
+                                                <!-- 有记录 -->
+                                                <!-- <tr>
+                                                    <td>
+                                                        2019 04.08<br>
+                                                        <sub>14:21</sub>
+                                                    </td>
+                                                    <td>
+                                                        在线充值开发宝 - 支付宝网页转入<br>
+                                                        <sub>支付宝充值</sub>
+                                                    </td>
+                                                    <td class="dny_align-right">
+                                                        +1.00
+                                                    </td>
+                                                    <td class="dny_align-right">
+                                                        <div class="dny_tooltip" data-tip="true" data-for="order-status-10000058607820190408142152643647" currentitem="false">
+                                                            <span>正在处理</span>
+                                                            <div class="__react_component_tooltip place-top type-dark " data-id="tooltip"></div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="dny_align-right"></td>
+                                                </tr> -->
+                                            </tbody>
+                                        </table>
+                                        <span style="display: none;"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="container-fluid">
+        <div class="dny_footer container">
+            <div class="dny_foot" style="width: 1116px;">
+                <div class="dny_brand">
+                    <a href="index.html"><img src="./img/dny_logo (2).png" alt="天眼" /></a>
+                </div>
+                <div>Copyright&nbsp;©&nbsp;2014-2018</div>
+            </div>
+        </div>
+    </footer>
+    <!-- 联系我们 -->
+    <div>
+        <div class="dny-contact-us-container">
+            <div class="dny-contact-us-content">
+                <div class="dny-button-container">
+                    <div class="dny-button" id="dny-contact-button">
+                        <img src="./img/dny_qq.png">
+                        联系我们
+                    </div> 
+                </div>
+                <div class="dny-pop-container animated dny-bounce-in-up" id="dny-contact-pop" data-show="false" style="display: none;">
+                    <div class="dny-title">在线咨询请添加客服 QQ</div>
+                    <div class="dny-qr">
+                        <img src="./img/dny_qq_ewm.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.dny-button-container').click(function(){
+            $('.dny-pop-container').toggle();
+        });
+    </script>
+  </body>
+</html>
