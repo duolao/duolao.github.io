@@ -1,0 +1,296 @@
+/* 我的开发宝-账户概览 */
+/* 内容 */
+.dny_content{
+    /* padding-top: 64px; */
+    padding-bottom: 56px;
+    min-height: 600px;
+}
+.dny_content .dny_cont{
+    height: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+.dny_breadcrumb-wrap{
+    display: block;
+    width: 100%;
+    padding: 35px 0 21px;
+}
+.dny_clearfix {
+    zoom: 1;
+}
+.dny_breadcrumbs {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.dny_breadcrumbs li {
+    float: left;
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    color: #474b48;
+    padding-right: 1rem;
+}
+.dny_breadcrumbs li a {
+    color: #2d3238;
+    text-decoration: none;
+}
+.dny_breadcrumbs li :after {
+    position: relative;
+    right: -.5rem;
+    content: "\2192";
+    font-size: 1rem;
+    color: #979fa8;
+}
+.dny_breadcrumbs li~li {
+    color: #2d3238;
+    opacity: .5;
+}
+
+
+.dny_flex-direction-row {
+    -ms-box-orient: vertical;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-line-pack: stretch;
+}
+.dny_flex-direction-column, .dny_flex-direction-row {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+.dny_wrapper{
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* 左边菜单部分 */
+.dny_menu{
+    padding: 0;
+}
+.dny_side-nav{
+    margin: 0;
+    left: 0;
+}
+.dny_side-nav ul {
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 -1px 0 0 #e7e7e7, inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+    list-style: none;
+}
+.dny_side-nav ul .dny_side-nav-header{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #e6ebf0;
+    padding: 7px 0 7px 21px;
+    box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+}
+.dny_side-nav ul>li {
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dny_side-nav ul .dny_side-nav-item{
+    background-color: #f0f2f5;
+    height: 48px;
+    box-shadow: 0 -1px 0 0 #e6e6e6, inset 0 1px 0 0 #fff, 0 2px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+}
+.dny_side-nav ul .dny_side-nav-item .dny_activing {
+    background-color: #fff;
+}
+.dny_side-nav ul>li .dny_nav-link-2 {
+    display: block;
+    padding: 14px 0 14px 50px;
+    color: #979fa8;
+    line-height: 18px;
+    text-decoration: none;
+    outline: none;
+    font-weight: 500;
+}
+.dny_side-nav ul>li .dny_nav-link-2 .dny_icon {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+/* 右边部分 */
+.dny_content-right{
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    background: #fff;
+    min-height: 40rem;
+    box-shadow: 0 1px 2px hsla(165,9%,74%,.95);
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+}
+.dny_content-right .dny_box{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.dny_tip.dny_shadow{
+    box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
+}
+.dny_tip.dny_red{
+    color: #e84d60;
+}
+.dny_tip {
+    font-size: 14px;
+    background: #fff6de;
+    color: #979fa8;
+    padding: .6rem 2.5rem .5rem 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.dny_account-wrapper-box{
+    background-color: rgba(221,227,235,.2);
+    border-radius: 5px;
+}
+.dny_account-wrapper-box .dny_wrapper-body{
+    display: table;
+    width: 100%;
+    padding-bottom: 2.5rem;
+}
+.dny_account-wrapper-box .dny_wrapper-body .dny_left-wrapper, .dny_account-wrapper-box .dny_wrapper-body .dny_right-wrapper{
+    vertical-align: middle;
+}
+.dny_account-box{
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    margin: .5rem 0 1rem;
+    padding: 1rem;
+    border-radius: .4rem;
+    /* background-color: rgba(221,227,235,.2); */
+    text-align: center;
+}
+.dny_account-box .dny_mpay-icon{
+    position: absolute;
+    left: 1rem;
+    top: .4rem;
+}
+.dny_account-balance{
+    padding: 10px 0;
+    color: gray;
+}
+.dny_account-box h2{
+    margin: 2.8rem 0 0;
+    font-size: 24px;
+}
+.dny_account-box .dny_account-balance em{
+    color: #4289db;
+    font-size: 28px;
+    font-style: normal;
+    margin-right: 4px;
+}
+.dny_withdraw{
+    margin-bottom: .5rem;
+}
+.dny_account-wrapper-box .dny_wrapper-body .dny_right-wrapper {
+    max-width: 25rem;
+    margin: 0 auto;
+    border-top: 1px solid #e3e8ed;
+}
+.dny_btn-box{
+    text-align: center;
+    padding: 1em 0;
+}
+.dny_btn-box button {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding:  12px 40px;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    border-radius: 5px;
+    margin: .5em 0;
+}
+.dny_btn-box .dny_conzh{
+    background: #4289db;
+    margin-right: 2em;
+}
+.dny_btn-box .dny_tixian{
+    background: #f0f1f4;
+    color: #000;
+    border: 1px solid #d3d9e1;
+}
+
+.dny_account-page div[class*=records] {
+    border-bottom: none;
+}
+.dny_account-page table[class*=sheets-] {
+    border-top: none;
+}
+.dny_header-jilu{
+    padding: 1.5rem 0 .5rem;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid hsla(212,9%,63%,.2);
+    /*H：Hue(色调)取值为：0 - 360  S：Saturation(饱和度)取值为：0.0% - 100.0%  L：Lightness(亮度)取值为：0.0% - 100.0%  A：Alpha(透明度)取值0~1之间。*/
+    color: #2d3238;
+}
+.dny_records{
+    box-sizing: border-box;
+    padding: 21px;
+    /* border-bottom: 1px solid hsla(212,9%,63%,.2); */
+    font-size: 14px;
+}
+.dny_sheets{
+    width: 100%;
+    color: #474b48;
+    /* border-top: 1px solid hsla(212,9%,63%,.2); */
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.dny_sheets tbody {
+    font-size: 16px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.dny_sheets .dny_align-left{
+    text-align: left;
+}
+.dny_sheets th {
+    height: 3.4rem;
+    font-weight: 400;
+}
+.dny_sheets tbody tr:only-child td {
+    border-bottom: none;
+}
+.dny_sheets tbody td {
+    padding: 1rem 0;
+    border-bottom: 1px solid hsla(212,9%,63%,.2);
+    vertical-align: top;
+}
+.dny_read-more {
+    color: #4289db;
+    display: block;
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: 1.5rem;
+}
