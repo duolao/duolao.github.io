@@ -1,5 +1,5 @@
 body{
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
     padding-top: 90px;
 }
 .zll_img{
@@ -9,6 +9,9 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 15px;
+}
+.navbar-fixed-top{
+    background-color: #fff;
 }
 /* .zll_nav{
     line-height: 50px;
@@ -75,4 +78,13 @@ body{
 } */
 .zll_from{
     margin-top: 40px;
+}
+.zll_span{
+    font-size: 12px;
+}
+.glyphicon-pencil {
+    color: #4289dc;
+}
+.ptfp{
+    margin-top: 80px;
 }
