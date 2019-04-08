@@ -9,7 +9,6 @@ html{
 }
 body{
     width: 100%;
-    height: 100%;
     font-weight: 300;
     font-size: 14px;
     background-color: #eef0f3;
@@ -220,10 +219,10 @@ button{
     width: 100%;
     height: 55px;
     background: #fff;
-    /* position:sticky;
-    top:65px;
+    position:sticky;
+    top:64px;
     left: 0;
-    right: 0; */
+    right: 0;
 }
 /* .wgp_webthree_cone{
     position: fixed;
@@ -235,6 +234,7 @@ button{
     height: 40px;
     border-bottom: 5px solid #4289db;
     margin-top: 10px;
+    position: relative;
     
 }
 .wgp_webthree_onep a{
@@ -245,7 +245,11 @@ button{
 .wgp_webthree_onep span{
 
     font-size: 18px;
-    color: #4289db
+    color: #4289db;
+    position: absolute;
+    right: 0;
+    top:2px;
+    
 }
 .wgp_webthree_twop{
     width: 100px;

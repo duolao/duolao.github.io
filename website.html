@@ -85,7 +85,7 @@
         <div class="wrap">
             <p class="wgp_webthree_onep fl">
                 <a href="#">Web网站</a>
-                <span>4</span>
+                <span class="wgpvaluemath">3</span>
             </p>
             <p class="wgp_webthree_twop fl">
                 <a href="#">管理后台</a>
@@ -604,7 +604,7 @@
                         </td>
                     </tr>
                     <tr class="wgp_trone">
-                        <td rowspan="3" class="wgp_soc">社交功能</td>
+                        <td rowspan="7" class="wgp_soc">社交功能</td>
                         <td class="wgp_yw">
                             <label for="wgp_tab_inpone11" class="clearfix wgp_slave">
                                 <span class="fl">分享</span>
@@ -668,12 +668,12 @@
                             <!-- <div class="wgpclear"></div> -->
                         </td>
                     </tr>
-                    <tr class="wgp_trone">
+                    <!-- <tr class="wgp_trone">
                         <td rowspan="5" class="wgp_soc">其他</td>
                         <td class="wgp_yw">
                             <label for="" class="clearfix">
                                 <span class="fl">UI设计(单选)</span>
-                                <!-- <input type="checkbox" id="wgp_tab_inpone12" class="wgp_tabmove"> -->
+                               
                             </label>
                         </td>
                         <td class="clearfix wgp_yw">
@@ -690,9 +690,8 @@
                                 <span>无(自行提供)</span>
                             </label>
 
-                            <!-- <div class="wgpclear"></div> -->
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr class="wgp_trtwo">
                         <td>
                             <label for="wgp_tab_inpfive12" class="clearfix wgp_slave">
@@ -854,50 +853,116 @@
                 var wgpslave = wgptr.find(".wgp_slave")
                 var wgpinput = wgpslave.find("input")
                 var wgpinputs = wgptr.find("input")
-                console.log(wgpinput)
-                wgpinput.css("visibility", "hidden")
-                wgptr.on("mouseover", function () {
-                    var wgpindexone = $(this).index()
-                    if (wgpindexone == 24) {
-                        wgpinput(wgpindexone).css("visibility", "hidden")
-                    } else if (wgpindexone >= 25) {
-                        wgpindexone -= 1
-                    }
-                    wgpinput.eq(wgpindexone).css("visibility", "visible")
-                    // var trindex = wgptr.eq(wgpindexone).find("input")
-                    // if (wgpinput.eq(wgpindexone).is(':checked')) {
-                    //     // var trindex = wgptr.index(wgpindexone).find("input")
-                    //     trindex.prop("checked",true)
-                    // }else{
-                    //     trindex.prop("checked",false)
-                    // }
-                })
+                var wgpinputss = wgptable.find("input")
+                var wgptfoot = wgptable.find("tfoot")
+                var wgpempty = wgptfoot.find("button:last")
+                var wgpres = wgptfoot.find("button:first")
+                var wgptabinptwo16 = $("#wgp_tab_inptwo16")
+                var wgptabinptwo15 = $("#wgp_tab_inptwo15")
+                var wgptabinptwo14 = $("#wgp_tab_inptwo14")
+                var wgptabinptwo13 = $("#wgp_tab_inptwo13")
+                var wgpclearfix = wgptr.find(".clearfix")
+                var wgplables = wgpclearfix.find("label")
+                var wgpfixinp = wgplables.find("input")
+                var wgpvaluemath = $(".wgpvaluemath")
+                // console.log(wgpfixinp.length)
+                var wgptrinputs = wgptr
+                var wgpbtn = $(".wgp_btn")
+                var wgparrs = []
+
                 wgptr.on("click", function () {
                     var wgpindexone = $(this).index()
-                    if (wgpindexone == 24) {
-                        wgpinput(wgpindexone).css("visibility", "hidden")
-                    } else if (wgpindexone >= 25) {
-                        wgpindexone -= 1
-                    }
-                    var trindex = wgptr.eq(wgpindexone).find("input")
-                    // if(trindex = wgptr.eq(wgpindexone)>=25){
-                    //     trindex+=1
+                    var wgptrinputs = $(this).find("td:last").find("input")
+                    var n = 0;
+                    wgptrinputs.each(function () {
+                        if ($(this).prop("checked") == true) {
+                            n++;
+                            console.log(n)
+                        } else {
+                            n--
+                        }
+                    })
+                    if (n == wgptrinputs.length) {
+                        wgpinput.eq(wgpindexone).prop("checked", true)
+                        // wgpvaluemath.text(parseInt(wgpvaluemath.text())+wgptrinputs.length)
+                    } 
+                    // else if (n < wgptrinputs.length) {
+                    //     wgpvaluemath.text(parseInt(wgpvaluemath.text()) + parseInt(wgptrinputs.length - n))
                     // }
-                    if (wgpinput.eq(wgpindexone).is(':checked')) {
-                        // var trindex = wgptr.index(wgpindexone).find("input")
-                        trindex.prop("checked",true)
-                    }else{
-                        trindex.prop("checked",false)
+                    else {
+                        wgpinput.eq(wgpindexone).prop("checked", false)
+                        // wgpvaluemath.text(parseInt(wgpvaluemath.text())-wgptrinputs.length)
+
                     }
+                    if(parseInt(wgpvaluemath.text())>10){
+                        wgpbtn.css("background","#4389d9")
+                    }else{
+                        wgpbtn.css("background","#8796a8")  
+                    }
+                })
+                wgpfixinp.on("click", function () {
+                    if ($(this).is(':checked')) {
+                        wgparrs.push(1)
+                        wgpvaluemath.text(parseInt(wgpvaluemath.text()) + 1)
+                    } else {
+                        wgparrs.pop()
+                        wgpvaluemath.text(parseInt(wgpvaluemath.text()) - 1)
+                    }
+                    // console.log(wgparrs.length)
+                    // wgpvaluemath.text(wgparrs.length);
+                })
+                wgpempty.on("click", function () {
+                    wgpinputss.prop("checked", false)
+                    wgptabinptwo13.prop("checked", true)
+                    wgpvaluemath.text(wgparrs.length)
+                    wgpempty.css("background","#8895a5")
+                })
+                wgpres.on("click", function () {
+                    wgptabinptwo16.prop("checked", true)
+                    wgptabinptwo15.prop("checked", true)
+                    wgptabinptwo14.prop("checked", true)
+                    wgpvaluemath.text(wgparrs.length + 3)
+                    wgpempty.css("background","#4289db")
+                })
+                wgpinput.css("visibility", "hidden")
+
+                wgptr.on("mouseover", function () {
+                    var wgpindexone = $(this).index()
+                    wgpinput.eq(wgpindexone).css("visibility", "visible")
+
+                })
+                wgpinput.on("click", function () {
+                    var wgpinindex = $(this).index()
+                    var trindex = $(this).parent().parent().next().find("input")
+                    var trinlength = trindex.length
+                    var cc=0;
+
+                    if ($(this).is(':checked')) {
+                        trindex.prop("checked", true)
+                        wgpvaluemath.text(parseInt(wgpvaluemath.text()) + trindex.length)
+                    }
+                    else {
+                        trindex.prop("checked", false)
+                        wgpvaluemath.text(parseInt(wgpvaluemath.text()) - trindex.length)
+                    }
+                    // trindex.each(function(){
+                    //     if($(this).prop("checked")==true){
+                    //         cc++;
+                    //        console.log(cc)
+                    //     }else{
+                    //        cc--;
+                    //     }
+                    // })
+                    // if(cc < trindex.length){
+                    //     wgpvaluemath.text(parseInt(wgpvaluemath.text())+trindex.length-cc)  
+                    //     alert(1)      
+                    // }
+
+
                 })
 
                 wgptr.on("mouseout", function () {
                     var wgpindexone = $(this).index()
-                    if (wgpindexone == 24) {
-                        wgpinput(wgpindexone).css("visibility", "hidden")
-                    } else if (wgpindexone >= 25) {
-                        wgpindexone -= 1
-                    }
                     if (wgpinput.eq(wgpindexone).is(':checked')) {
                         wgpinput.eq(wgpindexone).css("visibility", "visible")
                     } else {
@@ -905,9 +970,9 @@
                     }
                 })
 
-
             }
             pdd()
+
         })
     </script>
 </body>
