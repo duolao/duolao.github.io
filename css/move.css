@@ -618,7 +618,7 @@ a:hover{
 
 /* 尾部 */
 .footer{
-	padding: 52px 30px;
+	padding: 52px 0;
 	background: #ebebeb;
 }
 .footer_logo{
@@ -637,4 +637,34 @@ a:hover{
 }
 .footer_text a:hover{
 	color: #484848;
+}
+.footer_contact{
+	position: relative;
+}
+.footer_phone{
+	position: relative;
+	margin: 0 auto;
+	width: 340px;
+	height: 50px;
+	background: #fff;
+	background-image: url(../img/wcy_move_fo_tel2.png);
+	border-radius: 25px;
+}
+.footer_phone_img1{
+	margin-left: 10px;
+	z-index: 10;
+}
+.footer_phone_img1:hover{
+	animation: scale 1s infinite;
+}
+@keyframes scale{
+	0%{
+		transform: scale(1)
+	}
+	50%{
+		transform: scale(1.2)
+	}
+	100%{
+		transform: scale(1)
+	}
 }
