@@ -220,17 +220,17 @@
                         // wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" }) 
                     }
                     $(this).css("background", "#4389d9")
-                    if(wgparrss.length != 0){
-                        
-                         wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" }) 
-                    }else{
+                    if (wgparrss.length != 0) {
+
+                        wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
+                    } else {
                         wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" })
                     }
-                    
-                })  
+
+                })
                 //最后一个第一个
                 wgpgamemach.on("mouseover", function () {
-                    
+
                     wgpgamemach.css("background", "#4389d9")
                     wgpgamemachimg.css("z-index", "5")
                     wgpgamemachp.css("color", "#fff")
@@ -291,7 +291,7 @@
                     if (wgpindextwo == 1) {
                         wgpindexone += 3
                     }
-              
+
                     wgpadd.eq(wgpindexone).toggle()
                     wgpimgoness.eq(wgpindexone).toggle()
                     if (wgpadds.eq(wgpindexone).css("display") == "block") {
@@ -304,13 +304,13 @@
                         $(this).css("background", "#fff")
                         wgpimgonepp.eq(wgpindexone).css("color", "#8796a8")
                         $(this).removeClass("wgp_waini")
-                        wgpwebfourimg.css("z-index","1")
+                        wgpwebfourimg.css("z-index", "1")
                         wgparr.pop()
                     }
-                    if(wgparr.length == 0){
+                    if (wgparr.length == 0) {
                         wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" })
-                    }else{    
-                        wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })  
+                    } else {
+                        wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
                     }
                     // if(wgpadds.eq(wgpindexone).css("display") == "block"){
                     //     wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
