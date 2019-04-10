@@ -22,11 +22,11 @@
     opacity: 0;
 }
 .wgp_webfour_pone{
-    font-size: 22px;
+    font-size:150%;
     color: #fff;
     position: absolute;
     left:100%;
-    top: 35%;
+    top: 40%;
     opacity: 0;
 }
 .wgp_webfour_ptwo{
