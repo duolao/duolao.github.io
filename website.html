@@ -775,14 +775,17 @@
             </table>
         </div>
     </div>
-    <button type="button" class="wgp_btn">下一步</button>
-    <div class="wgp_webfive_box">
+    <button type="button" class="wgp_btn">下一步<a class="wgpbtna" href="./computation.html">go</a></button>
+    <div class="wgp_rubish">
+      <div class="wgp_webfive_box">
         <div class="wrap_two">
             <p class="fl"><a href="#">天 眼</a></p>
             <span class="fr">Copyright © 2014-2018</span>
         </div>
 
+    </div>  
     </div>
+    
     <div class="wgp_qq">
         <img src="./img/wgp_QQ.png" alt="">
         <a href="#">联系我们</a>
@@ -866,8 +869,11 @@
                 var wgpfixinp = wgplables.find("input")
                 var wgpvaluemath = $(".wgpvaluemath")
                 // console.log(wgpfixinp.length)
-                var wgptrinputs = wgptr
+                // var wgptrinputs = wgptr
                 var wgpbtn = $(".wgp_btn")
+                // var wgpbtnone = $(".wgp_btn")
+                var wgpbtna = wgpbtn.find(".wgpbtna")
+                console.log(wgpbtna)
                 var wgparrs = []
 
                 wgptr.on("click", function () {
@@ -898,6 +904,12 @@
                         wgpbtn.css("background","#4389d9")
                     }else{
                         wgpbtn.css("background","#8796a8")  
+                    }
+                    if(wgpbtn.css("backgroundColor") == "rgb(67, 137, 217)"){
+                        wgpbtna.css("display","block")
+                        alert(1)
+                    }else{
+                        wgpbtna.css("display","none")  
                     }
                 })
                 wgpfixinp.on("click", function () {
@@ -957,7 +969,7 @@
                     //     wgpvaluemath.text(parseInt(wgpvaluemath.text())+trindex.length-cc)  
                     //     alert(1)      
                     // }
-
+                  
 
                 })
 

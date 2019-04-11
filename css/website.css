@@ -67,7 +67,7 @@ button{
     
 }
 .wgp_webone_wrap{
-    width: 1293px;
+    /* width: 1293px; */
     height: 64px;
     margin: 0 auto;
     line-height: 64px;
@@ -458,7 +458,8 @@ tfoot tr th button{
     line-height: 56px;
 }
 .wrap_two{
-    width: 1115px;
+    /* width: 1115px; */
+    padding: 0 20px;
     margin: 0 auto;
 }
 .wgp_webfive_box p{
@@ -575,6 +576,9 @@ tfoot tr th button{
 .wgp_txts{
     color: #fff;
 }
+.wgp_btn a{
+    display: none;
+ }
 
 
 

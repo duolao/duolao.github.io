@@ -357,7 +357,7 @@
                     <div class="wgp_webthree_imgone">
                         <img src="./img/wgpsxz.png" alt="">
                     </div>
-                    <video autoplay loop>
+                    <video autoplay="autoplay" loop="loop">
                         <source src="./img/wgpvideo1.mp4" type="video/mp4">
                     </video>
                     <div class="wgp_webthree_masking"></div>
@@ -600,9 +600,9 @@
                 var wgpwebthreetxt = $(".wgp_webthree_txt")
                 var wgpwebthreetxtone = wgpwebthreetxt.find(".wgp_webthree_txtone")
                 console.log(wgpwebthreetxtone)
-
-                $(".wgp_webthree_box").on("mouseover", function () {
-                    //三
+                //三
+                $(".wgp_webthree_box").on("mouseenter", function () {
+                    
                     clearInterval(time8)
                     time8 = setInterval(function () {
 
@@ -639,7 +639,7 @@
                         })
                     }, 1500)
                 });
-                $(".wgp_webthree_box").mouseout(function () {
+                $(".wgp_webthree_box").mouseleave(function () {
                     if ($(".wgp_webthree_box").offset().top != 0) {
                         clearInterval(time8)
                         time8 = setInterval(function () {
