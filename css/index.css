@@ -89,11 +89,18 @@ button{
 .wgp_back_one img{
     display: block;
 }
+.container-fluid{
+    height: 80px;
+    line-height: 80px;
+}
 .wgp_img_two{
     margin:auto;
     margin-top:100px;
     display: none;
     /* display: block; */
+}
+.wgp_img_one{
+    display: inline-block;  
 }
 .wgp_img_three{
     margin:auto;

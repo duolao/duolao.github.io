@@ -51,7 +51,7 @@ button{
     clear: both;
 }
 .wrap{
-    /* width: 993px; */
+    width: 74.5%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -572,4 +572,54 @@ button{
 .wgp_btn a{
    display: none;
 }
+@media screen and (min-width:1200px) {
+    
+}
+@media screen and (min-width:992px) and (max-width: 1199px) {
 
+
+}
+@media screen and (min-width: 768px) and (max-width:991px ){
+
+
+}
+
+@media screen and (max-width: 768px){
+    .wgp_logo{
+        width: 100px;
+        margin-top: 15px;
+    }
+    .wgp_webone_karsa{
+        display: none;
+    }
+    .wgp_webone_wrap ul{
+        margin-left: 1px;
+    }
+    .wgp_webone_wrap ul li{
+       width: 40px;
+    }
+    .wgp_webtwo_step{
+        width:80px;
+        
+    }
+    .wgp_webone_imgtwo{
+        padding: 0;
+    }
+    .wgp_webone_imgthree{
+        padding: 0;
+    }
+    .wgp_webthree_box h1{
+        font-size: 16px;
+    }
+    .wgp_webfour_box ul li{
+        width: 80px;
+        height: 80px;
+    }
+    .wgp_webfour_box ul li img{
+        /* width: 50px; 
+        height: 40px; */
+    }
+    .wgp_qq{
+        right: 0;
+    }
+}
