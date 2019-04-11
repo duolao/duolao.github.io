@@ -78,6 +78,9 @@ a:hover{
 .wcy_activ{
 	background: url(../img/wcy_move_nav_hua.png) center no-repeat;
 }
+.navbar_img{
+	padding-top: 20px;
+}
 
 
 /* 背景图 */
@@ -243,6 +246,21 @@ a:hover{
 }
 
 
+/* 套餐选择动画 */
+.wcy_combo_animation{
+	/* animation: combo_animation 1s; */
+	top: 120px;
+}
+/* @keyframes combo_animation{
+	0%{
+		top: 120px;
+	}
+	100%{
+		top: 0;
+	}
+} */
+
+
 /* 一站全包 */
 .baok{
 	margin: 0 auto;
@@ -262,6 +280,8 @@ a:hover{
 	height: 177px;
 	background: url(../img/wcy_move_baobg.png);
 	position: relative;
+	opacity: 0;
+	left:50px;
 }
 .baok_package{
 	width: 138px;
@@ -382,6 +402,7 @@ a:hover{
 	padding: 94px 24px 0;
 	margin: 0 41px;
 	background: url(../img/wcy_move_sjlk.png);
+	/* margin-top: 300px; */
 }
 .zjsj_phone{
 	height: 549px;
@@ -470,7 +491,13 @@ a:hover{
 	height: 440px;
 	position: relative;
 }
+.presentation_left img{
+	position: absolute;
+	left:0;
+}
 .presentation_right_content{
+	position: absolute;
+	right: 0;
 	padding: 70px 0 0 70px;
 	width: 560px;
 }
