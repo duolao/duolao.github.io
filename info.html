@@ -16,39 +16,185 @@
 	<header>
 		<div class="log-nav">
 			<div class="log-nav-left">
-				<img src="img/logo.png" alt="">
-					
+				<img src="img/logo.png" alt="">					
 				<a href="#">项目</a>
 				<a href="#">估价</a>
 				<a href="#">开发者</a>
-				<a href="#">帮助</a>
+				<div class="help">
+					<a href="#">帮助</a>
+					<ul>
+						<li>常见问题</li>
+						<li>我是需求方</li>
+						<li>我是开发方</li>
+					</ul>
 				</div>
-				<div ></div>	
-			<div class="text-right">
-				<!-- <span style="color:#727f8f">还没注册账号？</span> -->
-				<img src="img/z_touxiang.png" alt="" style="height: 40px;width: 40px;margin-right: 8px">
+				</div>	
+			<div class="text-right personage">
+				<img src="img/z_touxiang.png" alt="">
 				<i class="fa fa-chevron-down"></i>
 				<i class="fa fa-navicon"></i>
+				<ul>
+					<li>Hello,zengpengtao</li>
+					<li><i class="fa fa-user"></i>企业中心</li>
+					<li><i class="fa fa-book"></i>企业开发宝</li>
+					<li><i class="fa fa-legal"></i>我的发布项目</li>
+					<li><i class="fa fa-pencil"></i>我的报价单</li>
+					<li><i class="fa fa-share-square-o"></i>退出登陆</li>
+				</ul>
 			</div>
 		</div>
 	</header>
-	<div class="Business-center container">
-		<a href="#">企业中心</a><span>账号信息</span>
+	<div class="Business-center container ">
+		<a href="#">企业中心</a> <i class="fa fa-long-arrow-right"></i><span>账号信息</span>
 	</div>
-	<!-- <div class="message-box">
+	<div class="message-box container">
 		<div class="message-left ">
 			<ul>
 				<li class="list-s">基本信息</li>
-				<li class="list-o" style="background-color: #fff"><i class="fa fa-user-o"></i>账号信息</li>
+				<li class="list-o" style="background-color: #fff"><i class="fa fa-user-o"></i>账号信息<i class="fa fa-check-circle-o"></i></li>
 				<li class="list-s">企业信息</li>
-				<li class="list-o"><i class="fa fa-certificate"></i>企业认证</li>
-				<li class="list-o"><i class="fa fa-server"></i>合同相关</li>
+				<li class="list-o"><i class="fa fa-certificate"></i>企业认证<i class="fa fa-check-circle-o"></i></li>
+				<li class="list-o"><i class="fa fa-server"></i>合同相关<i class="fa fa-check-circle-o" style="margin-left: 87px;color:#4289DB;"></i></li>
+			</ul>
+			<ul>
+				<li class="list-s" style="border-bottom: 1px solid 42484D">发票管理</li>
+				<li class="list-o">发票设置</li>
+				<li class="list-o">开票申请</li>
 			</ul>
 		</div>
-		<div class="message-right">
-			
+		<div class="message-right a">
+			<div class="box-content">
+				<div class="hint">
+					提示：您需要完善<span>基本信息</span>和<span>企业信息</span>才能发布项目。
+				</div>
+				<div class="authentication">
+					<img src="img/z_touxiang.png" alt="">
+					<span>码市认证</span>
+				</div>
+				<h3>账号信息</h3>
+				<p>标有星号 (*) 的栏目为必填栏目, 并请验证邮箱和手机。</p>
+				<p>您的个人信息不会透露给任何第三方，请放心填写。</p>
+				<div class="work">	
+					<div class="work-mail">
+						工作邮箱 * 
+						<span>未验证</span> 
+						<em>无</em>
+						<a href="javascript:;">修改</a>
+					</div>	
+					<div class="work-mobile">
+						工作手机 *  
+						<span>已验证</span>
+						<em>15115468775</em>
+						<a href="javascript:;">修改</a>
+					</div>
+				</div>
+				<h3>联系人资料</h3>
+				<div class="linkman">
+					姓名*
+					<span style="padding-left: 93px">45645656456</span>
+					<a href="javascript:;">修改</a>
+				</div>
+				<div class="linkman">
+					QQ 
+					<span style="padding-left: 105px;">4456445645</span>
+				</div>
+				<div class="linkman">
+					所在区*
+					<span>湖北省 襄阳市 襄州区</span>
+				</div>
+			</div>		
 		</div>
-
-	</div> -->
-	</body>	
-	</html>	
+		<div class="enterprise-certification a">
+			<div class="box-content">
+				<div class="hint">
+					提醒：您需要完善 <span>企业认证</span> 才能发布需求。
+				</div>
+				<p>
+				请填写正确的企业信息，码市承诺不会透露给任何第三方；认证审核需要 1-3 个工作日。
+				</p>
+				<div class="credit">
+					<label for="">企业名称 *</label>
+					<input type="text" placeholder="企业名字">
+				</div>
+				<div class="credit">
+					<label for="">统一社会信用代码或注册号 *</label>
+					<input type="text" placeholder="统一社会信用代码或注册号">
+				</div>
+				<div class="credit" style="margin-bottom: 25px;padding-bottom:25px;border-bottom: 1px solid #ddd">
+					<label for="">营业执照扫描件 *</label>
+					<input type="text" placeholder="添加附件">
+				</div>
+				<input style="background: #4289dc;color: #fff;border:none;width: 126px;height: 42px;border-radius: 4px" type="submit" value="提交认证申请">
+			</div>
+		</div>	
+		<div class="contract-related a">
+			<div class="box-content">
+				<h3>合同相关</h3>
+				<div class="related-background">
+					<p style="padding-top:20px">如需签订合同请与码市客服联系：</p>
+					<p>邮箱：support@codemart.com</p>
+					<p>QQ：1423626804</p>
+				</div>
+			</div>		
+		</div>	
+		<div class="invoice-is-set a">
+			<div class="box-content">
+				<div class="Invoice-prompt">
+					根据税务局要求，2018 年 6 月 1 日起码市不再支持开具发票，仅提供资金托收托付服务。如有开票要求请于 2018 年 5 月 30 日前提交或与开发服务商协商开票。
+				</div>
+				<h3>常用发票信息</h3>
+				<div class="invoice-value">
+					<p>增值税普通发票:</p>
+					<a href="javascript:;">修改</a>
+				</div>
+				<div class="clear">
+					还没有创建发票信息
+				</div>
+				<div class="invoice-value">
+					<p>增值税专用发票:</p>
+					<a href="javascript:;">修改</a>
+				</div>
+				<div class="clear">
+					还没有创建发票信息
+				</div>
+				<div>
+					<h3>常用邮递信息<a href="javascript:;" style="float: right;font-size: 14px">修改</a></h3>
+				</div>
+				<div class="clear">
+					还未填写邮递信息。
+				</div>
+			</div>
+		</div>
+		<div class="Application-invoice a">
+			<div class="box-content">
+				<div class="Invoice-prompt">
+					根据税务局要求，2018 年 6 月 1 日起码市不再支持开具发票，仅提供资金托收托付服务。如有开票要求请于 2018 年 5 月 30 日前提交或与开发服务商协商开票。
+				</div>
+				<h3>发票申请</h3>
+				<div class="invoice-amount">
+					可开票金额:￥0
+				</div>
+				<button>开具发票</button>
+				<h3>开票记录</h3>
+				<div class="Invoice-records">
+					<span>发票金额</span>
+					<span>发票抬头 / 单位名称</span>
+					<span>申请时间</span>
+					<span>状态</span>
+					<span>驳回理由</span>
+					<span>操作</span>
+					<span>暂无记录</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container text-right ">
+			<img src="img/logo.png" alt="">
+			<span>Copyright © 2014-2018</span>
+		</div>
+	</div>
+<script src="js/QQ.Contact.Information.js"></script>
+<script src="js/info.js"></script>
+</body>	
+</html>	

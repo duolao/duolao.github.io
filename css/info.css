@@ -3,46 +3,120 @@
 	margin:0;
 }
 body{
-	background-color:#F0F2F5
+	background-color:#F0F2F5;
+}
+header{
+	box-shadow: 0 3px 3px #ddd;
 }
 .log-nav-left{
 	position: relative;
 }
 .log-nav-left a{
+	display: inline-block;
+	width: 60px;
+	height: 70px;
 	color: #333;
 	font-size: 14px;
-	margin-left: 50px;
-	text-decoration: none !important
+	margin-left: 30px;
+	text-decoration: none !important;
 }
-.log-nav-left a:hover{
-	color:#5293df
+.help{
+	width: 60px;
+	position: relative;
+	text-align: center;
+	display: inline-block;
+}
+.help>ul{
+	font-size: 13px;
+	width: 80px;
+	color: #fff;
+	background-color: #2D3236;
+	display: none;
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #ccc
+
+}
+.help>ul li{
+	height: 40px;
+	line-height: 40px;
+	cursor: pointer;
+
+}
+.help:hover>ul{
+	display: block;
+}
+.log-nav-left a:hover {
+	color:#5293df;
+}
+.personage{
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+.personage img{
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+	margin-right: 8px
+}
+.personage>ul{
+	display: none;
+}
+.personage>ul li{
+	background-color: #fff;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	padding-left: 15px;
+	border-bottom:  1px solid #F7F6F2;
+	cursor: pointer;
+}
+.personage>ul li:hover{
+	background-color: #4289DB;
+	color: #fff;
+}
+.personage:hover>ul{
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+	border: 1px solid #F7F6F2;
+	box-shadow: 2px 2px 2px #eee,-2px 0px 2px #eee
+
 }
 .Business-center{
-
 	height: 75px;
-	margin:0 auto;
 	line-height: 75px;
 }
 .Business-center a{
 	/*margin-left: 10px*/
 }
+.Business-center .fa-long-arrow-right{
+	margin-left: 5px;
+	color: #8F9297
+}
 .Business-center span{
-	margin-left: 10px
+	color: #8F9297
 }
 .message-box{
-	/*width: 980px;*/
-	height: 942px;
-	margin: 0 auto;
+	height: 600px;
+	
 }
 .message-left{
-	width: 220px;
 	float: left;
 }
 .message-right{
 	width: 750px;
-	height: 524px;
+	height: 754px;
 	background-color: #fff;
 	float: right;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 1px #D7DDDD,-1px -1px 1px #D7DDDD;
+
 }
 .ul-one{
 	border: 1px solid #e6e6e6;
@@ -57,20 +131,46 @@ body{
 	line-height: 35px;
 	padding-left: 20px
 }
+.fa-check-circle-o{
+	margin-left: 89px;
+}
 .list-o{
 	background-color: #F0F2F5;
 	height:45px;
 	line-height: 45px;
 	padding-left: 20px;
 	cursor: pointer;
+	color: #979FA8;
 }
-ul{
-	border: 1px solid #ccc;
+.message-left ul{
+	border: 1px solid #ddd;
+	margin-bottom: 40px;
 	border-radius: 5px;
 
 }
+.message-left ul li{
+	box-shadow: 0 -1px 0px #fff;
+	border-radius: 2px;
+	border: 1px solid #ddd;
+}
 .fa-navicon{
 	display: none;
+}
+.footer{
+/*	position: absolute;
+	bottom: 0;*/
+	float: left;
+	width: 100%;
+	height: 58px;
+	background-color:#1f2d3d;
+    color: #8796a8;
+    line-height: 58px;
+}
+.footer img{
+	width: 42px;
+	height: 20px;
+	float: left;
+	margin-top: 20px;
 }
 @media screen and (max-width: 580px){
 	.log-nav-left a{
@@ -85,4 +185,200 @@ ul{
 		display: block;
 	}
 
+}
+.container{
+	padding-left: 115px;
+	padding-right: 115px;
+	min-width: 1200px;
+}
+.box-content{
+	width: 582px;
+	margin:40px auto;
+
+}
+.hint{
+	width: 100%;
+	height: 36px;
+	background-color: #FFF6DE;
+	line-height: 36px;
+	padding-left: 20px;
+	color: #979fa8; 
+}
+.hint span{
+	color: #F78435
+}
+.authentication{
+	height: 153px;
+	border: 1px solid #ddd;
+	margin-top: 15px;
+	line-height: 153px;
+	margin-bottom: 30px;
+}
+.authentication img{
+	width: 80px;
+	height: 80px;
+	margin-left: 40px
+}
+.authentication span{
+	border: 1px solid #ddd;
+	font-size: 12px;
+	color: #ddd;
+	border-radius: 8px;
+	padding:3px;
+	margin-left: 20px
+}
+.box-content h3{
+	font-size: 145%;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 25px;
+}
+.message-right p{
+	color: #8796A8;
+	font-size: 14px;
+	margin:15px 0;
+}
+.work em{
+	padding-left: 60px;
+	font-style: normal;
+}
+.work a{
+	float: right;	
+}
+.work-mobile{
+	margin:50px 0;
+}
+.work-mail{
+	margin-top: 20px
+}
+.work-mail span{
+	background-color: #FCE8E6;
+	color: #E73B0B;
+	padding: 5px 6px;
+	border-radius: 3px;
+	margin-left: 5px
+}
+.work-mobile span{
+	background-color: #EFF9F1;
+	color: #65C279;
+	padding: 5px 6px;
+	border-radius: 3px;
+	margin-left: 5px
+}
+.linkman{
+	margin-bottom: 30px;
+}
+.linkman span{
+	padding-left: 80px;
+}
+.linkman a{
+	float: right;	
+}
+.enterprise-certification{
+	width: 750px;
+	height: 560px;
+	background-color: #fff;
+	float: right;
+	display: none;
+	box-shadow: 1px 1px 1px #D7DDDD,-1px -1px 1px #D7DDDD;
+}
+.enterprise-certification p{
+	font-size: 12px;
+	border-top: 1px solid #ddd;
+	margin:10px 0;
+	padding:25px 0;
+	color: #8796A8
+}
+.enterprise-certification label{
+	width: 116px;
+	height: 40px;
+	font-weight: 500
+}
+.enterprise-certification  input{
+	margin-left: 20px;
+	padding-left: 10px;
+	width: 291px;
+	height: 42px;
+	background-color: #F0F2F5;
+	border: none;
+	border-radius: 5px;
+	border: 1px solid #CAD3DE;
+}
+.credit{
+	margin-top: 25px;
+}
+.Invoice-prompt{
+	background-color: #FFF6DE;
+	color: #EC6F64;
+	padding:8px 15px;
+}
+.invoice-value p{
+	float: left;
+	color:#333;
+}
+.invoice-value a{
+	float: right;
+}
+.clear{
+	clear: both;
+	background-color: #F8F9FB;
+	color: #ccc;
+	height: 62px;
+	line-height: 62px
+}
+
+.contract-related{
+	width: 750px;
+	height: 560px;
+	background-color: #fff;
+	float: right;
+	box-shadow: 1px 1px 1px #D7DDDD,-1px -1px 1px #D7DDDD;
+	display: none;
+}
+.related-background{
+	background-color: #F8F9FB;
+	height: 145px
+}
+.related-background p{
+	color: #000;
+	font-size: 14px;
+	margin:20px 10px;
+}
+.invoice-is-set{
+	width: 750px;
+	height: 560px;
+	background-color: #fff;
+	float: right;
+	display: none;
+	box-shadow: 1px 1px 1px #D7DDDD,-1px -1px 1px #D7DDDD;
+}
+.Application-invoice{
+	width: 750px;
+	height: 560px;
+	background-color: #fff;
+	float: right;
+	display: none;
+	box-shadow: 1px 1px 1px #D7DDDD,-1px -1px 1px #D7DDDD;
+}
+.invoice-amount{
+	background-color: #F8F9FB;
+	height: 88px;
+	line-height: 88px;
+	font-size: 18px;
+	text-align: center;
+}
+.Application-invoice button{
+	color: #fff;
+	background-color: #4276C9;
+	width: 126px;
+	height: 42px;
+	border:none;
+	border-radius: 4px;
+	margin: 30px 0;
+}
+.Invoice-records{
+	margin-top: 35px;
+}
+.Invoice-records span{
+	padding-right: 30px;
+	font-size: 12px
 }
