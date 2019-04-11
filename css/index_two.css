@@ -70,6 +70,9 @@
        margin: auto;
        
    }
+   .wgp_txt li{
+       width: 100px;
+   }
    .wgp_webthree_box video{
     width: 100%;
     height: 100%;

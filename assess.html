@@ -15,9 +15,9 @@
         <div class="wgp_webone_wrap">
             <img src="./img/tianyanlogos.png" alt="" class="wgp_logo fl">
             <ul class="fl wgp_webone_oneuls">
-                <li><a href="#">项目</a></li>
-                <li><a href="#">估价</a></li>
-                <li><a href="#">会员</a></li>
+                <li><a href="http://119.23.230.195/three/items.html ">项目</a></li>
+                <li><a href="http://119.23.230.195/three/assess.html">估价</a></li>
+                <li><a href="http://119.23.230.195/three/vip.html">会员</a></li>
                 <li class="wgp_webone_lastliss">
                     <a href="#">帮助</a>
                     <div class="wgp_help">
@@ -143,8 +143,12 @@
                 </li>
                 <div class="wgpclear"></div>
             </ul>
-            <button type="button" class="wgp_btn">下一步</button>
+            <button type="button" class="wgp_btn">下一步<a class="wgpbtna" href="./website.html">go</a></button>
         </div>
+    </div>
+    <div class="wgp_qq">
+        <img src="./img/wgp_QQ.png" alt="">
+        <a href="#">联系我们</a>
     </div>
     <div class="wgp_webfive_box">
         <div class="wrap_two">
@@ -153,10 +157,8 @@
         </div>
 
     </div>
-    <div class="wgp_qq">
-        <img src="./img/wgp_QQ.png" alt="">
-        <a href="#">联系我们</a>
-    </div>
+
+    
     <script>
         $(function () {
             //触碰变色
@@ -203,6 +205,7 @@
                 var wgpgamemachp = wgpgamemach.find("p")
                 var wgpreptilep = wgpreptile.find("p")
                 var wgpbtnone = wgpwebfourbox.find(".wgp_btn")
+                var wgpbtna = wgpbtnone.find(".wgpbtna")
 
                 //最后里面点击
                 var wgparrss = []
@@ -221,7 +224,6 @@
                     }
                     $(this).css("background", "#4389d9")
                     if (wgparrss.length != 0) {
-
                         wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
                     } else {
                         wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" })
@@ -309,14 +311,27 @@
                     }
                     if (wgparr.length == 0) {
                         wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" })
+
                     } else {
                         wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
+                        //     if(wgpbtnone.css("background") == "#4289db"){
+                        //     wgpbtnone.append("<a></a>")
+                        //     alert(1)
+                        // }
+
                     }
                     // if(wgpadds.eq(wgpindexone).css("display") == "block"){
                     //     wgpbtnone.css({ "background": "#4289db", "cursor": "pointer" })
                     // }else{
                     //     wgpbtnone.css({ "background": "#8796a8", "cursor": "not-allowed" }) 
                     // }
+                    if (wgpbtnone.css("backgroundColor") == "rgb(66, 137, 219)") {
+                        wgpbtna.css("display", "block")
+                        // alert(1)
+                    } else {
+                        wgpbtna.css("display", "none")
+                    }
+
                 })
                 //六个移入移除
                 wgpwebfourli.on("mouseover", function () {
@@ -351,12 +366,8 @@
                     }
                 })
                 //按钮
-                wgpbtnone.on("click", function () {
-
-                })
             }
             zed()
-
             function setshit() {
                 var wgpwebonebox = $(".wgp_webone_box")
                 var wgpweboneoneuls = wgpwebonebox.find(".wgp_webone_oneuls")

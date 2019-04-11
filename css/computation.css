@@ -49,7 +49,7 @@ button{
     clear: both;
 }
 .wrap{
-    width: 993px;
+    width: 74.5%;
     height: auto;
     overflow: hidden;
     margin: 0 auto;
@@ -67,7 +67,7 @@ button{
     
 }
 .wgp_webone_wrap{
-    width: 1293px;
+    /* width: 1293px; */
     height: 64px;
     margin: 0 auto;
     line-height: 64px;
@@ -289,7 +289,8 @@ button{
     line-height: 56px;
 }
 .wrap_two{
-    width: 1115px;
+    /* width: 1115px; */
+    padding: 0 20px;
     margin: 0 auto;
 }
 .wgp_webfive_box p{
@@ -298,4 +299,43 @@ button{
 }
 .wgp_webfive_box span{
     color: #8796a8;
+}
+@media screen and (min-width:1200px) {
+    
+}
+@media screen and (min-width:992px) and (max-width: 1199px) {
+
+
+}
+@media screen and (min-width: 768px) and (max-width:991px ){
+
+
+}
+
+@media screen and (max-width: 768px){
+    .wgp_logo{
+        width: 100px;
+        margin-top: 15px;
+    }
+    .wgp_webone_karsa{
+        display: none;
+    }
+    .wgp_webone_wrap ul{
+        margin:0 auto;
+    }
+    .wgp_webone_wrap ul li{
+        width: 35px;
+     }
+     .wgp_webtwo_step{
+         width:62px;
+         margin-right: 17px;
+         
+     }
+     .wgp_webone_imgtwo{
+         margin: 0;
+     }
+     .wgp_webone_imgthree{
+        padding: 0;
+     }
+
 }
