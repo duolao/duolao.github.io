@@ -11005,8 +11005,4 @@ if ( !noGlobal ) {
 }
 
 return jQuery;
-<<<<<<< HEAD
 }));
-=======
-}));
->>>>>>> master
