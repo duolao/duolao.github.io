@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .lj-header-bg {
     background-image: url(../img/lj_lxt_bg.jpg);
     height: 380px;
@@ -124,12 +125,16 @@
     overflow: hidden;
     padding-top:50px;
     padding-bottom: 30px;
+    margin: 0;
 }
 .lj_tel2{
  position: relative;
  background-color: #ffffff;
  border-radius: 25px;
- /* margin-right: 10px; */
+ float: left;
+}
+.lj_tel2-img {
+ float: left;
 }
 .lj-footer-dh {
     position: absolute;
@@ -208,6 +213,13 @@
     animation-iteration-count: infinite;
     animation-duration: 1s;
 }
+.lj-mmb{
+    padding-left: 100px;
+}
+/* .lj-wen-txt-bb {
+    margin-left: 0;
+    margin-right: 0;
+} */
 @keyframes scaleDraw {
     0%{
         transform: scale(1);
@@ -228,7 +240,7 @@
     }
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
 	.container,.container-fluid {
 		width: 750px
     }
@@ -249,4 +261,4 @@
 	.container,.container-fluid {
 		width: auto
 	}
-}
+} */
