@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>我的开发宝/开发宝充值</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/dny_myDevelopment.css" />
+    <link rel="stylesheet" href="./css/dny_myPaydeposit.css" />
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="javascript:;" class="navbar-brand"><img src="./img/dny_logo (2).png" alt="" /></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="items.html">项目</a></li>
+                    <li><a href="assess.html">估价</a></li>
+                    <li><a href="#">开发者</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+                <!-- 个人中心下拉 -->
+                <div class="dny_user-avatar navbar-right">
+                    <!-- 头像 -->
+                    <a href="JavaScript:;" class="dny_avatar-link">
+                        <img src="./img/dny_personal.png" height="40px" />
+                    </a>
+                    <!-- 下拉字体图标 -->
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    <!-- hover显示个人中心详情 -->
+                    <ul class="dny_avatar-menu">
+                        <li>
+                            <a>Hello, <span class="dny_username">dingny</span></a>
+                        </li>
+                        <li>
+                            <a href="/user/info"><span class="glyphicon glyphicon-user"></span><!-- react-text: 331 -->个人中心
+                                <!-- /react-text --></a>
+                        </li>
+                        <li>
+                            <a href="./myDevelopment.html">
+                                <span class="glyphicon glyphicon-briefcase"></span>我的开发宝
+                            </a>
+                            <!-- react-empty: 338 -->
+                            <a href="/user/projects">
+                                <span class="glyphicon glyphicon-pencil"></span><!-- react-text: 341 --> 我发布的项目
+                                <!-- /react-text -->
+                            </a>
+                            <a href="/user/quote">
+                                <span class="glyphicon glyphicon-list-alt"></span><!-- react-text: 344 --> 我的报价单
+                                <!-- /react-text -->
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span class="glyphicon glyphicon-log-out"></span><!-- react-text: 348 --> 退出登录
+                                <!-- /react-text -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 内容 -->
+    <div class="container dny_content">
+        <div class="dny_cont">
+            <div style="width:100%;">
+                <div class="dny_breadcrumb-wrap">
+                    <ul class="dny_breadcrumbs dny_clearfix">
+                        <li><a href="/user/mpay/account">我的开发宝</a></li>
+                        <li>开发宝充值</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="row dny_wrapper dny_flex-direction-row">
+                    <!-- 左边 -->
+                    <div class="dny_menu col-md-3 col-sm-3 col-xs-12">
+                        <div class="dny_side-nav">
+                            <ul>
+                                <li class="dny_side-nav-header">
+                                    <span> </span>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="./myDevelopment.html">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>账户概览</span>
+                                    </a>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="./myPayrecords.html">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>交易记录</span>
+                                    </a>
+                                </li>
+                                <li class="dny_side-nav-item">
+                                    <a class="dny_nav-link-2" href="./myPaypassword.html">
+                                        <span class="glyphicon glyphicon-list-alt dny_icon"></span>
+                                        <span>交易密码</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 右边 -->
+                    <div class="dny_content-right col-md-9  col-sm-9 col-xs-12">
+                        <div class="dny_box">
+                            <span class="row">
+                                <div class="col-md-1"></div>
+                                <div class="dny_tip dny_red dny_shadow col-md-10 col-xs-12">
+                                    <div>
+                                        根据税务局要求，2018 年 6 月 1 日起码市不再支持开具发票，仅提供资金托收托付服务。如有开票要求请于 2018 年 5 月 30 日前提交或与开发服务商协商开票。
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </span>
+                            <div class="dny_deposit row">
+                                <div class="col-md-1"></div>
+                                <div class="dny_pay-account col-md-10 col-xs-12">
+                                    <form action="/api/mpay/deposit/redirect" method="post" target="_blank">
+                                        <div class="dny_pay-platforms">
+                                            <div class="dny_two-columns row">
+                                                <div class="dny_left col-md-5 col-xs-12">
+                                                    <h2>选择充值方式</h2>
+                                                </div>
+                                                <div class="dny_right col-md-7 col-xs-12">
+                                                    <div>
+                                                        <div class="dny_platformIcon">
+                                                            <label class="dny_radio-container">
+                                                                <span class="dny_icon-container dny_radio-checked ">
+                                                                    <input type="radio" name="platform" value="Alipay">
+                                                                </span>
+                                                            </label>
+                                                            <span class="dny_alipay-icon glyphicon glyphicon-ruble">&nbsp;支付宝</span>
+                                                        </div>
+                                                        <div class="dny_platformIcon">
+                                                            <label class="dny_radio-container">
+                                                                <span class="dny_icon-container">
+                                                                    <input type="radio" name="platform" value="Weixin">
+                                                                </span>
+                                                            </label>
+                                                            <span class="glyphicon glyphicon-jpy">&nbsp;微信支付</span>
+                                                        </div>
+                                                        <div class="dny_platformIcon">
+                                                            <label class="dny_radio-container">
+                                                                <span class="dny_icon-container">
+                                                                    <input type="radio" name="platform" value="Abc">
+                                                                </span>
+                                                            </label>
+                                                            <span class="glyphicon glyphicon-modal-window">&nbsp;银行转账</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 大选项卡 -->
+                                        <div class="dny_Btabs">
+                                            <!-- 1 -->
+                                            <div class="dny_Btab">
+                                                <div class="dny_deposit-price">
+                                                    <div class="dny_two-columns row">
+                                                        <div class="dny_left col-md-5 col-xs-12">
+                                                            <h2>充值金额</h2>
+                                                            <p>每次充值金额不可低于 0.01元。</p>
+                                                        </div>
+                                                        <div class="dny_right col-md-7 col-xs-12">
+                                                            <label for="price">
+                                                                <input type="text" id="price" name="price" placeholder="0.01 ~ 100,000">元
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dny_deposit-submit">
+                                                    <button type="button" class="dny_ok">立即充值</button>
+                                                    <a href="myDevelopment.html"><button type="button">取消</button></a>
+                                                </div>
+                                            </div>
+                                            <!-- 2 -->
+                                            <div class="dny_Btab">
+                                                <div class="dny_deposit-price">
+                                                    <div class="dny_two-columns row">
+                                                        <div class="dny_left col-md-5 col-xs-12">
+                                                            <h2>充值金额</h2>
+                                                            <p>每次充值金额不可低于 0.01元。</p>
+                                                        </div>
+                                                        <div class="dny_right col-md-7 col-xs-12">
+                                                            <label for="price">
+                                                                <input type="text" id="price2" name="price" placeholder="0.01 ~ 100,000">元
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dny_deposit-submit">
+                                                    <button type="button" class="dny_ok">立即充值</button>
+                                                    <a href="myDevelopment.html"><button type="button">取消</button></a>
+                                                </div>
+                                            </div>
+                                            <!-- 3 -->
+                                            <div class="dny_Btab">
+                                                <div class="dny_tabborder">
+                                                    <div class="dny_bank-tabs">
+                                                        <ul>
+                                                            <li class="dny_tab-checked">
+                                                                <span>在线支付</span>
+                                                            </li>
+                                                            <li class="">
+                                                                <span>线下转账</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- 小选项卡 -->
+                                                <div class="dny_Ltabs">
+                                                    <div class="dny_tab">
+                                                            <div class="dny_deposit-price">
+                                                                <div class="dny_two-columns row">
+                                                                    <div class="dny_left col-md-5 col-xs-12">
+                                                                        <h2>充值金额</h2>
+                                                                        <p>每次充值金额不可低于 0.01 元。</p>
+                                                                    </div>
+                                                                    <div class="dny_right col-md-7 col-xs-12">
+                                                                        <label for="price">
+                                                                            <input type="text" id="price3" name="price" placeholder="0.01 ~ 100,000">元
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="dny_deposit-submit">
+                                                                <button type="button" class="dny_ok">立即充值</button>
+                                                                <a href="myDevelopment.html">
+                                                                    <button type="button">取消</button>
+                                                                </a>
+                                                                <p>通过在线银行转账充值的金额将会在半小时内到账</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="dny_tab">
+                                                        <div class="dny_bank-info">
+                                                            <p class="dny_tabinfo">
+                                                                请在转账时务必备注信息，并在转账后联系码市客服人员为您及时确认并处理。
+                                                            </p>
+                                                            <article class="dny_tabbox">
+                                                                <div class="dny_tabinfo">
+                                                                    <p>码市账户名：<em>深圳市码市科技有限公司</em></p>
+                                                                    <p>开户行：<em>中国农业银行深圳免税大厦支行</em></p>
+                                                                    <p>码市账号：<em>4103 4100 0400 12245</em></p>
+                                                                </div>
+                                                                <div class="dny_tabinfo">
+                                                                    <p>请在转账时备注以下信息：</p>
+                                                                    <p><em>码市开发宝账户充值，充值账户：dingny</em></p>
+                                                                </div>
+                                                                <div class="dny_tabinfo">
+                                                                    <p><em>请在转账后联系码市客服：</em></p>
+                                                                    <p>客服电话：0755-82788632 或将转账凭证截图发送至 support@codemart.com</p>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <footer class="container-fluid">
+        <div class="dny_footer container">
+            <div class="dny_foot" style="width: 1116px;">
+                <div class="dny_brand">
+                    <a href="index.html"><img src="./img/dny_logo (2).png" alt="天眼" /></a>
+                </div>
+                <div>Copyright&nbsp;©&nbsp;2014-2018</div>
+            </div>
+        </div>
+    </footer>
+    <!-- 联系我们 -->
+    <div>
+        <div class="dny-contact-us-container">
+            <div class="dny-contact-us-content">
+                <div class="dny-button-container">
+                    <div class="dny-button" id="dny-contact-button">
+                        <img src="./img/dny_qq.png">
+                        联系我们
+                    </div> 
+                </div>
+                <div class="dny-pop-container animated dny-bounce-in-up" id="dny-contact-pop" data-show="false" style="display: none;">
+                    <div class="dny-title">在线咨询请添加客服 QQ</div>
+                    <div class="dny-qr">
+                        <img src="./img/dny_qq_ewm.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 联系我们
+        $('.dny-button-container').click(function(){
+            $('.dny-pop-container').toggle();
+        });
+        // 大选项卡
+        $('.dny_icon-container').click(function(){
+            $('.dny_icon-container').removeClass('dny_radio-checked');
+            $(this).addClass('dny_radio-checked');
+        })
+        $('.dny_platformIcon').click(function(){
+            //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+            var _index = $(this).index();
+            //让内容框的第 _index 个显示出来，其他的被隐藏
+            $(".dny_Btabs>.dny_Btab").eq(_index).show().siblings().hide();
+        })
+        // 小选项卡
+        $('.dny_bank-tabs li').click(function(){
+            var _indx = $(this).index();
+            $(".dny_Ltabs>.dny_tab").eq(_indx).show().siblings().hide();
+            $(this).addClass("dny_tab-checked").siblings().removeClass("dny_tab-checked");
+        })
+    </script>
+  </body>
+</html>

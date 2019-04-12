@@ -1,9 +1,16 @@
 body{
     padding-top: 60px;
+    background-color: #f0f2f5;
+    height: auto;
+    position: relative;
+}
+html{
+    height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
     color: rgba(0,0,0,.85);
-    font-weight: 500;
+    /* font-weight: 300; */
+    font-weight: 500; 
 }
 ul,li{
     list-style: none;
@@ -77,6 +84,9 @@ nav{
 #navbar{
     line-height: 60px;
 }
+#navbar .navbar-left li a:hover{
+    color: skyblue;
+}
 /* 个人中心菜单 */
 .dny_user-avatar{
     position: relative;
@@ -102,9 +112,17 @@ nav{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: none;
+    /* display: block; */
 }
 .dny_user-avatar:hover .dny_avatar-menu{
     display: inline-block;
+}
+.dny_avatar-menu li a:hover{
+    background-color: rgb(81, 167, 241);
+    color: #fff;
+}
+.dny_avatar-menu li a span{
+    margin-right: 15px;
 }
 .dny_header ul{
     margin: 0;
@@ -142,13 +160,14 @@ nav{
 
 /* 内容 */
 /* link:dny_myBrowes.css */
-
+/* link:dny_myRecord.css */
+/* link:dny_myPassword.css */
 
  /* 底部 */
- footer{
+footer{
     width: 100%;
-    /* bottom: 0px;
-    position: absolute; */
+    position: absolute;
+    bottom: 0;
     box-sizing: border-box;    /*规定带边框的框*/
     background: #050708;
     color: #8796a8;
