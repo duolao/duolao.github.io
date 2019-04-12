@@ -1,6 +1,10 @@
 body{
-    background-color: #f0f0f0;
+    background-color: #f0f2f5;
     padding-top: 90px;
+    padding-bottom: 90px;
+}
+label{
+    font-weight: normal
 }
 .zll_img{
      height: 99%;
@@ -20,21 +24,53 @@ body{
 .row{
     margin-top: 15px;
 }
-.zll_btn{
+.zll-col-li{
+    background-color: #e6ebf0;
+    padding: 7px 0 7px 21px;
+    box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+}
+.zll-col-li>span{
+    font-size: 12px;   
+}
+.zll-col-lg-div>ul>li{
+
+}
+
+/* .zll_btn{
     text-align: left;
     font-size: 12px;
 }
 .zll_btn_two{
     text-align: left;
+} */
+.zll_a{
+    /* margin-top: 20px; */
+    background-color: #f0f2f5;
+    height: 48px;
+    line-height: 48px;
+    box-shadow: 0 -1px 0 0 #e6e6e6, inset 0 1px 0 0 #fff, 0 2px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
 }
 .zll_a{
-    margin-top: 20px;
+    color: #979fa8;
+    text-decoration: none;
+}
+.zll-a-span{
+    display: inline-block;
+    margin-left: 20px; 
+}
+.active{
+    background-color: #fff;
+}
+.zll-col{
+    margin-top: 40px;
 }
 /* .nav>li>a{
     padding: 0 15px;
 } */
 .zll_content{
+    /* padding: 0 15px; */
     background-color: #fff;
+    padding-bottom: 100px;
 }
 .col_div_one{
     margin-top: 20px;
@@ -45,14 +81,22 @@ body{
     margin-right: 35px;
 }
 .col_div_two{
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    /* margin-left: 35px; */
+    /* margin-right: 35px; */
+    margin-top: 40px;
+    margin-bottom: 40px;      
 }
 .col_div_two>p{
-    color: #333;
+        color: #8796a8;
 }
+.col_div_two_kaipiao{
+background-color: #fff6de;
+}
+.col_div_two_kaipiao>p{
+    color: #e84d60;
+    padding: 0 30px;
+}
+
 .col_div_one_span{
     font-size: 20px;
     color: #000;
@@ -62,6 +106,8 @@ body{
     color: #dde3eb;
 }
 .col_div_three{
+    /* margin-top:35px; */
+    padding-top: 40px; 
     margin-left: 35px;
     margin-right: 35px;
 }
@@ -69,22 +115,74 @@ body{
     text-align: left;
     font-weight: 0;
 }
+
 .col_div_two .form-horizontal .control-label{
     padding-top:0;
 
 } 
-/* .control-label {
-    font-weight: 0;
-} */
 .zll_from{
     margin-top: 40px;
 }
 .zll_span{
     font-size: 12px;
 }
-.glyphicon-pencil {
+.glyphicon-edit {
     color: #4289dc;
 }
 .ptfp{
-    margin-top: 80px;
+    margin: 60px;
+    background-color: #f8f9fb;
+    padding: 30px;
+}
+.ptfp_two{
+    margin-top: 50px;
+    padding: 90px;
+}
+.bg-fo{
+    background-color: #f0f0f0;
+    margin-top: 30px;
+    text-indent: 1em;
+    margin-bottom: 40px;
+    padding-right: 30px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+}
+.zll_set_form{
+    margin-top: 40px;
+}
+.zll_fp_div{
+    padding: 40px 0;
+    background-color: #f0f0f0;
+    /* height: 120px; */
+}
+.zll_fp_div>p{
+    font-size: 12px;
+    color: #727f8f;
+       
+}
+.zll_fp_div>h4>span{
+    color: #4289dc;
+}
+.zll_fp_h4{
+    padding: 20px 0 30px 0;
+}
+.zll_fp_h4_two{
+    padding: 20px 0 0 0;
+}
+/* 账号信息单独样式 */
+.zll_zhxx_sj{
+    font-size: 12px;
+    padding: 3px;
+        color: #65c279;
+    background-color: rgba(100,194,120,.1);
+}
+.zll_zhxx_yx{
+    background-color:rgba(229,30,10,.1); 
+    color: #e61e0b;
+    font-size: 12px;
+    padding: 3px;
+}
+.zll_zhxx_from{
+    margin-top: 40px;
 }
