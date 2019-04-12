@@ -143,7 +143,7 @@
                 </li>
                 <div class="wgpclear"></div>
             </ul>
-           
+
         </div>
         <button type="button" class="wgp_btn">下一步<a class="wgpbtna" href="./website.html">go</a></button>
     </div>
@@ -159,7 +159,7 @@
 
     </div>
 
-    
+
     <script>
         $(function () {
             //触碰变色
@@ -379,7 +379,8 @@
                 var wgpinformbox = wgpweboneman.find(".wgp_inform_box")
                 var wgpperbox = wgpweboneman.find(".wgp_per_box")
                 var wgpperboxp = wgpperbox.find("p")
-                var wgpperboxptwo =  wgpperbox.find("p").eq(1)
+                var wgpperboxptwo = wgpperbox.find("p").eq(1)
+                var wgpperboxpthree = wgpperbox.find("p").eq(2)
                 var wgpweboneimgtwo = wgpweboneman.find(".wgp_webone_imgtwo")
                 var wgpwebonekarsa = wgpweboneman.find(".wgp_webone_karsa")
                 var wgpwebonebuff = wgpweboneman.find(".wgp_webone_buff")
@@ -413,14 +414,17 @@
                     //   $(this).css({top:$(this).position().top,left:$(this).position().left}).animate({width:$(this).width()*2,height:$(this).height()*2,top:$(this).position().top-$(this).height(),
                     // left:$(this).position().left-$(this).width()})
                 })
-                wgpperboxptwo.on("click",function(){
-                    $(window).attr('location',"exploitation.html")
+                wgpperboxptwo.on("click", function () {
+                    $(window).attr('location', "exploitation.html")
+                })
+                wgpperboxpthree.on("click", function () {
+                    $(window).attr('location', "myDevelopment.html")
                 })
             }
             setshit()
 
-            
-            
+
+
         })
     </script>
 </body>

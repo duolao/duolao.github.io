@@ -15,9 +15,9 @@
         <div class="wgp_webone_wrap">
             <img src="./img/tianyanlogos.png" alt="" class="wgp_logo fl">
             <ul class="fl wgp_webone_oneuls">
-                    <li><a href="items.html ">项目</a></li>
-                    <li><a href="assess.html">估价</a></li>
-                    <li><a href="vip.html">会员</a></li>
+                <li><a href="items.html ">项目</a></li>
+                <li><a href="assess.html">估价</a></li>
+                <li><a href="vip.html">会员</a></li>
                 <li class="wgp_webone_lastliss">
                     <a href="#">帮助</a>
                     <div class="wgp_help">
@@ -777,15 +777,15 @@
     </div>
     <button type="button" class="wgp_btn">下一步<a class="wgpbtna" href="./computation.html">go</a></button>
     <div class="wgp_rubish">
-      <div class="wgp_webfive_box">
-        <div class="wrap_two">
-            <p class="fl"><a href="#">天 眼</a></p>
-            <span class="fr">Copyright © 2014-2018</span>
-        </div>
+        <div class="wgp_webfive_box">
+            <div class="wrap_two">
+                <p class="fl"><a href="#">天 眼</a></p>
+                <span class="fr">Copyright © 2014-2018</span>
+            </div>
 
-    </div>  
+        </div>
     </div>
-    
+
     <div class="wgp_qq">
         <img src="./img/wgp_QQ.png" alt="">
         <a href="#">联系我们</a>
@@ -802,7 +802,8 @@
                 var wgpinformbox = wgpweboneman.find(".wgp_inform_box")
                 var wgpperbox = wgpweboneman.find(".wgp_per_box")
                 var wgpperboxp = wgpperbox.find("p")
-                var wgpperboxptwo =  wgpperbox.find("p").eq(1)
+                var wgpperboxptwo = wgpperbox.find("p").eq(1)
+                var wgpperboxpthree = wgpperbox.find("p").eq(2)
                 var wgpweboneimgtwo = wgpweboneman.find(".wgp_webone_imgtwo")
                 var wgpwebonekarsa = wgpweboneman.find(".wgp_webone_karsa")
                 var wgpwebonebuff = wgpweboneman.find(".wgp_webone_buff")
@@ -836,8 +837,11 @@
                     //   $(this).css({top:$(this).position().top,left:$(this).position().left}).animate({width:$(this).width()*2,height:$(this).height()*2,top:$(this).position().top-$(this).height(),
                     // left:$(this).position().left-$(this).width()})
                 })
-                wgpperboxptwo.on("click",function(){
-                    $(window).attr('location',"exploitation.html")
+                wgpperboxptwo.on("click", function () {
+                    $(window).attr('location', "exploitation.html")
+                })
+                wgpperboxpthree.on("click", function () {
+                    $(window).attr('location', "myDevelopment.html")
                 })
             }
             setshit()
@@ -895,7 +899,7 @@
                     if (n == wgptrinputs.length) {
                         wgpinput.eq(wgpindexone).prop("checked", true)
                         // wgpvaluemath.text(parseInt(wgpvaluemath.text())+wgptrinputs.length)
-                    } 
+                    }
                     // else if (n < wgptrinputs.length) {
                     //     wgpvaluemath.text(parseInt(wgpvaluemath.text()) + parseInt(wgptrinputs.length - n))
                     // }
@@ -904,15 +908,15 @@
                         // wgpvaluemath.text(parseInt(wgpvaluemath.text())-wgptrinputs.length)
 
                     }
-                    if(parseInt(wgpvaluemath.text())>10){
-                        wgpbtn.css("background","#4389d9")
-                    }else{
-                        wgpbtn.css("background","#8796a8")  
+                    if (parseInt(wgpvaluemath.text()) > 10) {
+                        wgpbtn.css("background", "#4389d9")
+                    } else {
+                        wgpbtn.css("background", "#8796a8")
                     }
-                    if(wgpbtn.css("backgroundColor") == "rgb(67, 137, 217)"){
-                        wgpbtna.css("display","block")
-                    }else{
-                        wgpbtna.css("display","none")  
+                    if (wgpbtn.css("backgroundColor") == "rgb(67, 137, 217)") {
+                        wgpbtna.css("display", "block")
+                    } else {
+                        wgpbtna.css("display", "none")
                     }
                 })
                 wgpfixinp.on("click", function () {
@@ -930,14 +934,14 @@
                     wgpinputss.prop("checked", false)
                     wgptabinptwo13.prop("checked", true)
                     wgpvaluemath.text(wgparrs.length)
-                    wgpempty.css("background","#8895a5")
+                    wgpempty.css("background", "#8895a5")
                 })
                 wgpres.on("click", function () {
                     wgptabinptwo16.prop("checked", true)
                     wgptabinptwo15.prop("checked", true)
                     wgptabinptwo14.prop("checked", true)
                     wgpvaluemath.text(wgparrs.length + 3)
-                    wgpempty.css("background","#4289db")
+                    wgpempty.css("background", "#4289db")
                 })
                 wgpinput.css("visibility", "hidden")
 
@@ -950,7 +954,7 @@
                     var wgpinindex = $(this).index()
                     var trindex = $(this).parent().parent().next().find("input")
                     var trinlength = trindex.length
-                    var cc=0;
+                    var cc = 0;
 
                     if ($(this).is(':checked')) {
                         trindex.prop("checked", true)
@@ -972,7 +976,7 @@
                     //     wgpvaluemath.text(parseInt(wgpvaluemath.text())+trindex.length-cc)  
                     //     alert(1)      
                     // }
-                  
+
 
                 })
 
