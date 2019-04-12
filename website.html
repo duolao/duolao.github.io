@@ -802,6 +802,7 @@
                 var wgpinformbox = wgpweboneman.find(".wgp_inform_box")
                 var wgpperbox = wgpweboneman.find(".wgp_per_box")
                 var wgpperboxp = wgpperbox.find("p")
+                var wgpperboxptwo =  wgpperbox.find("p").eq(1)
                 var wgpweboneimgtwo = wgpweboneman.find(".wgp_webone_imgtwo")
                 var wgpwebonekarsa = wgpweboneman.find(".wgp_webone_karsa")
                 var wgpwebonebuff = wgpweboneman.find(".wgp_webone_buff")
@@ -834,6 +835,9 @@
                 wgpqq.on("mouseover", function () {
                     //   $(this).css({top:$(this).position().top,left:$(this).position().left}).animate({width:$(this).width()*2,height:$(this).height()*2,top:$(this).position().top-$(this).height(),
                     // left:$(this).position().left-$(this).width()})
+                })
+                wgpperboxptwo.on("click",function(){
+                    $(window).attr('location',"http://119.23.230.195/three/exploitation.html")
                 })
             }
             setshit()
