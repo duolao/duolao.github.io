@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/personal.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>发票设置</title>
+    <title>开票申请</title>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">项目</a></li>
-                <li><a href="#">估价</a></li>
+                <li><a href="./items.html ">项目</a></li>
+                <li><a href="./assess.html">估价</a></li>
                 <li><a href="#">开发者</a></li>
                 <li><a href="#">帮助</a></li>
             </ul>
@@ -43,15 +43,14 @@
                     <ul class="dropdown-menu">
                         <li role="separator"><a href="#">hello lay_zll</a></li>
                         <li role="separator" class="divider"></li>
-                        <li role="separator"><a href="#">个人中心</a></li>
+                        <li role="separator"><a href="./personal_zhxx.html">个人中心</a></li>
                         <li role="separator" class="divider"></li>
                         <li role="separator"><a href="#"></a></li>
-                        <li role="separator"><a href="#">Another action</a></li>
-                        <li role="separator"><a href="#">Another action</a></li>
+                        <li role="separator"><a href="./myDevelopment.html">我的开发宝</a></li>
+                        <li role="separator"><a href="#">我发布的项目</a></li>
+                        <li role="separator"><a href="#">我的报价单</a></li>
                         <li role="separator" class="divider"></li>
-                        <li role="separator"><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li role="separator" class="divider"><a href="#">Separated </a></li>
+                        <li role="separator"><a href="#">退出登录 </a></li>
                     </ul>
                 </li>
             </ul>
@@ -83,55 +82,51 @@
     <div class="container">
         <div>个人中心<span aria-hidden="true">&rarr;</span> 账户信息</div>
         <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">\
                 <ul class="list-unstyled">
-                    <li role="separator">
-                        <a href="#" class="zll_a">
-                            <button type="button" class="zll_btn btn btn-large btn-block btn-default"
-                                disabled="disabled">
-                                基本信息
-                            </button>
-                        </a>
-                    </li>
-                    <li role="separator">
-                        <a href="#">
-                            <button type="button" class="zll_btn_two btn btn-large btn-block btn-default">
-                                <span class="glyphicon glyphicon-user"></span>账号信息
-                            </button>
-                        </a>
-                    </li>
+                    <li class="col-xs-12 col-sm-12 col-lg-12 zll-col-li" role="separator"><span>基本信息</span></li>
+                    <li><a href="./personal_zhxx.html" class="col-xs-12 col-sm-12 col-lg-12 zll_a ">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="zll-a-span">账号信息</span>
+                        </a></li>
                 </ul>
                 <ul class="list-unstyled">
-                    <li role="separator" class="zll_a">
-                        <a href="#">
-                            <button type="button" class="zll_btn btn btn-large btn-block btn-default"
-                                disabled="disabled">
-                                发票管理
-                            </button>
-                        </a>
-                    </li>
-                    <li role="separator">
-                        <a href="#">
-                            <button type="button" class="zll_btn_two btn btn-large btn-block btn-default">
-                                <span class="glyphicon glyphicon-list-alt"></span><span>发票设置</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li role="separator">
-                        <a href="#">
-                            <button type="button" class="zll_btn_two btn btn-large btn-block btn-default">
-                                <span class="glyphicon glyphicon-user"></span><span>开票申请</span>
-                            </button>
-                        </a>
-                    </li>
+                    <li class="col-xs-12 col-sm-12 col-lg-12 zll-col-li zll-col" role="separator"><span>发票管理</span></li>
+                    <li><a href="./personal_set.html" class="col-xs-12 col-sm-12 col-lg-12 zll_a">
+                            <span class="glyphicon glyphicon-list-alt"></span>
+                            <span class="zll-a-span">发票设置</span>
+                        </a></li>
+                    <li><a href="./personal_kpsq.html" class="col-xs-12 col-sm-12 col-lg-12 zll_a active">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            <span class="zll-a-span">开票申请</span>
+                        </a></li>
                 </ul>
+              
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 zll_content">
-                <div class="zll_div_one col_div_two">
+                <div class="zll_div_one col_div_two col_div_two_kaipiao">
                     <p>根据税务局要求，2018 年 6 月 1 日起码市不再支持开具发票，仅提供资金托收托付服务。如有开票要求请于 2018 年 5 月 30 日前提交或与开发服务商协商开票。</p>
                 </div>
-                <div class="">
-
+                <div>
+                    <h4>发票申请<span class="zll_span glyphicon glyphicon-info-sign">请在项目结束后 7 天之内提出发票申请，过期将无法开票</span></h4>
+                    <hr>
+                    <div class="text-center zll_fp_div">
+                        <h4>可开票金额:<span>￥0</span></h4>
+                        <p>已验收阶段的金额才能开具发票</p>
+                    </div>
+                    <h4 class="zll_fp_h4">暂无可开具发票的款项。</h4>
+                    <button class="btn btn-primary ">开具发票</button>
+                    <h4 class="zll_fp_h4_two">开票记录<span class="zll_span glyphicon glyphicon-info-sign">发票申请被驳回后，发票服务费将自动退回您的开发宝账号</span></h4>
+                    <hr>
+                    <ul class="list-inline">
+                        <li>发票金额</li>
+                        <li>发票抬头 / 单位名称</li>
+                        <li>申请时间</li>
+                        <li>状态</li>
+                        <li>驳回理由</li>
+                        <li>操作</li>
+                        <li>暂无记录</li>
+                    </ul>
                 </div>
             </div>
         </div>
