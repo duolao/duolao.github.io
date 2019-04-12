@@ -50,15 +50,21 @@ li{
     display: flex;
 }
 .wzr_body{
-    max-width: 980px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* min-width: 980px; */
+    /* max-width: 980px; */
     width: 980px;
     margin: 0 auto;
+    /* text-align: center; */
     padding: 2.5rem .5rem;
     padding-top: 64px;
 }
 .wzr_body_box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 .wzr_body_box_top{
     display: flex;
@@ -197,6 +203,7 @@ li{
 .wzr_body_bottom_font{
     margin-left: 20px;
     margin-top: 35px;
+    margin-bottom: 56px;
 }
 .wzr_body_bottom_font_1{
     font-size: 14px;
@@ -230,11 +237,13 @@ li{
     background: #1f2d3d;
     color: #8796a8;
     height: 56px;
-    min-width: 1200px;
+    min-width: 980px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    bottom: 0;
 }
 
 
