@@ -381,6 +381,7 @@
                 var wgpperboxp = wgpperbox.find("p")
                 var wgpperboxptwo = wgpperbox.find("p").eq(1)
                 var wgpperboxpthree = wgpperbox.find("p").eq(2)
+                var wgpperboxplasts = wgpperbox.find("p:last")
                 var wgpweboneimgtwo = wgpweboneman.find(".wgp_webone_imgtwo")
                 var wgpwebonekarsa = wgpweboneman.find(".wgp_webone_karsa")
                 var wgpwebonebuff = wgpweboneman.find(".wgp_webone_buff")
@@ -420,6 +421,10 @@
                 wgpperboxpthree.on("click", function () {
                     $(window).attr('location', "myDevelopment.html")
                 })
+                wgpperboxplast.on("click", function () {
+                    $(window).attr('location', "index.html")
+                })
+                
             }
             setshit()
 
