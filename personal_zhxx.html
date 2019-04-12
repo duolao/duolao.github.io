@@ -212,13 +212,13 @@
                     <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">姓名*</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="姓名">
+                            <input type="text" class="form-control" id="yanzhengone" placeholder="姓名">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">QQ</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="QQ号">
+                            <input type="text" class="form-control" id="yanzhengtwo" placeholder="QQ号">
                         </div>
                     </div>
                     <div class="form-group">
@@ -251,7 +251,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-2">
-                            <button type="submit" class="btn  btn-primary">保存</button>
+                            <button type="button" class="btn  btn-primary" id="btn">保存</button>
                         </div>
                     </div>
                 </form>
@@ -276,9 +276,16 @@
             })
 
             // 表格验证
-
+            var yzone = document.getElementById("yanzhengone");
+            var yztwo = document.getElementById("yanzhengtwo");
+            $(".btn").click(function() {
+                if(yzone.value=="" || yztwo.value == ""){
+                    alert("还有空格，请继续输入")
+                }
+            })
 
         })
+
 
 
 
