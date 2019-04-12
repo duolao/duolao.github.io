@@ -1,0 +1,336 @@
+/* 我的开发宝-开发宝冲值 */
+/* 内容 */
+.dny_content{
+    /* padding-top: 64px; */
+    padding-bottom: 56px;
+    min-height: 600px;
+}
+.dny_content .dny_cont{
+    height: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+.dny_breadcrumb-wrap{
+    display: block;
+    width: 100%;
+    padding: 35px 0 21px;
+}
+.dny_clearfix {
+    zoom: 1;
+}
+.dny_breadcrumbs {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.dny_breadcrumbs li {
+    float: left;
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    color: #474b48;
+    padding-right: 1rem;
+}
+.dny_breadcrumbs li a {
+    color: #2d3238;
+    text-decoration: none;
+}
+.dny_breadcrumbs li :after {
+    position: relative;
+    right: -.5rem;
+    content: "\2192";
+    font-size: 1rem;
+    color: #979fa8;
+}
+.dny_breadcrumbs li~li {
+    color: #2d3238;
+    opacity: .5;
+}
+
+
+.dny_flex-direction-row {
+    -ms-box-orient: vertical;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-line-pack: stretch;
+}
+.dny_flex-direction-column, .dny_flex-direction-row {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+.dny_wrapper{
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* 左边菜单部分 */
+.dny_menu{
+    padding: 0;
+}
+.dny_side-nav{
+    margin: 0;
+    left: 0;
+}
+.dny_side-nav ul {
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 -1px 0 0 #e7e7e7, inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+    list-style: none;
+}
+.dny_side-nav ul .dny_side-nav-header{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #e6ebf0;
+    padding: 7px 0 7px 21px;
+    box-shadow: inset 0 1px 0 0 #fff, 0 1px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+}
+.dny_side-nav ul>li {
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dny_side-nav ul .dny_side-nav-item{
+    background-color: #f0f2f5;
+    height: 48px;
+    box-shadow: 0 -1px 0 0 #e6e6e6, inset 0 1px 0 0 #fff, 0 2px 0 0 #e6e6e6, 1px 0 0 0 #e6e6e6, -1px 0 0 0 #e6e6e6;
+}
+.dny_side-nav ul>li .dny_nav-link-2 {
+    display: block;
+    padding: 14px 0 14px 50px;
+    color: #979fa8;
+    line-height: 18px;
+    text-decoration: none;
+    outline: none;
+    font-weight: 500;
+}
+.dny_side-nav ul>li .dny_nav-link-2 .dny_icon {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+}
+/* 右边部分 */
+.dny_content-right{
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    background: #fff;
+    min-height: 40rem;
+    box-shadow: 0 1px 2px hsla(165,9%,74%,.95);
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+}
+.dny_content-right .dny_box{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.dny_tip.dny_shadow{
+    box-shadow: 0 1px 2px 0 rgba(31,45,61,.1);
+}
+.dny_tip.dny_red{
+    color: #e84d60;
+}
+.dny_tip {
+    font-size: 14px;
+    background: #fff6de;
+    color: #979fa8;
+    padding: .6rem 2.5rem .5rem 1.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.dny_deposit .dny_pay-account {
+    position: relative;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.dny_deposit .dny_pay-account .dny_pay-platforms,.dny_deposit .dny_pay-account .dny_deposit-price{
+    border-bottom: 1px solid hsla(212,9%,63%,.2);
+}
+.dny_two-columns{
+    display: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 2.5rem 0;
+}
+h2 {
+    display: block;
+    font-size: 1.8em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    /* font-weight: bold; */
+    color: rgba(0,0,0,.85);
+    font-weight: 300;
+}
+.dny_two-columns .dny_right {
+    -ms-flex: 1;
+    flex: 1;
+}
+.dny_platformIcon {
+    width: 49%;
+    display: inline-block;
+    position: relative;
+    height: 3rem;
+    padding: .67rem 0;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+.dny_radio-container {
+    cursor: pointer;
+}
+.dny_icon-container {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 1px solid #cad3de;
+    background: #edf1f5;
+    box-sizing: border-box;
+    margin: 0 .5rem;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.dny_icon-container.dny_radio-checked {
+    box-shadow: inset 0 0 0 0.64rem #4289db;
+}
+.dny_icon-container input {
+    display: none;
+}
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.dny_alipay-icon {
+    display: inline-block;
+    width: 8rem!important;
+    height: 3rem!important;
+}
+.dny_two-columns .dny_left p {
+    font-size: 1.6rem;
+    color: #979fa8;
+}
+.container p {
+    padding: 0;
+    margin: 0;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.dny_deposit-price input[type=text] {
+    width: 10rem;
+    margin: 2.5rem 1rem 2.5rem 0;
+    box-sizing: border-box;
+}
+.dny_deposit input[type=text] {
+    background: #edf1f5;
+    border: 1px solid #cad3de;
+    padding: .8rem;
+    margin-right: .4rem;
+    outline: none;
+    font-size: 1rem;
+    color: #2d3238;
+    border-radius: .4rem;
+}
+input {
+    overflow: visible;
+}
+.dny_deposit .dny_deposit-submit {
+    text-align: center;
+    margin: 3rem 0;
+}
+.dny_deposit-submit button.dny_ok{
+    background-color: #4289db;
+    color: #fff;
+    padding: .8rem 3.6rem;
+    box-shadow: 0 2px 2px 0 rgba(45,51,56,.2);
+}
+.dny_deposit-submit button {
+    outline: none;
+    cursor: pointer;
+    padding: .8rem 2rem;
+    text-align: center;
+    white-space: nowrap;
+    color: #979fa8;
+    background-color: #fff;
+    border: 1px solid hsla(212,9%,63%,.5);
+    border-radius: 5px;
+    margin: .5rem .25rem;
+    font-size: 2rem;
+    transition: background .5s cubic-bezier(.24,.68,.67,.9);
+    -webkit-font-smoothing: antialiased;
+}
+.dny_Btabs .dny_Btab{
+    display: none;
+}
+.dny_Btabs .dny_Btab:first-Child{
+    display:block;
+}
+.dny_tabborder{
+    border-bottom: 1px solid hsla(212,9%,63%,.2);
+}
+/* 小选项卡 */
+.dny_bank-tabs ul {
+    margin: 0;
+    padding: 0;
+}
+.dny_bank-tabs ul li {
+    display: inline-block;
+    width: 6.4rem;
+    padding: .7rem 0;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+.dny_bank-tabs .dny_tab-checked {
+    color: #4289db;
+    border-bottom: 1px solid #4289db;
+}
+.dny_bank-info {
+    padding-top: 2.5rem;
+}
+.dny_tabinfo {
+    margin-bottom: 1.5rem;
+    color: #e61e0b;
+    font-size: 1.4rem;
+}
+article{
+    display: block;
+}
+.dny_tabbox {
+    background-color: #edf1f5;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid #cad3de;
+    border-radius: .4rem;
+}
+.dny_tabbox p {
+    margin: 0;
+    color: #979fa8;
+}
+.dny_tabbox p~p {
+    margin-top: .5rem;
+}
+.dny_tabbox em {
+    font-style: normal;
+    color: #2d3238;
+}
+.dny_Ltabs .dny_tab{
+    display: none;
+}
+.dny_Ltabs .dny_tab:first-Child{
+    display:block;
+}
