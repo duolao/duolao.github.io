@@ -522,6 +522,7 @@ button{
     top: 65px;
     right: 5px;
     display: none;
+    z-index: 3333333333111111;
 }
 .wgp_per_box p{
     font-size: 14px;

@@ -43,7 +43,6 @@
                     <img src="https://dn-coding-net-production-pp.codehub.cn/29402486-bf33-4cb4-9ea2-ab4bae89bee2.png"
                         alt="" class="wgp_webone_imgtwo">
                     <img src="./img/wgp_xiasanjiao.png" alt="" class="wgp_webone_imgthree">
-
                     <div class="wgp_per_box">
                         <p class="wgp_perbor_box">Hellow,wgp110120</p>
                         <p class="wgp_perbor_box">个人中心</p>
@@ -108,6 +107,58 @@
             </div>
     
         </div>
+        <script>
+
+function setshit() {
+                var wgpwebonebox = $(".wgp_webone_box")
+                var wgpweboneoneuls = wgpwebonebox.find(".wgp_webone_oneuls")
+                var wgpwebonelastliss = wgpweboneoneuls.find(".wgp_webone_lastliss")
+                var wgphelp = wgpweboneoneuls.find(".wgp_help")
+                var wgpweboneman = wgpwebonebox.find(".wgp_webone_man")
+                var wgpweboneimgone = wgpweboneman.find(".wgp_webone_imgone")
+                var wgpinformbox = wgpweboneman.find(".wgp_inform_box")
+                var wgpperbox = wgpweboneman.find(".wgp_per_box")
+                var wgpperboxp = wgpperbox.find("p")
+                var wgpperboxptwo =  wgpperbox.find("p").eq(1)
+                var wgpweboneimgtwo = wgpweboneman.find(".wgp_webone_imgtwo")
+                var wgpwebonekarsa = wgpweboneman.find(".wgp_webone_karsa")
+                var wgpwebonebuff = wgpweboneman.find(".wgp_webone_buff")
+                var wgpqq = $(".wgp_qq")
+                var wgpqqfont = wgpqq.find("a")
+                console.log(wgpqq)
+                console.log(wgpweboneimgtwo)
+                wgpwebonelastliss.on("mouseover", function () {
+                    wgphelp.css("display", "block")
+                })
+                wgpwebonelastliss.on("mouseout", function () {
+                    wgphelp.css("display", "none")
+                })
+                wgpwebonekarsa.on("mouseover", function () {
+                    wgpinformbox.css("display", "block")
+                })
+                wgpwebonekarsa.on("mouseout", function () {
+                    wgpinformbox.css("display", "none")
+                })
+                wgpwebonebuff.on("mouseover", function () {
+                    wgpperbox.css("display", "block")
+                })
+                wgpwebonebuff.on("mouseout", function () {
+                    wgpperbox.css("display", "none")
+                })
+                wgpperboxp.on("mouseover", function () {
+                    wgpperboxp.css({ "background": "#fff", "color": "#000" })
+                    $(this).css({ "background": "#4389d9", "color": "#fff", "transition": "0.5s" })
+                })
+                wgpqq.on("mouseover", function () {
+                    //   $(this).css({top:$(this).position().top,left:$(this).position().left}).animate({width:$(this).width()*2,height:$(this).height()*2,top:$(this).position().top-$(this).height(),
+                    // left:$(this).position().left-$(this).width()})
+                })
+                wgpperboxptwo.on("click",function(){
+                    $(window).attr('location',"http://119.23.230.195/three/exploitation.html")
+                })
+            }
+            setshit()
+        </script>
 </body>
 
 </html>
