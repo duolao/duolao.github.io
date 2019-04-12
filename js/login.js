@@ -23,7 +23,7 @@
 var flag_user = flag_pass = flag_repass = flag_email = flag_phone = 0;
 //获取所有input节点
 var inputs = document.getElementsByTagName('input');
-console.log(inputs);
+// console.log(inputs);
 //获取所有的span标签,用于给出提示信息
 var spans = document.getElementsByTagName('p');
 //遍历input节点，给不同的input的绑定不	同的事件
@@ -156,4 +156,6 @@ function checkForm(){
 		return false;
 	}
 }
+
+
 
