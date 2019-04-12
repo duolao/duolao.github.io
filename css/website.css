@@ -208,6 +208,7 @@ button{
     position: absolute;
     top: 65px;
     right: 5px;
+    z-index: 5555;
     display: none;
 }
 .wgp_per_box p{
